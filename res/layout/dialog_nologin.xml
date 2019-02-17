@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:skin="http://schemas.android.com/android/skin"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/view_parent"
+    style="@style/bg_fw"
+    android:background="@drawable/my_help_center_button2x"
+    android:orientation="vertical"
+    skin:enable="true">
+
+    <RelativeLayout
+        style="@style/bg_fw"
+        android:layout_height="65dp"
+        android:background="@drawable/selector_white_item"
+        skin:enable="true">
+
+        <TextView
+            style="@style/bg_ww"
+            android:text="@string/tip_dialog_title"
+            android:textColor="@color/day_text_color"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/text_size_18"
+            skin:enable="true" />
+
+        <ImageView
+            android:id="@+id/img_close"
+            style="@style/bg_ww"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/margin_top_15"
+            android:src="@drawable/close_button"
+            skin:enable="true" />
+
+    </RelativeLayout>
+
+    <View
+        style="@style/view_line_2px"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginRight="@dimen/margin_right"
+        android:background="@color/day_line2_color"
+        skin:enable="true" />
+
+    <LinearLayout
+        style="@style/bg_fw"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/nologin_content"
+            style="@style/bg_fw"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/margin_bottom_15"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginTop="@dimen/margin_top_15"
+            android:layout_weight="1"
+            android:text="@string/tip_dialog_longin"
+            android:textColor="@color/day_text_color_737373"
+            android:textSize="@dimen/text_size_16"
+            skin:enable="true" />
+    </LinearLayout>
+
+    <View
+        style="@style/view_line_1px"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginRight="@dimen/margin_right"
+        android:background="@color/day_line1_color"
+        skin:enable="true" />
+
+    <LinearLayout
+        style="@style/bg_fw"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/margin_dialog_bottom_8"
+        android:paddingTop="@dimen/margin_top_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btn_sign_in"
+            style="@style/btn_dialog_nologin_cancel"
+            android:background="@drawable/btn_red_sel_2"
+            android:text="@string/name_title_login"
+            android:textColor="@color/word_white_red_press"
+            android:textSize="@dimen/text_size_16"
+            skin:enable="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2" />
+
+        <Button
+            android:id="@+id/btn_sign_up"
+            style="@style/btn_dialog_nologin_cancel"
+            android:background="@drawable/btn_blue_white"
+            android:text="@string/name_title_register"
+            android:textColor="@color/word_red_sel"
+            android:textSize="@dimen/text_size_16"
+            skin:enable="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>

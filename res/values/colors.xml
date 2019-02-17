@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ebpay_gray">#ffd9d9d9</color>
+    <color name="transparent">#00000000</color>
+    <color name="night_bg">#ff232122</color>
+</resources>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/bg_ff"
+    android:background="@color/day_bg_color">
+
+    <com.baiyi.jj.app.views.MyScrollView
+        android:id="@+id/scroll"
+        android:layout_width="@dimen/attention_menu_wight"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <com.baiyi.jj.app.activity.attention.AttentionMenuView
+            android:id="@+id/attention_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></com.baiyi.jj.app.activity.attention.AttentionMenuView>
+    </com.baiyi.jj.app.views.MyScrollView>
+
+    <RelativeLayout
+        style="@style/bg_ff"
+        android:layout_toRightOf="@+id/scroll">
+
+        <LinearLayout
+            android:id="@+id/lin_attention_top"
+            style="@style/bg_fw"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/margin_top_10"
+                android:paddingLeft="@dimen/margin_left"
+                android:paddingRight="@dimen/margin_right"
+                android:paddingTop="@dimen/margin_top_10">
+
+                <ImageView
+                    android:id="@+id/img_channel_pic"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:textColor="@color/day_text_color_737373"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    android:id="@+id/tv_channel_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_left_10"
+                    android:layout_marginRight="@dimen/margin_right_10"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/day_text_color"
+                    android:textSize="@dimen/text_size_16" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_marginRight="@dimen/margin_right"
+                android:background="@color/day_line1_color" />
+        </LinearLayout>
+
+        <com.jcodecraeer.xrecyclerview.XRecyclerView
+            android:id="@+id/attention_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/lin_attention_top" />
+
+        <com.baiyi.jj.app.views.MyLoadingBar
+            android:id="@+id/loading"
+            style="@style/bg_ww"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

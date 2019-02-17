@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_left"
+                    android:layout_marginTop="@dimen/margin_30"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tip_select_interests"
+                        android:textColor="@color/day_text_color_red"
+                        android:textSize="@dimen/text_size_16"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="50dp"
+                        android:layout_marginTop="@dimen/margin_top_5"
+                        android:text="@string/tip_redit_has_communties"
+                        android:textColor="@color/day_text_color_737373"
+                        android:textSize="@dimen/text_size_14" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_skip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/margin_right"
+                    android:text="@string/tip_skip"
+                    android:textColor="@color/day_text_color_red"
+                    android:textSize="@dimen/text_size_16"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <com.baiyi.jj.app.views.ChannelFlowLayout
+                android:id="@+id/tag_channel_view"
+                android:layout_width="match_parent"
+                android:layout_height="380dp"
+                android:layout_margin="@dimen/margin_top_15" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/btn_channel_ok"
+                style="@style/btn_blue_f_40"
+                android:layout_marginBottom="@dimen/margin_bottom_10"
+                android:layout_marginTop="@dimen/margin_top_10"
+                android:background="@drawable/btn_red_sel_2"
+                android:text="@string/txt_messge_addchannel"
+                android:textColor="@color/word_white_red_press"
+                android:textSize="@dimen/text_size_18" />
+        </LinearLayout>
+
+    <com.baiyi.jj.app.views.MyLoadingBar
+        android:id="@+id/loading"
+        style="@style/bg_ww"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

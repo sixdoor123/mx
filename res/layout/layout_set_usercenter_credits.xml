@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:skin="http://schemas.android.com/android/skin"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/bg_fw"
+    android:background="@color/day_bg_color_fafafa"
+    android:orientation="vertical"
+    android:visibility="visible"
+    skin:enable="true">
+
+    <LinearLayout
+        android:id="@+id/btn_language"
+        style="@style/btn_item_selector_padall_15"
+        android:background="@drawable/selector_white_item"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        skin:enable="true">
+
+        <ImageView
+            style="@style/bg_ww"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_right"
+            android:src="@drawable/icon_lanuage"
+            skin:enable="true" />
+
+        <TextView
+            style="@style/bg_ww"
+            android:layout_weight="1"
+            android:text="@string/txt_account_language"
+            android:textColor="@color/default_color_313131_white"
+            android:textSize="@dimen/text_size_16"
+            skin:enable="true" />
+
+        <ImageView
+            style="@style/bg_ww"
+            android:layout_centerVertical="true"
+            android:src="@drawable/my_arrow_right2x"
+            skin:enable="true" />
+    </LinearLayout>
+
+    <View
+        style="@style/view_line_1px_pading"
+        android:background="@color/day_line1_color"
+        android:visibility="gone"
+        skin:enable="true" />
+
+    <LinearLayout
+        android:id="@+id/btn_credits_history"
+        style="@style/btn_item_selector_padall_15"
+        android:background="@drawable/selector_white_item"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        skin:enable="true">
+
+        <ImageView
+            style="@style/bg_ww"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_right"
+            android:src="@drawable/user_paypal2x"
+            skin:enable="true" />
+
+        <TextView
+            style="@style/bg_ww"
+            android:layout_weight="1"
+            android:text="@string/txt_credits_history"
+            android:textColor="@color/default_color_313131_white"
+            android:textSize="@dimen/text_size_16"
+            skin:enable="true" />
+
+        <ImageView
+            style="@style/bg_ww"
+            android:layout_centerVertical="true"
+            android:src="@drawable/my_arrow_right2x"
+            skin:enable="true" />
+    </LinearLayout>
+
+    <View
+        style="@style/view_line_1px_pading"
+        android:background="@color/day_line1_color"
+        android:visibility="gone"
+        skin:enable="true" />
+
+    <LinearLayout
+        android:id="@+id/btn_withdraw_history"
+        style="@style/btn_item_selector_padall_15"
+        android:background="@drawable/selector_white_item"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        skin:enable="true">
+
+        <ImageView
+            style="@style/bg_ww"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_right"
+            android:src="@drawable/user_credits_statement2x"
+            android:visibility="gone"
+            skin:enable="true" />
+
+        <TextView
+            style="@style/bg_ww"
+            android:layout_weight="1"
+            android:text="@string/txt_withdraw_history"
+            android:textColor="@color/default_color_313131_white"
+            android:textSize="@dimen/text_size_16"
+            skin:enable="true" />
+
+        <ImageView
+            style="@style/bg_ww"
+            android:layout_centerVertical="true"
+            android:src="@drawable/my_arrow_right2x"
+            skin:enable="true" />
+    </LinearLayout>
+
+    <View
+        style="@style/view_line_1px_pading"
+        android:background="@color/day_line1_color"
+        android:visibility="gone"
+        skin:enable="true" />
+
+    <LinearLayout
+        android:id="@+id/btn_center_paypal"
+        style="@style/btn_item_selector_padall_15"
+        android:background="@drawable/selector_white_item"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        skin:enable="true">
+
+        <ImageView
+            style="@style/bg_ww"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_right"
+            android:src="@drawable/icon_center_paypal2x"
+            android:visibility="gone"
+            skin:enable="true" />
+
+        <TextView
+            style="@style/bg_ww"
+            android:layout_weight="1"
+            android:text="@string/txt_my_paypal"
+            android:textColor="@color/default_color_313131_white"
+            android:textSize="@dimen/text_size_16"
+            skin:enable="true" />
+
+        <ImageView
+            style="@style/bg_ww"
+            android:layout_centerVertical="true"
+            android:src="@drawable/my_arrow_right2x"
+            skin:enable="true" />
+    </LinearLayout>
+
+    <View
+        style="@style/view_line_1px_pading"
+        android:background="@color/day_line1_color"
+        android:visibility="gone"
+        skin:enable="true" />
+
+    <LinearLayout
+        android:id="@+id/btn_center_withdraw"
+        style="@style/btn_item_selector_padall_15"
+        android:background="@drawable/selector_white_item"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        skin:enable="true">
+
+        <ImageView
+            style="@style/bg_ww"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_right"
+            android:src="@drawable/user_withdraw2x"
+            android:visibility="gone"
+            skin:enable="true" />
+
+        <TextView
+            style="@style/bg_ww"
+            android:layout_weight="1"
+            android:text="@string/txt_withdraw"
+            android:textColor="@color/default_color_313131_white"
+            android:textSize="@dimen/text_size_16"
+            skin:enable="true" />
+
+        <ImageView
+            style="@style/bg_ww"
+            android:layout_centerVertical="true"
+            android:src="@drawable/my_arrow_right2x"
+            skin:enable="true" />
+    </LinearLayout>
+</LinearLayout>

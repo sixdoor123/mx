@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/day_bg_color_fafafa"
+    android:orientation="vertical">
+
+
+
+    <com.baiyi.jj.app.views.RecyScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/day_bg_color">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/lin_downsize"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="@dimen/margin_bottom_10"
+                    android:paddingTop="@dimen/margin_top_10"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/bg_ww"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/margin_left"
+                        android:layout_weight="1"
+                        android:text="@string/txt_offline_size"
+                        android:textColor="@color/day_text_color_70black"
+                        android:textSize="@dimen/text_size_14" />
+
+                    <RadioGroup
+                        android:id="@+id/rg_downsize"
+                        style="@style/bg_ww"
+                        android:layout_marginLeft="@dimen/margin_left"
+                        android:layout_marginRight="@dimen/margin_right"
+                        android:orientation="horizontal">
+
+                    </RadioGroup>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/lin_cleardown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@color/day_bg_color"
+                    android:paddingBottom="@dimen/margin_bottom_10"
+                    android:paddingTop="@dimen/margin_top_10">
+
+                    <TextView
+                        style="@style/bg_ww"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/margin_left"
+                        android:layout_weight="1"
+                        android:text="@string/txt_clear_offline"
+                        android:textColor="@color/day_text_color_70black"
+                        android:textSize="@dimen/text_size_16" />
+                    <TextView
+                        android:id="@+id/txt_offlinesize"
+                        style="@style/bg_ww"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/margin_left_10"
+                        android:layout_marginRight="@dimen/margin_right_10"
+                        android:text="11M"
+                        android:textColor="@color/day_text_color_50black"
+                        android:textSize="@dimen/text_size_16" />
+                    <Button
+                        android:id="@+id/btn_clear_cache"
+                        style="@style/btn_blue_send_30"
+                        android:background="@drawable/btn_red_sel_90"
+                        android:text="@string/tip_clearcahe_btn"
+                        android:textColor="@color/word_white_red_press"
+                        android:textSize="@dimen/text_size_16"
+                        />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/offline_list_check"
+                style="@style/bg_fw" />
+
+            <TextView
+                android:id="@+id/txt_addmore"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:gravity="center"
+                android:text="@string/txt_addmore"
+                android:textColor="@color/day_text_color_40black"
+                android:textSize="@dimen/text_size_16" />
+            <View
+                style="@style/view_1px_margin_15"
+                android:background="@color/day_line1_color" />
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/offline_list_uncheck"
+                style="@style/bg_fw" />
+        </LinearLayout>
+    </com.baiyi.jj.app.views.RecyScrollView>
+
+
+
+
+</LinearLayout>

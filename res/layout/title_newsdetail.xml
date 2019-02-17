@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:skin="http://schemas.android.com/android/skin"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:orientation="vertical"
+    skin:enable="true">
+
+
+    <RelativeLayout
+        android:id="@+id/rela_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/day_text_color_red">
+
+
+        <ImageView
+            android:id="@+id/title_bg"
+            style="@style/title_bg"
+            android:background="@color/day_text_color_red"
+            skin:enable="true" />
+
+        <ImageView
+            android:id="@+id/img_back"
+            style="@style/bg_ww"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="@dimen/margin_bottom_10"
+            android:paddingLeft="@dimen/margin_left"
+            android:paddingRight="@dimen/margin_right_10"
+            android:paddingTop="@dimen/margin_top_10"
+            android:src="@drawable/btn_back_white_red"
+            skin:enable="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="@color/day_text_color_write"
+            android:textSize="@dimen/text_size_20"
+            android:visibility="gone"
+            skin:enable="true" />
+
+        <RadioGroup
+            android:id="@+id/rg_news_top"
+            style="@style/bg_ww"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginRight="@dimen/margin_right"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            android:visibility="gone">
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/lin_webtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/text_left_web"
+                style="@style/bg_wf"
+                android:layout_width="82dp"
+                android:layout_weight="1"
+                android:duplicateParentState="false"
+                android:gravity="center"
+                android:text="@string/title_web"
+                android:textColor="@color/word_red_sel"
+                android:textSize="@dimen/text_size_15"
+                skin:enable="true" />
+
+            <TextView
+                android:id="@+id/text_left_local"
+                style="@style/bg_wf"
+                android:layout_width="82dp"
+                android:layout_weight="1"
+                android:duplicateParentState="false"
+                android:gravity="center"
+                android:text="@string/title_local"
+                android:textColor="@color/word_red_sel"
+                android:textSize="@dimen/text_size_15"
+                skin:enable="true" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_right"
+            style="@style/bg_ww"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_right"
+            android:paddingBottom="@dimen/margin_bottom_10"
+            android:paddingLeft="@dimen/margin_left_10"
+            android:paddingTop="@dimen/margin_top_10"
+            android:src="@drawable/btn_web"
+            android:visibility="visible"
+            skin:enable="true" />
+
+        <TextView
+            android:id="@+id/text_right"
+            style="@style/bg_ww"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/margin_bottom_10"
+            android:text="@string/txt_open_top"
+            android:textColor="@color/word_red_sel"
+            android:textSize="@dimen/text_size_15"
+            android:visibility="gone"
+            skin:enable="true" />
+    </RelativeLayout>
+
+    <View
+        style="@style/view_line_1px"
+        android:background="@color/day_line1_color"
+        android:visibility="gone"/>
+
+</LinearLayout>

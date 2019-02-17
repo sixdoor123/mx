@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:skin="http://schemas.android.com/android/skin"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lin_news_detail"
+    style="@style/bg_fw"
+    android:background="@color/day_text_color_write"
+    android:orientation="vertical"
+    android:visibility="gone"
+    skin:enable="true">
+
+    <LinearLayout
+        android:id="@+id/lin_attention"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_top_15"
+        android:background="@color/day_bg_color_f5f5"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/bg_fw_all"
+            android:singleLine="true"
+            android:text="@string/txt_please_tags"
+            android:textColor="@color/day_text_color_737373"
+            android:textSize="@dimen/text_size_16"
+            skin:enable="true" />
+
+        <View
+            style="@style/view_line_2px"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginRight="@dimen/margin_right"
+            android:background="@color/day_line2_color" />
+
+        <com.baiyi.jj.app.views.PleaseAttentionView
+            android:id="@+id/tag_cloud_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tcvBackground="@color/day_bg_color_f5f5"
+            app:tcvBorder="5dp"
+            app:tcvCanTagClick="false"
+            app:tcvItemBorderHorizontal="0dp"
+            app:tcvItemBorderVertical="0dp"
+            app:tcvSingleLine="false"
+            app:tcvTextColor="@color/day_text_color"
+            app:tcvTextSize="10sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_reading"
+        style="@style/bg_fw_all"
+        android:layout_marginTop="0dp"
+        android:background="@color/day_bg_color_f5f5"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/bg_fw_all"
+            android:singleLine="true"
+            android:text="@string/txt_reading"
+            android:textColor="@color/day_text_color_737373"
+            android:textSize="@dimen/text_size_16"
+            skin:enable="true" />
+
+        <View
+            style="@style/view_line_2px"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginRight="@dimen/margin_right"
+            android:background="@color/day_line2_color" />
+
+        <com.baiyi.jj.app.views.LinNewsReadingView
+            android:id="@+id/lin_list_reading"
+            style="@style/bg_fw"
+            android:layout_marginBottom="@dimen/margin_bottom_15"
+            android:orientation="vertical" />
+    </LinearLayout>
+</LinearLayout>

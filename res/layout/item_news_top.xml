@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/txt_news_top"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/tab_height"
+    android:text="@string/name_news"
+    android:textStyle="normal"
+    android:gravity="center"
+    android:textColor="@color/day_text_color_write"
+    android:textSize="15sp">
+
+</TextView>

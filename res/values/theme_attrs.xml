@@ -1,0 +1,149 @@
+<!--
+  Copyright 2011 The Android Open Source Project
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+
+<resources>
+
+
+    <declare-styleable name="baseLayout">
+        <attr name="day_layout_color" format="reference" />
+        <attr name="night_layout_color" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="tipTitles">
+        <attr name="tiles_text" format="reference" />
+        <attr name="select_index" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="lineView">
+        <attr name="day_color" format="reference" />
+        <attr name="night_color" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="baseImageView">
+        <attr name="day_img_res" format="reference" />
+        <attr name="night_img_res" format="reference" />
+        <attr name="day_img_bg" format="reference" />
+        <attr name="night_img_bg" format="reference" />
+        <attr name="day_color_bg" format="reference" />
+        <attr name="night_color_bg" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="baseSeekBar">
+        <attr name="day_progress_res" format="reference" />
+        <attr name="night_progress_res" format="reference" />
+        
+        <attr name="day_thumb_res" format="reference" />
+        <attr name="night_thumb_res" format="reference" />
+    </declare-styleable>
+    
+    <declare-styleable name="btnItem">
+        <attr name="day_item_res" format="reference" />
+        <attr name="night_item_res" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="MyRadioButton">
+        <attr name="day_left_radioButton_bg" format="reference" />
+        <attr name="night_left_radioButton_bg" format="reference" />
+        
+        <attr name="day_middle_radioButton_bg" format="reference" />
+        <attr name="night_middle_radioButton_bg" format="reference" />
+        
+        <attr name="day_right_radioButton_bg" format="reference" />
+        <attr name="night_right_radioButton_bg" format="reference" />
+        
+        <attr name="day_radioButton_color" format="reference|color" />
+        <attr name="night_radioButton_color" format="reference|color" />
+        <attr name="button_type" format="integer" />
+    </declare-styleable>
+    
+    <declare-styleable name="baseButton">
+        <attr name="day_btn_bg" format="reference" />
+        <attr name="night_btn_bg" format="reference" />
+        
+        <attr name="day_btn_text_color" format="reference|color" />
+        <attr name="night_btn_text_color" format="reference|color" />
+        
+        <attr name="min_btn_margin_top" format="dimension" />
+        <attr name="min_btn_margin_bottom" format="dimension" />
+        <attr name="min_btn_margin_left" format="dimension" />
+        <attr name="min_btn_margin_right" format="dimension" />
+        
+        <attr name="middle_btn_margin_top" format="dimension" />
+        <attr name="middle_btn_margin_bottom" format="dimension" />
+        <attr name="middle_btn_margin_left" format="dimension" />
+        <attr name="middle_btn_margin_right" format="dimension" />
+        
+        <attr name="max_btn_margin_top" format="dimension" />
+        <attr name="max_btn_margin_bottom" format="dimension" />
+        <attr name="max_btn_margin_left" format="dimension" />
+        <attr name="max_btn_margin_right" format="dimension" />
+    </declare-styleable>
+    
+    <declare-styleable name="MyEditText">
+        <attr name="day_bg" format="reference" />
+        <attr name="night_bg" format="reference" />
+        
+        <attr name="edit_margin_top" format="dimension" />
+        <attr name="edit_margin_bottom" format="dimension" />
+        <attr name="edit_margin_left" format="dimension" />
+        <attr name="edit_margin_right" format="dimension" />
+    </declare-styleable>
+    
+    <declare-styleable name="MyCheckBox">
+        <attr name="cb_day_bg" format="reference" />
+        <attr name="cb_night_bg" format="reference" />
+        
+        <attr name="cb_margin_top" format="dimension" />
+        <attr name="cb_margin_bottom" format="dimension" />
+        <attr name="cb_margin_left" format="dimension" />
+        <attr name="cb_margin_right" format="dimension" />
+    </declare-styleable>
+    
+    <declare-styleable name="MyTextView">
+        <attr name="day_bg_res" format="reference" />
+        <attr name="night_bg_res" format="reference" />
+        
+        <attr name="day_text_color" format="reference|color" />
+        <attr name="night_text_color" format="reference|color" />
+        
+        <attr name="min_text_size" format="dimension" />
+        <attr name="middle_text_size" format="dimension" />
+        <attr name="max_text_size" format="dimension" />
+        <attr name="big_max_text_size" format="dimension" />
+        
+        <attr name="min_spaceextra" format="dimension" />
+        <attr name="middle_spaceextra" format="dimension" />
+        <attr name="max_spaceextra" format="dimension" />
+        <attr name="big_max_spaceextra" format="dimension" />
+        
+        <attr name="min_margin_top" format="dimension" />
+        <attr name="min_margin_bottom" format="dimension" />
+        <attr name="min_margin_left" format="dimension" />
+        <attr name="min_margin_right" format="dimension" />
+        
+        <attr name="middle_margin_top" format="dimension" />
+        <attr name="middle_margin_bottom" format="dimension" />
+        <attr name="middle_margin_left" format="dimension" />
+        <attr name="middle_margin_right" format="dimension" />
+        
+        <attr name="bigmax_margin_bottom" format="dimension" />
+        
+        <attr name="max_margin_top" format="dimension" />
+        <attr name="max_margin_bottom" format="dimension" />
+        <attr name="max_margin_left" format="dimension" />
+        <attr name="max_margin_right" format="dimension" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:skin="http://schemas.android.com/android/skin"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/day_bg_color">
+
+    <com.baiyi.jj.app.views.MyLoadingBar
+        android:id="@+id/loading"
+        style="@style/bg_ww"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:visibility="gone"
+        skin:enable="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <EditText
+            android:id="@+id/eidt_userName"
+            style="@style/base_edit_h50"
+            android:layout_centerVertical="true"
+            android:background="@color/day_bg_color_white"
+            android:gravity="center"
+            android:hint="@string/txt_edit_hint32"
+            android:textColor="@color/day_text_color_737373"
+            android:textSize="@dimen/text_size_15"
+            skin:enable="true" />
+
+        <View
+            style="@style/view_line_1px"
+            android:background="@color/day_line1_color" />
+
+        <EditText
+            android:id="@+id/edit_pwd"
+            style="@style/base_edit_h50"
+            android:layout_centerVertical="true"
+            android:background="@color/day_bg_color_white"
+            android:gravity="center"
+            android:hint="@string/login_password"
+            android:inputType="textPassword"
+            android:textColor="@color/day_text_color_737373"
+            android:textSize="@dimen/text_size_15"
+            skin:enable="true" />
+
+        <Button
+            android:id="@+id/login"
+            style="@style/btn_blue_f_40"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_red_sel_2"
+            android:text="@string/name_title_login"
+            android:textColor="@color/word_white_red_press"
+            android:textSize="@dimen/text_size_16"
+            skin:enable="true" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginRight="@dimen/margin_right"
+            android:layout_marginTop="@dimen/margin_top_15"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/forget_password"
+                style="@style/bg_ww"
+                android:layout_alignParentLeft="true"
+                android:text="@string/txt_forget_pwd"
+                android:textColor="@color/day_text_color_007AFF"
+                android:textSize="@dimen/text_size_14"
+                skin:enable="true" />
+
+            <TextView
+                android:id="@+id/tv_sign_up"
+                style="@style/bg_ww"
+                android:layout_alignParentRight="true"
+                android:text="@string/name_title_register"
+                android:textColor="@color/day_text_color_007AFF"
+                android:textSize="@dimen/text_size_14"
+                skin:enable="true" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1px"
+                android:layout_weight="1"
+                android:background="@color/day_line1_color" />
+
+
+            <TextView
+                style="@style/bg_ww"
+                android:layout_marginLeft="@dimen/margin_left_10"
+                android:layout_marginRight="@dimen/margin_right_10"
+                android:text="@string/or"
+                android:textColor="@color/day_text_color"
+                android:textSize="@dimen/text_size_16"
+                skin:enable="true" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1px"
+                android:layout_weight="1"
+                android:background="@color/day_line1_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_fb"
+            style="@style/btn_blue_f_40"
+            android:gravity="center"
+            android:orientation="horizontal"
+            skin:enable="true">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="@dimen/margin_left_10"
+                android:layout_marginRight="@dimen/margin_right_5"
+                android:src="@drawable/icon_facebook"
+                skin:enable="true" />
+
+            <TextView
+                style="@style/bg_ww"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/txt_button24"
+                android:textColor="@color/day_text_color_write"
+                android:textSize="@dimen/text_size_16"
+                skin:enable="true" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_skip_now"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/margin_40"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_40"
+            android:background="@drawable/btn_blue_white"
+            android:paddingLeft="@dimen/margin_left_20"
+            android:paddingRight="@dimen/margin_right_20"
+            android:text="@string/skip_now"
+            android:textColor="@color/word_red_sel"
+            android:textSize="@dimen/text_size_16"
+            skin:enable="true" />
+    </LinearLayout>
+</RelativeLayout>

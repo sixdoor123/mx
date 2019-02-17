@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:skin="http://schemas.android.com/android/skin"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btn_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    skin:enable="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <LinearLayout
+            android:background="@drawable/selector_news_item"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            skin:enable="true">
+
+            <ImageView
+                android:id="@+id/img_head"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="@dimen/margin_bottom_10"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_marginTop="@dimen/margin_top_10"
+                android:visibility="gone"/>
+            <ImageView
+                android:id="@+id/img_channel_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_bottom_10"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_marginTop="@dimen/margin_top_10" />
+
+            <TextView
+                android:id="@+id/txt_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_10"
+                android:layout_marginRight="@dimen/margin_right"
+                android:layout_marginBottom="@dimen/margin_bottom_15"
+                android:layout_marginTop="@dimen/margin_top_15"
+                android:layout_weight="1"
+                android:enabled="true"
+                android:text=""
+                android:textColor="@color/day_text_color_737373"
+                android:textSize="@dimen/text_size_18"
+                skin:enable="true" />
+
+            <CheckBox
+                android:id="@+id/check_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/checkbox_square"
+                android:paddingBottom="@dimen/margin_bottom_10"
+                android:paddingRight="@dimen/margin_right"
+                android:paddingTop="@dimen/margin_top_10" />
+            <ImageView
+                android:id="@+id/img_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_check_select"
+                android:paddingBottom="@dimen/margin_bottom_10"
+                android:paddingRight="@dimen/margin_right"
+                android:paddingTop="@dimen/margin_top_10"
+                android:visibility="gone"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <View
+        style="@style/view_1px_margin_15"
+        android:background="@color/day_line1_color"
+        skin:enable="true" />
+
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_reading"
+        style="@style/bg_fw_all"
+        android:text=""
+        android:textColor="@color/word_313131_737373"
+        android:textSize="@dimen/text_size_16" />
+
+    <View
+        style="@style/view_line_1px"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginRight="@dimen/margin_right"
+        android:background="@color/day_line1_color" />
+</LinearLayout>

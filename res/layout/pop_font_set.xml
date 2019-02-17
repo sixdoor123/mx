@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:skin="http://schemas.android.com/android/skin"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/view_parent"
+    style="@style/bg_fw"
+    android:orientation="vertical"
+    skin:enable="true">
+
+    <include
+        layout="@layout/title_pop"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        style="@style/view_line_1px"
+        android:background="@color/day_line1_color"
+        android:visibility="gone"
+        skin:enable="true" />
+
+    <LinearLayout
+        style="@style/btn_item_selector_top_bottom_10"
+        android:background="@drawable/selector_white_item"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        skin:enable="true">
+
+        <TextView
+            style="@style/bg_ww"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_weight="1"
+            android:text="亮度"
+            android:textColor="@color/day_text_color"
+            android:textSize="@dimen/text_size_16"
+            skin:enable="true" />
+
+        <SeekBar
+            android:id="@+id/seekbar_bright"
+            android:layout_width="137dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_right"
+            android:maxHeight="7dp"
+            android:minHeight="7dp"
+            android:progress="40"
+            android:progressDrawable="@drawable/setup_luminance_bar2x"
+            android:thumb="@drawable/setup_luminance_button2x"
+            android:thumbOffset="0dip"
+            skin:enable="true" />
+    </LinearLayout>
+
+    <View
+        style="@style/view_line_1px"
+        android:background="@color/day_line1_color"
+        skin:enable="true" />
+
+    <LinearLayout
+        style="@style/btn_item_selector_top_bottom_10"
+        android:background="@drawable/selector_white_item"
+        android:gravity="center_vertical"
+        skin:enable="true">
+
+        <TextView
+            style="@style/bg_ww"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_weight="1"
+            android:text="@string/txt_font"
+            android:textColor="@color/day_text_color"
+            android:textSize="@dimen/text_size_16"
+            skin:enable="true" />
+
+        <RadioGroup
+            android:id="@+id/pop_font_group"
+            style="@style/bg_ww"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/margin_right"
+            android:orientation="horizontal"
+            skin:enable="true"></RadioGroup>
+    </LinearLayout>
+    <View
+        style="@style/view_line_1px"
+        android:background="@color/day_line1_color"
+        skin:enable="true"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        style="@style/btn_item_selector_top_bottom_10"
+        android:background="@drawable/selector_white_item"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        skin:enable="true">
+
+        <TextView
+            style="@style/bg_ww"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_weight="1"
+            android:text="@string/txt_abstract"
+            android:textColor="@color/day_text_color"
+            android:textSize="@dimen/text_size_16"
+            skin:enable="true" />
+
+        <RadioGroup
+            android:id="@+id/pop_abstract"
+            style="@style/bg_ww"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/margin_right"
+            android:orientation="horizontal"
+            skin:enable="true"></RadioGroup>
+    </LinearLayout>
+    <View
+        style="@style/view_line_1px_pading"
+        android:background="@color/day_line1_color"
+        skin:enable="true"
+        android:visibility="visible"/>
+    <LinearLayout
+        style="@style/bg_fw"
+        android:background="@drawable/selector_white_item"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/margin_bottom_10"
+        android:paddingTop="@dimen/margin_top_10"
+        android:layout_gravity="center_vertical"
+        android:visibility="gone"
+        skin:enable="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+            <TextView
+                style="@style/bg_ww"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_marginRight="@dimen/margin_right"
+                android:singleLine="true"
+                android:text="@string/txt_wifi_show"
+                android:textColor="@color/default_color_313131_white"
+                android:textSize="@dimen/text_size_16"
+                skin:enable="true" />
+            <TextView
+                style="@style/bg_ww"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_marginRight="@dimen/margin_right"
+                android:singleLine="true"
+                android:text="@string/txt_wifi_show_2g"
+                android:textColor="@color/day_text_color_737373"
+                android:textSize="@dimen/text_size_14"
+                skin:enable="true" />
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/pop_rg_wifibig"
+            style="@style/bg_ww"
+            android:layout_gravity="right"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginRight="@dimen/margin_right"
+            android:orientation="horizontal"></RadioGroup>
+    </LinearLayout>
+
+    <View
+        style="@style/view_line_1px"
+        android:background="@color/day_line1_color"
+        skin:enable="true" />
+
+</LinearLayout>

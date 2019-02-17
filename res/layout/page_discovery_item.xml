@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:skin="http://schemas.android.com/android/skin"
+    style="@style/bg_ff"
+    android:background="@color/day_bg_color"
+    android:orientation="vertical"
+    skin:enable="true" >
+
+    <LinearLayout 
+        android:id="@+id/lin_addtable"
+        style="@style/bg_fw"
+        android:orientation="vertical"
+        skin:enable="true">
+        
+    </LinearLayout>
+
+    <View
+        style="@style/view_line_15"
+        android:background="@color/day_line15_color"
+        skin:enable="true" />
+
+    <View
+        style="@style/view_line_1px"
+        android:background="@color/day_line1_color"
+        skin:enable="true" />
+
+    <LinearLayout
+        android:id="@+id/btn_discovery_market"
+        style="@style/btn_item_selector_top_bottom_15"
+        android:background="@drawable/selector_white_item"
+        android:gravity="center_vertical"
+        skin:enable="true"
+        android:visibility="visible" >
+
+        <ImageView
+            style="@style/bg_ww"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:src="@drawable/icon_member_market"
+            skin:enable="true" />
+
+        <TextView
+            style="@style/bg_ww"
+            android:textColor="@color/default_color_313131_white"
+            android:textSize="@dimen/text_size_16"
+            android:layout_marginLeft="@dimen/margin_left_10"
+            android:layout_weight="1"
+            android:text=""
+            skin:enable="true" />
+
+        <ImageView
+            style="@style/bg_ww"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_right"
+            android:src="@drawable/my_arrow_right2x"
+            skin:enable="true" />
+    </LinearLayout>
+    <View
+        style="@style/view_line_1px"
+        android:background="@color/day_line1_color"
+        skin:enable="true"
+        android:visibility="gone" />
+
+</LinearLayout>

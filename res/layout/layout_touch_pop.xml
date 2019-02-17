@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rela_touch"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/day_text_color_black_40"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:id="@+id/lin_touch1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/icon_touch1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/bg_touch_black"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="@string/txt_touch1"
+            android:textColor="@color/day_text_color_write"
+            android:textSize="@dimen/text_size_18" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_touch2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/bg_touch_black"
+            android:gravity="center_vertical"
+            android:paddingLeft="1dp"
+            android:paddingRight="1dp"
+            android:text="@string/txt_touch2"
+            android:textColor="@color/day_text_color_write"
+            android:textSize="@dimen/text_size_18" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_touch3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/bg_touch_black"
+            android:gravity="center_vertical"
+            android:paddingLeft="1dp"
+            android:paddingRight="1dp"
+            android:text="@string/txt_touch3"
+            android:textColor="@color/day_text_color_write"
+            android:textSize="@dimen/text_size_18" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_touch4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="-10dp"
+            android:layout_marginTop="-10dp"
+            android:src="@drawable/icon_touch4" />
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_top_100"
+            android:background="@drawable/bg_touch_black"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="@string/txt_touch4"
+            android:textColor="@color/day_text_color_write"
+            android:textSize="@dimen/text_size_18" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_touch5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-10dp"
+            android:layout_marginTop="-10dp"
+            android:layout_gravity="left"
+            android:src="@drawable/icon_touch5" />
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_top_100"
+            android:background="@drawable/bg_touch_black"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="@string/txt_touch5"
+            android:textColor="@color/day_text_color_write"
+            android:textSize="@dimen/text_size_18" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/icon_pager_bg"
+        android:layout_marginBottom="@dimen/tab_height"
+        android:gravity="center"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/tv_pager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textSize="@dimen/text_size_18" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/2"
+            android:textSize="@dimen/text_size_18" />
+    </LinearLayout>
+
+
+</RelativeLayout>

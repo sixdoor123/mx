@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.turbo.turbo.mexico"
+    android:versionCode="15"
+    android:versionName="1.4.2">
+
+    <!--1 网络权限-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--2 读写文件，拍照存储需要-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!--3 读取手机唯一标识吗-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!--4 广播-->
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <!--5 读取或写入系统设置-->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!--6 判断当前网络状态的-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!--7 判断当前应用在前台还是后台-->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+
+
+    <!-- [START gcm_permission] -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <permission
+        android:name="com.turbo.turbo.mexico.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="com.turbo.turbo.mexico.permission.C2D_MESSAGE" />
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="17" />
+
+    <meta-data
+        android:name="ApkType"
+        android:value="all"></meta-data>
+
+    <application
+        android:name="com.baiyi.jj.app.application.CmsApplication"
+        android:allowBackup="true"
+        android:configChanges="locale"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.baiyi.jj.app.activity.LogoActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/LogoDrawTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--<activity-->
+        <!--android:name="com.baiyi.jj.app.manager.googleauth.TestActivity"-->
+        <!--android:configChanges="keyboardHidden|navigation|orientation|screenSize"-->
+        <!--android:screenOrientation="portrait" />-->
+        <activity
+            android:name="com.baiyi.jj.app.activity.main.TestActivity"
+            android:configChanges="keyboardHidden|navigation|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.baiyi.jj.app.activity.user.WelcomeActivity"
+            android:configChanges="keyboardHidden|navigation|orientation|screenSize"
+            android:screenOrientation="portrait" />
+
+        <!-- FaceBook Login -->
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProviderfacebook_app_id.mx"
+            android:exported="true" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.baiyi.jj.app.activity.ImageContainerActivity"
+            android:configChanges="keyboardHidden|navigation|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ycl.chooseavatar.library.CropImageViewActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.baiyi.jj.app.activity.NewsDetailAct"
+            android:configChanges="orientation|keyboard|keyboardHidden|navigation"
+            android:excludeFromRecents="true"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/LogoTheme"
+            android:windowSoftInputMode="adjustPan|stateVisible"></activity>
+        <activity
+            android:name="com.baiyi.jj.app.activity.GifDetailAct"
+            android:configChanges="orientation|keyboard|keyboardHidden|navigation"
+            android:excludeFromRecents="true"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/LogoTheme"
+            android:windowSoftInputMode="adjustPan|stateVisible"></activity>
+
+        <activity
+            android:name="com.baiyi.jj.app.activity.NewsLocalAct"
+            android:configChanges="keyboardHidden|navigation|orientation|screenSize"
+            android:excludeFromRecents="true"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeCompat"
+            android:windowSoftInputMode="adjustPan|stateVisible">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <!--下面所设置的质需要和html端对调-->
+                <!--在data里设置了 scheme和host，则该Activity可以接收和处理类似于 "sharetest://data/XXX"的链接-->
+                <data
+                    android:host="data"
+                    android:scheme="sharecallback" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name="com.baiyi.jj.app.activity.NewsVideoAct"
+            android:configChanges="keyboardHidden|navigation|orientation|screenSize"
+            android:excludeFromRecents="true"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeCompat"
+            android:windowSoftInputMode="adjustPan|stateVisible"></activity>
+
+        <activity
+            android:name="com.baiyi.jj.app.activity.MorningNewsListAct"
+            android:configChanges="keyboardHidden|navigation|orientation|screenSize"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.baiyi.jj.app.activity.DetailCommnetListActivity"
+            android:configChanges="keyboardHidden|navigation|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.baiyi.jj.app.activity.user.ValidateEmailActivity"
+            android:configChanges="keyboardHidden|navigation|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.baiyi.jj.app.activity.user.MemberNameActivity"
+            android:configChanges="keyboardHidden|navigation|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.baiyi.jj.app.activity.user.UsLoginAct"
+            android:configChanges="orientation|keyboard|keyboardHidden|navigation"
+            android:excludeFromRecents="true"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateVisible" />
+        <activity
+            android:name="com.baiyi.jj.app.activity.user.UsRegistAct"
+            android:configChanges="orientation|keyboard|keyboardHidden|navigation"
+            android:excludeFromRecents="true"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateVisible" />
+        <activity
+            android:name="com.baiyi.jj.app.activity.user.center.WithdrawHistoryAct"
+            android:configChanges="orientation|keyboard|keyboardHidden|navigation"
+            android:excludeFromRecents="true"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateVisible" />
+        <activity
+            android:name="com.baiyi.jj.app.activity.user.center.CreditsHistoryAct"
+            android:configChanges="orientation|keyboard|keyboardHidden|navigation"
+            android:excludeFromRecents="true"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateVisible" />
+        <activity
+            android:name="com.baiyi.jj.app.activity.user.center.PwdSetAct"
+            android:configChanges="orientation|keyboard|keyboardHidden|navigation"
+            android:excludeFromRecents="true"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateVisible" />
+        <activity
+            android:name="com.baiyi.jj.app.activity.user.center.EmailSetAct"
+            android:configChanges="orientation|keyboard|keyboardHidden|navigation"
+            android:excludeFromRecents="true"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateVisible" />
+        <activity
+            android:name="com.baiyi.jj.app.activity.user.center.NameSetAct"
+            android:configChanges="orientation|keyboard|keyboardHidden|navigation"
+            android:excludeFromRecents="true"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateVisible" />
+        <activity
+            android:name="com.baiyi.jj.app.activity.user.center.PayPalSetAct"
+            android:configChanges="orientation|keyboard|keyboardHidden|navigation"
+            android:excludeFromRecents="true"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateVisible" />
+        <activity
+            android:name="com.baiyi.jj.app.activity.user.center.PayPalAct"
+            android:configChanges="orientation|keyboard|keyboardHidden|navigation"
+            android:excludeFromRecents="true"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateVisible" />
+
+        <service
+            android:name="com.paypal.android.sdk.payments.PayPalService"
+            android:exported="false" />
+
+        <activity
+            android:name="com.paypal.android.sdk.payments.LoginActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name="com.paypal.android.sdk.payments.PayPalFuturePaymentActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@android:style/Theme.Dialog" />
+
+        <activity
+            android:name="com.paypal.android.sdk.payments.PayPalProfileSharingActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@android:style/Theme.Dialog" />
+
+        <activity
+            android:name="com.baiyi.jj.app.activity.user.center.PayPalChangeAct"
+            android:configChanges="orientation|keyboard|keyboardHidden|navigation"
+            android:excludeFromRecents="true"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateVisible" />
+        <activity
+            android:name="com.baiyi.jj.app.activity.user.center.WithdrawPwdAct"
+            android:configChanges="orientation|keyboard|keyboardHidden|navigation"
+            android:excludeFromRecents="true"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateVisible" />
+        <activity
+            android:name="com.baiyi.jj.app.activity.user.center.WithdrawAct"
+            android:configChanges="orientation|keyboard|keyboardHidden|navigation"
+            android:excludeFromRecents="true"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateVisible" />
+        <activity
+            android:name="com.baiyi.jj.app.activity.user.channel.UsChannelNewAct"
+            android:configChanges="keyboardHidden|navigation|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.baiyi.jj.app.activity.user.channel.UsChannelAct"
+            android:configChanges="keyboardHidden|navigation|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.baiyi.jj.app.activity.user.channel.UsChannelTagAct"
+            android:configChanges="keyboardHidden|navigation|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.baiyi.jj.app.activity.user.channel.OfflineAct"
+            android:configChanges="keyboardHidden|navigation|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.baiyi.jj.app.activity.user.about.MemberWebViewActivity"
+            android:configChanges="keyboardHidden|navigation|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.baiyi.jj.app.activity.user.MyCollectActivity"
+            android:configChanges="keyboardHidden|navigation|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.baiyi.jj.app.activity.user.ShareActivity"
+            android:configChanges="keyboardHidden|navigation|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.baiyi.jj.app.activity.SearchDetailActivity"
+            android:configChanges="keyboardHidden|navigation|orientation|screenSize"
+            android:excludeFromRecents="true"
+            android:hardwareAccelerated="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.baiyi.jj.app.activity.user.center.LanguageSetAct"
+            android:configChanges="keyboardHidden|navigation|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.baiyi.jj.app.activity.user.center.CountrySetAct"
+            android:configChanges="keyboardHidden|navigation|orientation|screenSize"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.baiyi.jj.app.activity.user.center.SetupUsAct"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.baiyi.jj.app.activity.user.about.OtherAct"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.baiyi.jj.app.activity.user.center.UserInfoAct"
+            android:configChanges="keyboardHidden|navigation|orientation|screenSize"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.baiyi.jj.app.activity.user.ForgetPwdSetPwdActivity"
+            android:configChanges="keyboardHidden|navigation|orientation|screenSize"
+            android:excludeFromRecents="true"
+            android:hardwareAccelerated="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.baiyi.jj.app.activity.EditionAct"
+            android:configChanges="keyboardHidden|navigation|orientation|screenSize"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.baiyi.jj.app.activity.attention.AllAttetionAct"
+            android:configChanges="keyboardHidden|navigation|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeCompat" />
+
+        <activity
+            android:name="com.baiyi.jj.app.activity.main.HomeTabAct"
+            android:configChanges="keyboardHidden|navigation|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeCompat"></activity>
+
+        <activity
+            android:name="com.baiyi.jj.app.activity.attention.MyAttentionListAct"
+            android:configChanges="keyboardHidden|navigation|orientation|screenSize"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.baiyi.jj.app.activity.attention.AttentionWordsAct"
+            android:configChanges="keyboardHidden|navigation|orientation|screenSize"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.baiyi.jj.app.activity.attention.SearchAttentionAct"
+            android:configChanges="keyboardHidden|navigation|orientation|screenSize"
+            android:screenOrientation="portrait" />
+
+        <!-- [START gcm_receiver] -->
+        <!--<receiver-->
+        <!--android:name="com.google.android.gms.gcm.GcmReceiver"-->
+        <!--android:exported="true"-->
+        <!--android:permission="com.google.android.c2dm.permission.SEND"-->
+        <!--android:process=":gcm_service">-->
+        <!--<intent-filter>-->
+        <!--<action android:name="com.google.android.c2dm.intent.RECEIVE" />-->
+        <!--<category android:name="com.turbo.turbo.mexico" />-->
+
+        <!--</intent-filter>-->
+        <!--</receiver>-->
+        <!-- Used for Google Play Store Campaign Measurement-->
+        <receiver
+            android:name="com.google.android.gms.analytics.CampaignTrackingReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+        <service
+            android:name="com.google.android.gms.analytics.CampaignTrackingService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <receiver android:name="com.baiyi.jj.app.manager.NotificationReceiver" />
+
+
+        <!-- [END gcm_receiver] -->
+
+        <!-- [START gcm_listener] -->
+        <!--<service-->
+        <!--android:name="com.baiyi.jj.app.manager.gcm.MyGcmListenerService"-->
+        <!--android:exported="false"-->
+        <!--android:process=":gcm_service">-->
+        <!--<intent-filter>-->
+        <!--<action android:name="com.google.android.c2dm.intent.RECEIVE" />-->
+
+        <!--</intent-filter>-->
+        <!--</service>-->
+        <!--&lt;!&ndash; [END gcm_listener] &ndash;&gt;-->
+        <!--&lt;!&ndash; [START instanceId_listener] &ndash;&gt;-->
+        <!--<service-->
+        <!--android:name="com.baiyi.jj.app.manager.gcm.MyInstanceIDListenerService"-->
+        <!--android:exported="false">-->
+        <!--<intent-filter>-->
+        <!--<action android:name="com.google.android.gms.iid.InstanceID" />-->
+        <!--</intent-filter>-->
+        <!--</service>-->
+        <!--&lt;!&ndash; [END instanceId_listener] &ndash;&gt;-->
+        <!--<service-->
+        <!--android:name="com.baiyi.jj.app.manager.gcm.RegistrationIntentService"-->
+        <!--android:exported="false"></service>-->
+
+        <!-- [START firebase_service] -->
+        <!--<service-->
+        <!--android:name="com.baiyi.jj.app.manager.fcm.MyFirebaseMessagingService">-->
+        <!--<intent-filter>-->
+        <!--<action android:name="com.google.firebase.MESSAGING_EVENT"/>-->
+        <!--</intent-filter>-->
+        <!--</service>-->
+        <!--&lt;!&ndash; [END firebase_service] &ndash;&gt;-->
+        <!--&lt;!&ndash; [START firebase_iid_service] &ndash;&gt;-->
+        <!--<service-->
+        <!--android:name="com.baiyi.jj.app.manager.fcm.MyFirebaseInstanceIDService">-->
+        <!--<intent-filter>-->
+        <!--<action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>-->
+        <!--</intent-filter>-->
+        <!--</service>-->
+        <!-- [END firebase_iid_service] -->
+        <!--<service android:name="com.baiyi.jj.app.manager.fcm.MyJobService"-->
+        <!--android:exported="false">-->
+        <!--<intent-filter>-->
+        <!--<action android:name="com.firebase.jobdispatcher.ACTION_EXECUTE"/>-->
+        <!--</intent-filter>-->
+        <!--</service>-->
+
+        <meta-data
+            android:name="com.onesignal.NotificationOpened.DEFAULT"
+            android:value="DISABLE" />
+        <service
+            android:name="com.baiyi.jj.app.manager.onesignal.NotificationExtenderExample"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.onesignal.NotificationExtender" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="awsapi_key"
+            android:value="AKIAJ44V27A2VFSJJGEQ" />
+        <meta-data
+            android:name="awssecret_key"
+            android:value="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" />
+
+        <meta-data
+            android:name="google_webclint_id"
+            android:value="894590119585-l6ss8si7ev20j4123poodnqckeqmngee.apps.googleusercontent.com" />
+
+        <meta-data
+            android:name="api_key"
+            android:value="Rg19mZwGe3mNHTfsevPfDsZW" />
+
+
+        <!--<activity-->
+        <!--android:name="com.baiyi.jj.wbshare.SinaShareActivity"-->
+        <!--android:configChanges="keyboardHidden|navigation|orientation|screenSize"-->
+        <!--android:screenOrientation="portrait"-->
+        <!--android:theme="@style/LogoTheme">-->
+        <!--<intent-filter>-->
+        <!--<action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />-->
+        <!--<category android:name="android.intent.category.DEFAULT" />-->
+        <!--</intent-filter>-->
+        <!--</activity>-->
+
+        <!-- 必须注册在微博授权，分享微博时候用到 -->
+        <!--<activity-->
+        <!--android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"-->
+        <!--android:configChanges="keyboardHidden|orientation"-->
+        <!--android:exported="false"-->
+        <!--android:windowSoftInputMode="adjustResize"></activity>-->
+
+        <!--<activity-->
+        <!--android:name="com.baiyi.jj.wbshare.QQLoginActivity"-->
+        <!--android:configChanges="keyboardHidden|navigation|orientation|screenSize"-->
+        <!--android:screenOrientation="portrait" />-->
+        <!--<activity-->
+        <!--android:name="com.baiyi.jj.wbshare.SinaLoginActivity"-->
+        <!--android:configChanges="keyboardHidden|navigation|orientation|screenSize"-->
+        <!--android:screenOrientation="portrait" />-->
+        <!--<activity-->
+        <!--android:name="com.baiyi.jj.wbshare.WeixinLoginActivity"-->
+        <!--android:configChanges="keyboardHidden|navigation|orientation|screenSize"-->
+        <!--android:screenOrientation="portrait" />-->
+
+        <!-- 配置qq分享 -->
+        <!--<activity-->
+        <!--android:name="com.tencent.tauth.AuthActivity"-->
+        <!--android:launchMode="singleTask"-->
+        <!--android:noHistory="true">-->
+        <!--<intent-filter>-->
+        <!--<action android:name="android.intent.action.View" />-->
+
+        <!--<category android:name="android.intent.category.DEFAULT" />-->
+        <!--<category android:name="android.intent.category.BROWSABLE" />-->
+
+        <!--<data android:scheme="1104870066" />-->
+        <!--</intent-filter>-->
+        <!--</activity>-->
+        <!-- qq需要注册该activity -->
+        <!--<activity-->
+        <!--android:name="com.tencent.connect.common.AssistActivity"-->
+        <!--android:configChanges="orientation|keyboardHidden"-->
+        <!--android:screenOrientation="portrait"-->
+        <!--android:theme="@android:style/Theme.Translucent.NoTitleBar" />-->
+        <!--&lt;!&ndash; 微信分享注册的Activity &ndash;&gt;-->
+        <!--<activity-->
+        <!--android:name="com.baiyi.jj.wxapi.WXEntryActivity"-->
+        <!--android:exported="true"-->
+        <!--android:screenOrientation="portrait"-->
+        <!--android:theme="@android:style/Theme.Translucent.NoTitleBar" />-->
+
+        <!--<meta-data-->
+        <!--android:name="WEIBO_APPKEY"-->
+        <!--android:value="3831822777" />-->
+        <!--<meta-data-->
+        <!--android:name="WEIBO_CHANNEL"-->
+        <!--android:value="weibo" />-->
+
+        <!--
+        <service
+            android:name="com.umeng.message.example.MyPushIntentService"
+            android:process=":push" />
+		-->
+        <!-- 使用完全自定义消息来开启应用的服务进程的示例服务配置 -->
+        <!-- 不是必需的服务，可以根据开发者的需求进行设置 -->
+        <!--
+        <service android:name="com.umeng.message.example.NotificationService" />
+        -->
+
+    </application>
+
+
+    <!--加载google play services-->
+    <meta-data
+        android:name="com.google.android.gms.version"
+        android:value="@integer/google_play_services_version" />
+
+    <meta-data
+        android:name="com.google.android.gms.analytics.globalConfigResource"
+        android:resource="@xml/analytics" />
+
+</manifest>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="day_bg_color">#ffffffff</color>
+    <color name="day_bg_color_white">#ffffffff</color>
+    <color name="day_bg_color_e0e0">#ffe0e0e0</color>
+    <color name="day_bg_color_f5f5">#fff5f5f5</color>
+    <color name="day_bg_color_f6f6">#fff6f6f6</color>
+    <color name="day_bg_color_f8f8">#fff8f8f8</color>
+    <color name="day_bg_color_detail_title">#ffffffff</color>
+    <color name="day_bg_trans_start">#00000000</color>
+    <color name="day_bg_trans_center">#14000000</color>
+    <color name="day_bg_trans_end">#7f000000</color>
+    <color name="day_bg_trans_channel">#8f000000</color>
+
+    <color name="day_bg_color_halftran">#99b0b0b0</color>
+    <color name="day_bg_color_fafafa">#fffafafa</color>
+
+    <color name="day_bg_title">#ffececec</color>
+
+    <!---->
+    <color name="day_bg_color_efefed">#ffefefed</color>
+    <color name="day_bg_color_d41c33">#ffd41c33</color>
+    <color name="day_bg_color_fe4e64">#fffe4e64</color>
+
+    <color name="day_text_color_cecece">#ffececec</color>
+    <color name="day_text_color_title">#FF434343</color>
+    <color name="day_text_color_green">#2dc76e</color>
+    <color name="day_text_color_write">#ffffffff</color>
+    <color name="day_text_color_454545">#ff454545</color>
+    <color name="day_text_color_121212">#ff121212</color>
+    <color name="day_text_color_737373">#ff737373</color>
+    <color name="day_text_color_6a6a6b">#6a6a6b</color>
+    <color name="day_text_color_888888">#ff888888</color>
+    <!--渐变色开始颜色-->
+    <color name="day_text_color_red">#D13A4D</color>
+    <color name="day_text_color_red85">#d9D13A4D</color>
+    <color name="day_text_color_red60">#99D13A4D</color>
+    <color name="day_text_color_smallicon">#f63a52</color>
+    <!--渐变色结束颜色-->
+    <color name="day_text_red">#E14357</color>
+    <color name="day_text_red85">#d9E14357</color>
+    <color name="day_text_red60">#99E14357</color>
+    <color name="day_text_color_0da7e2">#0da7e2</color>
+    <color name="day_text_color_blue">#2e62ad</color>
+    <color name="day_text_color_007AFF">#007AFF</color>
+    <color name="day_text_color_cfcfcf">#cfcfcf</color>
+    <color name="day_text_color_black">#ff000000</color>
+    <color name="day_text_color_black_40">#66000000</color>
+    <color name="day_text_color_black_60">#99000000</color>
+    <color name="day_text_color_black_30">#65000000</color>
+
+    <color name="day_line2_color">#ffcccccc</color>
+    <color name="day_line1_color">#ffb4b4b4</color>
+    <color name="day_line15_color">#fffafafa</color>
+
+    <color name="day_text_color_70black">#b2000000</color>
+    <color name="day_text_color_50black">#7f000000</color>
+    <color name="day_text_color_40black">#66000000</color>
+    <color name="day_text_color_5black">#19000000</color>
+    <color name="day_text_color">#ff313131</color>
+    <color name="day_text_orange">#FFf8a300</color>
+
+    <color name="day_text_news_title_color">#ff313131</color>
+
+    <color name="day_tab_menu_bg">#ffffffff</color>
+
+    <color name="day_text_new_count_color">#FF2F8BCD</color>
+    <color name="day_text_new_count_bg">#FFC5DFF9</color>
+
+    <color name="nightd_day_text_color">#ff908c8b</color>
+    <color name="nightd_day_text_blue">#ff324975</color>
+    <color name="nightd_day_text_red">#FF592c2c</color>
+
+    <color name="day_tag_news">#0da7e2</color>
+    <color name="day_tag_suggestion">#f77c27</color>
+    <color name="day_tag_top">#ed2a5b</color>
+    <color name="day_tag_edition">#1fbf55</color>
+
+</resources>

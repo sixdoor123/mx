@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:skin="http://schemas.android.com/android/skin"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/bg_ff"
+    skin:enable="true">
+
+    <LinearLayout
+        style="@style/bg_ff"
+        android:orientation="vertical"
+        skin:enable="true">
+
+        <View
+            style="@style/view_1px_margin_15"
+            android:background="@color/day_line1_color"
+            skin:enable="true" />
+
+        <LinearLayout
+            android:id="@+id/btn_center_head"
+            style="@style/btn_item_selector_top_bottom_15"
+            android:background="@drawable/selector_white_item"
+            android:gravity="center_vertical"
+            skin:enable="true">
+
+            <TextView
+                style="@style/bg_ww"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_weight="1"
+                android:text="@string/txt_head"
+                android:textColor="@color/default_color_313131_white"
+                android:textSize="@dimen/text_size_16"
+                skin:enable="true" />
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_head"
+                android:layout_width="41dp"
+                android:layout_height="41dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_top_15"
+                android:src="@drawable/default_head"
+                skin:enable="true" />
+        </LinearLayout>
+
+        <View
+            style="@style/view_1px_margin_15"
+            android:background="@color/day_line1_color"
+            skin:enable="true" />
+
+        <LinearLayout
+            android:id="@+id/btn_center_name"
+            style="@style/btn_item_selector_top_bottom_15"
+            android:background="@drawable/selector_white_item"
+            android:gravity="center_vertical"
+            skin:enable="true">
+
+            <TextView
+                style="@style/bg_ww"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_weight="1"
+                android:text="@string/title_account"
+                android:textColor="@color/default_color_313131_white"
+                android:textSize="@dimen/text_size_16"
+                skin:enable="true" />
+
+            <TextView
+                android:id="@+id/my_center_name_txt"
+                style="@style/bg_ww"
+                android:layout_marginLeft="@dimen/margin_left_10"
+                android:layout_marginRight="@dimen/margin_right_10"
+                android:textColor="@color/day_text_color_737373"
+                android:textSize="@dimen/text_size_16"
+                skin:enable="true" />
+
+
+            <ImageView
+                style="@style/bg_ww"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_top_15"
+                android:src="@drawable/my_arrow_right2x"
+                skin:enable="true" />
+        </LinearLayout>
+
+
+        <View
+            style="@style/view_1px_margin_15"
+            android:background="@color/day_line1_color"
+            skin:enable="true" />
+
+        <LinearLayout
+            android:id="@+id/btn_center_email"
+            style="@style/btn_item_selector_top_bottom_15"
+            android:background="@drawable/selector_white_item"
+            android:gravity="center_vertical"
+            skin:enable="true">
+
+            <TextView
+                style="@style/bg_ww"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_weight="1"
+                android:text="@string/txt_my_email"
+                android:textColor="@color/default_color_313131_white"
+                android:textSize="@dimen/text_size_16"
+                skin:enable="true" />
+
+            <TextView
+                android:id="@+id/my_center_email"
+                style="@style/bg_ww"
+                android:layout_marginRight="@dimen/margin_right_10"
+                android:textColor="@color/day_text_color_737373"
+                android:textSize="@dimen/text_size_16"
+                skin:enable="true" />
+
+            <ImageView
+                style="@style/bg_ww"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_top_15"
+                android:src="@drawable/my_arrow_right2x"
+                skin:enable="true" />
+        </LinearLayout>
+
+        <View
+            style="@style/view_1px_margin_15"
+            android:background="@color/day_line1_color"
+            skin:enable="true" />
+
+        <LinearLayout
+            android:id="@+id/btn_center_accout"
+            style="@style/btn_item_selector_top_bottom_15"
+            android:background="@drawable/selector_white_item"
+            android:gravity="center_vertical"
+            skin:enable="true">
+
+            <TextView
+                style="@style/bg_ww"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_weight="1"
+                android:text="@string/txt_account"
+                android:textColor="@color/default_color_313131_white"
+                android:textSize="@dimen/text_size_16"
+                skin:enable="true" />
+
+            <TextView
+                android:id="@+id/txt_center_accout"
+                style="@style/bg_ww"
+                android:layout_marginRight="@dimen/margin_right_10"
+                android:textColor="@color/day_text_color_737373"
+                android:textSize="@dimen/text_size_16"
+                skin:enable="true" />
+
+            <ImageView
+                style="@style/bg_ww"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_top_15"
+                android:src="@drawable/my_arrow_right2x"
+                skin:enable="true" />
+        </LinearLayout>
+
+        <View
+            style="@style/view_1px_margin_15"
+            android:background="@color/day_line1_color"
+            skin:enable="true" />
+
+        <LinearLayout
+            android:id="@+id/btn_center_loginpassword"
+            style="@style/btn_item_selector_top_bottom_15"
+            android:background="@drawable/selector_white_item"
+            android:gravity="center_vertical"
+            skin:enable="true">
+
+            <TextView
+                style="@style/bg_ww"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_weight="1"
+                android:text="@string/title_setpwd"
+                android:textColor="@color/default_color_313131_white"
+                android:textSize="@dimen/text_size_16"
+                skin:enable="true" />
+
+            <TextView
+                android:id="@+id/user_pwd_text"
+                style="@style/bg_ww"
+                android:layout_marginRight="@dimen/margin_right_10"
+                android:textColor="@color/day_text_color_737373"
+                android:textSize="@dimen/text_size_16"
+                android:visibility="gone"
+                skin:enable="true" />
+
+            <ImageView
+                style="@style/bg_ww"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_top_15"
+                android:src="@drawable/my_arrow_right2x"
+                skin:enable="true" />
+        </LinearLayout>
+
+        <View
+            style="@style/view_1px_margin_15"
+            android:background="@color/day_line1_color"
+            skin:enable="true" />
+
+        <Button
+            android:id="@+id/btn_sign_in"
+            style="@style/btn_blue_f_40"
+            android:layout_marginTop="@dimen/margin_top_15"
+            android:background="@drawable/btn_blue_white"
+            android:text="@string/name_title_login"
+            android:textColor="@color/word_red_sel"
+            android:textSize="@dimen/text_size_18"
+            skin:enable="true" />
+
+        <Button
+            android:id="@+id/btn_sign_up"
+            style="@style/btn_blue_f_40"
+            android:layout_marginTop="@dimen/margin_top_15"
+            android:background="@drawable/btn_blue_white"
+            android:text="@string/name_title_register"
+            android:textColor="@color/word_red_sel"
+            android:textSize="@dimen/text_size_18"
+            skin:enable="true" />
+    </LinearLayout>
+
+    <com.baiyi.jj.app.views.MyLoadingBar
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        skin:enable="true" />
+</RelativeLayout>

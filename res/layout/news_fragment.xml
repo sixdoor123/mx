@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:skin="http://schemas.android.com/android/skin"
+    style="@style/bg_ff"
+    android:background="@color/day_bg_color_white"
+    skin:enable="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/bg_ff"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/news_new_count_group"
+                style="@style/btn_item_selector_news_recomment_count"
+                android:background="@drawable/bg_button_red_90_select"
+                skin:enable="true">
+
+                <TextView
+                    android:id="@+id/news_new_count"
+                    style="@style/bg_ww"
+                    android:layout_centerInParent="true"
+                    android:text="@string/txt_tip"
+                    android:textColor="@color/day_bg_color_white"
+                    android:textSize="@dimen/text_size_12"
+                    skin:enable="true" />
+            </RelativeLayout>
+
+            <com.jcodecraeer.xrecyclerview.XRecyclerView
+                android:id="@+id/news_feeds"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <include
+                style="@style/bg_fw"
+                layout="@layout/pull_down_view"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <com.baiyi.jj.app.views.MyLoadingBar
+            android:id="@+id/loading"
+            style="@style/bg_ww"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/page_channel_manager"
+        layout="@layout/page_channel_manager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</FrameLayout>

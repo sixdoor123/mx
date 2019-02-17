@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:skin="http://schemas.android.com/android/skin"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/day_bg_color">
+    <LinearLayout
+        style="@style/bg_ff"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/eidt_withdraw_pwd"
+            style="@style/base_edit_h50"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:hint="@string/txt_tixian5"
+            android:background="@color/day_bg_color_white"
+            android:textColor="@color/day_text_color_737373"
+            android:textSize="@dimen/text_size_15"
+            android:inputType="textPassword"
+            skin:enable="true" />
+        <View
+            style="@style/view_1px_margin_15"
+            android:background="@color/day_line1_color" />
+
+        <Button
+            android:id="@+id/btn_save"
+            style="@style/btn_blue_f_40"
+            android:background="@drawable/btn_red_sel_2"
+            android:layout_marginTop="@dimen/margin_20"
+            android:text="@string/txt_button26"
+            android:textColor="@color/word_white_red_press"
+            android:textSize="@dimen/text_size_16"
+            skin:enable="true" />
+
+    </LinearLayout>
+
+    <com.baiyi.jj.app.views.MyLoadingBar
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        skin:enable="true" />
+</RelativeLayout>

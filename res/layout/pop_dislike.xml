@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/bg_nolike"
+    android:gravity="center_vertical">
+
+
+    <LinearLayout
+        android:id="@+id/lin_dislike"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_left_10"
+        android:layout_marginRight="@dimen/margin_right_10"
+        android:gravity="center_vertical">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_nolike"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left_10"
+            android:text="@string/txt_dislike"
+            android:textSize="@dimen/text_size_12"
+            android:textColor="@color/day_text_color_red"/>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/img_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_left_10"
+        android:src="@drawable/icon_close_butt1"
+        android:visibility="gone"/>
+
+</LinearLayout>

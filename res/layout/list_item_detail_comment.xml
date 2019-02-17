@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:skin="http://schemas.android.com/android/skin"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lin_item"
+    style="@style/bg_fw"
+    android:background="@drawable/selector_white_item"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    skin:enable="true">
+
+    <LinearLayout
+        style="@style/bg_fw"
+        android:background="@drawable/bg_line_gj_center"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        skin:enable="true">
+
+        <LinearLayout
+            style="@style/bg_fw"
+            android:background="@color/day_bg_color"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            skin:enable="true">
+
+            <LinearLayout
+                style="@style/bg_wf"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/margin_top_15"
+                skin:enable="true">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img_head"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="@dimen/margin_left"
+                    android:src="@drawable/default_head"
+                    skin:enable="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                skin:enable="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/margin_top_15"
+                    skin:enable="true">
+
+                    <TextView
+                        android:id="@+id/username"
+                        style="@style/bg_ww"
+                        android:layout_marginLeft="@dimen/margin_left_10"
+                        android:layout_weight="1"
+                        android:singleLine="true"
+                        android:text="@string/txt_account"
+                        android:textColor="@color/day_text_color_black"
+                        android:textSize="@dimen/text_size_17"
+                        skin:enable="true" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/com_comment_content"
+                    style="@style/bg_ww"
+                    android:layout_marginLeft="@dimen/margin_left_10"
+                    android:layout_marginRight="@dimen/margin_right"
+                    android:layout_marginTop="@dimen/margin_top_10"
+                    android:lineSpacingExtra="@dimen/spacin_text"
+                    android:text=""
+                    android:textColor="@color/day_text_color_70black"
+                    android:textSize="@dimen/text_size_16"
+                    skin:enable="true" />
+
+                <include
+                    style="@style/bg_fw"
+                    layout="@layout/layout_commentdet_line" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        style="@style/view_line_1px"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:background="@color/day_line1_color"
+        skin:enable="true" />
+
+</LinearLayout>

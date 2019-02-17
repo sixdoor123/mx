@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/day_bg_color"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/margin_top_10">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_local"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:layout_centerInParent="true" />
+
+        <ImageView
+            android:id="@+id/img_local_big"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txt_img_info"
+        style="@style/bg_ww"
+        android:layout_marginTop="@dimen/margin_top_10"
+        android:lineSpacingExtra="@dimen/margin_top_7"
+        android:paddingLeft="@dimen/margin_left"
+        android:paddingRight="@dimen/margin_right"
+        android:text="@string/name_news_title"
+        android:textColor="@color/day_text_color_black"
+        android:textSize="@dimen/text_size_17"
+        android:typeface="serif" />
+
+</LinearLayout>

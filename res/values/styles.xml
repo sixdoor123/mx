@@ -1,0 +1,117 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="bg_fw">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="bg_ff">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="bg_wf">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="bg_ww">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="bg_weight_line">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@color/day_bg_trans_start</item>
+    </style>
+
+    <style name="bg_fw_all">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/margin_left</item>
+        <item name="android:layout_marginRight">@dimen/margin_right</item>
+        <item name="android:layout_marginTop">@dimen/margin_top_10</item>
+        <item name="android:layout_marginBottom">@dimen/margin_bottom_10</item>
+
+    </style>
+
+    <style name="main_tab_bottom">
+        <item name="android:textSize">1sp</item>
+        <item name="android:textColor">@color/tabword</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:button">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+
+    <style name="main_tab_lin">
+        <item name="android:textSize">12sp</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/tab_height</item>
+    </style>
+
+    <style name="share_layout_lin">
+        <item name="android:background">@drawable/selector_white_item</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/margin_top_15</item>
+        <item name="android:paddingBottom">@dimen/margin_bottom_15</item>
+    </style>
+
+    <style name="EbpayThemeActivit" parent="@android:style/Theme.NoTitleBar">
+        <item name="android:screenOrientation">portrait</item>
+        <item name="android:windowBackground">@color/ebpay_gray</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+    <style name="my_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">#00000000</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="seekbar_style" parent="@android:style/Widget.SeekBar">
+        <item name="android:maxHeight">10dp</item>
+        <item name="android:minHeight">10dp</item>
+        <item name="android:indeterminateOnly">true</item>
+        <item name="android:indeterminateDrawable">
+            @android:drawable/progress_indeterminate_horizontal
+        </item>
+        <item name="android:progressDrawable">@drawable/seekbar_bg</item>
+        <item name="android:thumb">@drawable/setup_luminance_button2x</item>
+    </style>
+
+    <style name="popwindow_anim" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/anim_pop_enter</item>
+        <item name="android:windowExitAnimation">@anim/anim_pop_exit</item>
+    </style>
+
+    <style name="popwindow_anim_bottom" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/anim_pop_bottom_enter</item>
+        <item name="android:windowExitAnimation">@anim/anim_pop_bottom_exit</item>
+    </style>
+
+    <style
+        name="NotificationInfo"
+        parent="android:TextAppearance.StatusBar.EventContent" />
+    <style
+        name="NotificationTitle"
+        parent="android:TextAppearance.StatusBar.EventContent.Title" />
+
+</resources>

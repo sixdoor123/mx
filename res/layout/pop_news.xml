@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:skin="http://schemas.android.com/android/skin"
+    android:id="@+id/pop_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:layout_marginRight="7dp"
+    android:gravity="right"
+    android:orientation="vertical"
+    skin:enable="true" >
+
+</LinearLayout>

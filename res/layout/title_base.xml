@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:skin="http://schemas.android.com/android/skin"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@color/day_text_color_red"
+    android:orientation="vertical"
+    skin:enable="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <com.baiyi.jj.app.views.LetterSpacingTextView
+            android:id="@+id/title_name"
+            style="@style/bg_ww"
+            android:layout_centerInParent="true"
+            android:paddingTop="@dimen/margin_top_3"
+            android:text="@string/app_name"
+            android:textColor="@color/day_text_color_write"
+            android:textSize="@dimen/text_size_20"
+            skin:enable="true" />
+
+        <ImageView
+            android:id="@+id/img_right"
+            style="@style/bg_ww"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_right"
+            android:src="@drawable/btn_channel_normal"
+            android:visibility="gone"
+            skin:enable="true" />
+
+    </RelativeLayout>
+
+    <View
+        style="@style/view_line_1px"
+        android:background="@color/day_line1_color" />
+</LinearLayout>

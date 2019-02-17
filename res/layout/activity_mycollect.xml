@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:skin="http://schemas.android.com/android/skin"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/day_bg_color"
+    skin:enable="true">
+
+    <LinearLayout
+        style="@style/bg_ff"
+        android:orientation="vertical">
+
+        <com.jcodecraeer.xrecyclerview.XRecyclerView
+            android:id="@+id/xr_collects"
+            style="@style/bg_ff"
+            android:layout_weight="1"
+            android:background="@color/day_bg_color_fafafa" />
+
+        <LinearLayout
+            android:id="@+id/lin_bottom"
+            style="@style/bg_fw"
+            android:orientation="vertical">
+
+            <View
+                style="@style/view_1px_margin_15"
+                android:background="@color/day_line1_color" />
+
+            <Button
+                android:id="@+id/btn_clear_all"
+                style="@style/btn_blue_f_40"
+                android:layout_marginBottom="@dimen/margin_bottom_10"
+                android:layout_marginTop="@dimen/margin_top_10"
+                android:background="@drawable/btn_red_sel_2"
+                android:text="@string/tip_clear_all"
+                android:textColor="@color/word_white_red_press"
+                android:textSize="@dimen/text_size_18" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.baiyi.jj.app.views.MyLoadingBar
+        android:id="@+id/loading"
+        style="@style/bg_ww"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        skin:enable="true" />
+</RelativeLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:skin="http://schemas.android.com/android/skin"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/day_bg_color"
+    android:visibility="gone"
+    skin:enable="true" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+            <include android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/title_left"/>
+        </LinearLayout>
+
+        <View
+            style="@style/view_line_15"
+            android:layout_marginBottom="@dimen/margin_top_5"
+            android:background="@color/day_line15_color"
+            android:visibility="gone"
+            skin:enable="true" />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/margin_top_4"
+            skin:enable="true" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/channer_recycler"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            skin:enable="true" />
+
+        <LinearLayout
+            style="@style/bg_fw"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/btn_exit"
+                style="@style/btn_blue_f_40_feiye"
+                android:background="@drawable/btn_blue_white"
+                android:text="@string/txt_Channel_close"
+                android:textColor="@color/word_red_sel"
+                android:textSize="@dimen/text_size_16"
+                skin:enable="true" />
+        </LinearLayout>
+    </LinearLayout>
+    <include
+        style="@style/bg_ff"
+        layout="@layout/layout_nochannel"/>
+
+    <com.baiyi.jj.app.views.MyLoadingBar
+        android:id="@+id/channel_manager_loading"
+        style="@style/bg_ww"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

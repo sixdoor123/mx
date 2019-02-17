@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:skin="http://schemas.android.com/android/skin"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@color/day_bg_color_fafafa"
+    android:orientation="vertical"
+    skin:enable="true">
+
+    <RelativeLayout
+        android:id="@+id/rela_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/title_bg"
+            style="@style/title_bg"
+            android:background="@color/day_bg_color_fafafa"
+            skin:enable="true" />
+
+        <ImageView
+            style="@style/bg_ww"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:src="@drawable/btn_back_red_white"
+            android:visibility="gone"
+            skin:enable="true" />
+
+        <ImageView
+            android:id="@+id/img_back"
+            style="@style/bg_ww"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="@dimen/margin_bottom_10"
+            android:paddingLeft="@dimen/margin_left"
+            android:paddingRight="@dimen/margin_right_10"
+            android:paddingTop="@dimen/margin_top_10"
+            android:src="@drawable/btn_back_red_white"
+            skin:enable="true" />
+
+        <ImageView
+            android:id="@+id/btn_search"
+            style="@style/bg_ww"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="@dimen/margin_bottom_10"
+            android:paddingLeft="@dimen/margin_left"
+            android:paddingRight="@dimen/margin_right_10"
+            android:paddingTop="@dimen/margin_top_10"
+            android:src="@drawable/btn_title_search"
+            android:visibility="gone"
+            skin:enable="true" />
+
+        <ImageView
+            android:id="@+id/btn_left_more"
+            style="@style/bg_ww"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_right"
+            android:layout_toRightOf="@+id/img_back"
+            android:src="@drawable/selector_title_left_more"
+            android:visibility="gone"
+            skin:enable="true" />
+
+        <TextView
+            style="@style/bg_ww"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/margin_bottom_10"
+            android:text="@string/tip_cannel"
+            android:textColor="@color/day_text_color_737373"
+            android:textSize="@dimen/text_size_15"
+            android:visibility="gone"
+            skin:enable="true" />
+
+        <LinearLayout
+            style="@style/bg_ww"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            skin:enable="true">
+
+            <LinearLayout
+                android:id="@+id/lin_refresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.baiyi.jj.app.views.LetterSpacingTextView
+                    android:id="@+id/title_name"
+                    style="@style/bg_ww"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:paddingTop="@dimen/margin_top_3"
+                    android:text="@string/app_name"
+                    android:textColor="@color/day_text_color_title"
+                    android:textSize="@dimen/text_size_20"
+                    skin:enable="true" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/btn_center_arrow"
+                style="@style/bg_ww"
+                android:layout_gravity="center_vertical"
+                android:paddingBottom="@dimen/margin_bottom_10"
+                android:paddingLeft="@dimen/margin_left_12"
+                android:paddingRight="60dp"
+                android:paddingTop="@dimen/margin_bottom_10"
+                android:src="@drawable/btn_arrow_updown"
+                android:visibility="gone"
+                skin:enable="true" />
+
+            <RelativeLayout
+                style="@style/bg_ww"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/margin_left_5"
+                android:paddingTop="2dp"
+                android:visibility="gone"
+                skin:enable="true">
+
+                <ImageView
+                    android:id="@+id/img_refresh"
+                    style="@style/bg_ww" />
+
+                <ImageView
+                    android:id="@+id/img_refresh_show"
+                    style="@style/bg_ww"
+                    android:background="@drawable/loading1"
+                    android:visibility="gone"
+                    skin:enable="true" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_right"
+            style="@style/bg_ww"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_right"
+            android:paddingTop="@dimen/margin_top_3"
+            android:text="@string/tip_cannel"
+            android:textColor="@color/word_red_737373_pressed"
+            android:textSize="@dimen/text_size_15"
+            android:visibility="gone"
+            skin:enable="true" />
+
+        <ImageView
+            android:id="@+id/img_search"
+            style="@style/bg_ww"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_right"
+            android:src="@drawable/btn_title_search"
+            android:visibility="gone"
+            skin:enable="true" />
+
+        <ImageView
+            android:id="@+id/img_other"
+            style="@style/bg_ww"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_right"
+            android:src="@drawable/edit_done"
+            android:visibility="gone"
+            skin:enable="true" />
+
+        <FrameLayout
+            android:id="@+id/news_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_right_5"
+            android:visibility="gone"
+            skin:enable="true">
+
+            <ImageView
+                android:id="@+id/btn_news"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_right_10"
+                android:background="@color/transparent"
+                android:duplicateParentState="true"
+                android:paddingBottom="@dimen/margin_bottom_10"
+                android:paddingLeft="@dimen/margin_left_10"
+                android:paddingTop="@dimen/margin_top_10"
+                android:src="@drawable/selector_title_news"
+                android:visibility="gone"
+                skin:enable="true" />
+
+            <ImageView
+                android:id="@+id/btn_more"
+                style="@style/bg_ww"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_right_10"
+                android:paddingBottom="@dimen/margin_bottom_10"
+                android:paddingLeft="@dimen/margin_left_10"
+                android:paddingTop="@dimen/margin_top_10"
+                android:src="@drawable/selector_title_news_more"
+                android:visibility="gone"
+                skin:enable="true" />
+
+            <ImageView
+                style="@style/bg_ww"
+                android:layout_marginRight="@dimen/margin_right_10"
+                android:paddingBottom="@dimen/margin_bottom_10"
+                android:paddingLeft="@dimen/margin_left"
+                android:paddingTop="@dimen/margin_top_10"
+                android:src="@drawable/btn_title_pop_channel"
+                android:visibility="gone"
+                skin:enable="true" />
+
+            <TextView
+                android:id="@+id/news_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|right"
+                android:layout_marginRight="@dimen/margin_right_5"
+                android:layout_marginTop="@dimen/margin_top_5"
+                android:background="@drawable/new_luber_bg"
+                android:duplicateParentState="true"
+                android:gravity="center"
+                android:textColor="@color/word_red_737373_pressed"
+                android:textSize="10sp"
+                skin:enable="true" />
+        </FrameLayout>
+
+    </RelativeLayout>
+
+    <View
+        style="@style/view_line_1px"
+        android:background="@color/day_line1_color" />
+</LinearLayout>

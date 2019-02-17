@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="10dp"
+    card_view:cardElevation="10dp"
+    android:layout_marginLeft="@dimen/margin_20"
+    android:layout_marginRight="@dimen/margin_20"
+    android:layout_marginTop="@dimen/margin_20"
+    android:background="@color/day_bg_color_f5f5">
+
+    <LinearLayout
+        android:id="@+id/lin_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/day_bg_color_white"
+        >
+        <ImageView
+            android:id="@+id/img_onecenter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:background="@color/day_bg_color_white"
+            />
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_top_15"
+            android:textColor="@color/day_text_color_70black"
+            android:textSize="@dimen/text_size_16"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/margin_left"
+            android:paddingRight="@dimen/margin_right"
+            android:layout_marginBottom="@dimen/margin_bottom_15"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:id="@+id/lin_addlable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/margin_right_5"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/txt_source"
+                style="@style/bg_ww"
+                android:layout_gravity="center_vertical"
+                android:maxEms="7"
+                android:singleLine="true"
+                android:layout_marginRight="@dimen/margin_right_10"
+                android:layout_weight="1"
+                android:text="xxx"
+                android:textColor="@color/default_color_737373_white"
+                android:textSize="@dimen/text_size_12"/>
+            <TextView
+                android:id="@+id/txt_time"
+                style="@style/bg_ww"
+                android:layout_gravity="center_vertical"
+                android:singleLine="true"
+                android:text="xxx"
+                android:textColor="@color/default_color_737373_white"
+                android:textSize="@dimen/text_size_12" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

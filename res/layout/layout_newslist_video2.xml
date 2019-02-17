@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rela_vedio"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <FrameLayout
+            android:id="@+id/frame_video"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </FrameLayout>
+        <RelativeLayout
+            android:id="@+id/rela_vedio_cover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/img_cover"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/txt_videotitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_top_15"
+                android:textSize="@dimen/text_size_16"
+                android:textColor="@color/day_text_color_write"
+                />
+            <ImageView
+                android:id="@+id/img_player"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_play_36dp"/>
+            <TextView
+                android:id="@+id/txt_video_dur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_right_10"
+                android:layout_marginBottom="@dimen/margin_bottom_10"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:textColor="@color/day_text_color_write"
+                android:textSize="@dimen/text_size_10"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rela_line"
+        style="@style/bg_fw"
+        android:paddingLeft="@dimen/margin_left"
+        android:paddingRight="@dimen/margin_right"
+        android:layout_marginTop="@dimen/margin_top_6">
+
+        <include
+            android:id="@+id/title_3line"
+            style="@style/bg_fw"
+            layout="@layout/layout_newslist_3line_time"
+            android:gravity="center_vertical" />
+
+    </RelativeLayout>
+
+</LinearLayout>

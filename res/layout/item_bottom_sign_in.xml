@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottom"
+    style="@style/bg_fw"
+    android:orientation="vertical">
+
+    <View
+        style="@style/view_line_1px"
+        android:background="@color/day_line1_color" />
+
+    <LinearLayout
+        style="@style/bg_fw"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/margin_top_15"
+        android:paddingTop="@dimen/margin_top_15">
+
+        <View style="@style/bg_weight_line" />
+
+        <ImageView
+            android:id="@+id/btn_fb"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/share_facebook" />
+
+        <View style="@style/bg_weight_line"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/img_google_login"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/share_google"
+            android:visibility="gone"/>
+
+        <View style="@style/bg_weight_line" />
+    </LinearLayout>
+</LinearLayout>

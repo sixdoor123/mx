@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:skin="http://schemas.android.com/android/skin"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/bg_ff"
+    android:background="@android:color/black"
+    android:orientation="vertical"
+    skin:enable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        skin:enable="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            skin:enable="true">
+
+            <ImageView
+                style="@style/bg_ww"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/margin_left_5"
+                android:padding="@dimen/margin_left_10"
+                android:src="@drawable/btn_back_white"
+                skin:enable="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_addpoint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/margin_left"
+            skin:enable="true"></LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_viewpager"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            skin:enable="true">
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:visibility="gone"></FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            skin:enable="true">
+
+            <ImageView
+                android:id="@+id/img_back"
+                style="@style/bg_ww"
+                android:layout_marginLeft="@dimen/margin_left_5"
+                android:padding="@dimen/margin_bottom_10"
+                android:src="@drawable/btn_back_white"
+                skin:enable="true" />
+
+            <TextView
+                android:id="@+id/txt_imgposition"
+                style="@style/bg_ww"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="0"
+                android:textColor="@color/day_text_color_6a6a6b"
+                android:textSize="@dimen/text_size_14"
+                skin:enable="true" />
+
+            <TextView
+                android:id="@+id/txt_allcout"
+                style="@style/bg_ww"
+                android:layout_weight="1"
+                android:text="/0"
+                android:textColor="@color/day_text_color_6a6a6b"
+                android:textSize="@dimen/text_size_14"
+                skin:enable="true" />
+
+            <ImageView
+                android:id="@+id/img_down"
+                style="@style/bg_ww"
+                android:layout_marginRight="@dimen/margin_right_5"
+                android:padding="@dimen/margin_bottom_10"
+                android:src="@drawable/btn_image_download"
+                skin:enable="true" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.baiyi.jj.app.views.MyLoadingBar
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        skin:enable="true" />
+
+</RelativeLayout>

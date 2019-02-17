@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 中间的背景色 -->
+    <solid android:color="@color/day_text_color_cfcfcf" />
+    <gradient
+        android:angle="0"
+        android:endColor="@color/day_text_color_cfcfcf"
+        android:startColor="@color/day_text_color_cfcfcf" />
+
+    <corners
+        android:bottomLeftRadius="3dp"
+        android:bottomRightRadius="3dp"
+        android:topLeftRadius="3dp"
+        android:topRightRadius="3dp" />
+
+</shape>

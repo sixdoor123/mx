@@ -1,0 +1,447 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="android:Theme.Light">
+
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:windowNoTitle">true</item>
+        <!--<item name="android:background">@color/transparent</item>-->
+        <item name="android:background">@color/transparent</item>
+    </style>
+
+    <style name="LogoTheme" parent="android:Theme.Light">
+
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <style name="LogoDrawTheme" parent="android:Theme.Light">
+
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@mipmap/logo9_bj2</item>
+        <!--<item name="android:windowBackground">@color/transparent</item>-->
+        <item name="android:windowIsTranslucent">false</item>
+    </style>
+    
+    <style name="AppThemeDialog" parent="@android:style/Theme.DeviceDefault.Dialog">
+
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="AppThemeCompat" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:textAllCaps">false</item>
+
+    </style>
+    
+    <style name="activity_anim" parent="@android:style/Animation">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_from_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_out_from_right</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_in_from_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_from_left</item>
+    </style>
+    <style name="logo_anim" parent="@android:style/Animation">
+        <item name="android:activityOpenEnterAnimation">@anim/anim_user_enter</item>
+        <item name="android:activityCloseExitAnimation">@anim/anim_user_exit</item>
+    </style>
+
+    <style name="tabLayoutTextSize"
+        parent="TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse">
+        <item name="android:textSize">@dimen/text_size_16</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="tabmainLayoutTextSize"
+        parent="TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse">
+        <item name="android:textSize">@dimen/text_size_12</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="base_img_ww">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="base_img_fw">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="title_bg">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">45dp</item>
+    </style>
+
+    <style name="title_detail_bg">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">45dp</item>
+    </style>
+
+    <style name="title_detail_bg_white">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">45dp</item>
+    </style>
+
+    <style name="baseimg_news_three_h" parent="@style/base_img_ww">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">70dip</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="baseimg_news_two" parent="@style/base_img_ww">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">127dip</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="baseimg_news_three_v_left" parent="@style/base_img_ww">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="baseimg_news_three_v_updown" parent="@style/base_img_ww">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="baseimg_news_center">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="baseimg_news_left" parent="@style/base_img_ww">
+        <item name="android:layout_width">136dp</item>
+        <item name="android:layout_height">76dp</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="baseimg_news_left_collect" parent="@style/base_img_ww">
+        <item name="android:layout_width">83dp</item>
+        <item name="android:layout_height">62dp</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+
+    <style name="view_line_1px">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1px</item>
+    </style>
+    <style name="view_line_1px_shu">
+        <item name="android:layout_width">1px</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="view_line_1px_pading">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:layout_marginLeft">@dimen/margin_left</item>
+        <item name="android:layout_marginRight">@dimen/margin_right</item>
+    </style>
+
+    <style name="view_1px_margin_15">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:layout_marginLeft">@dimen/margin_left</item>
+        <item name="android:layout_marginRight">@dimen/margin_right</item>
+    </style>
+
+    <style name="view_line_1dp">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1dp</item>
+    </style>
+    <style name="view_line_2px">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">2px</item>
+    </style>
+
+    <style name="view_line_10">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">10dp</item>
+    </style>
+
+    <style name="view_line_15">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">20dp</item>
+    </style>
+    <style name="view_line_15_pading">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">15dp</item>
+        <item name="android:layout_marginLeft">@dimen/margin_left</item>
+        <item name="android:layout_marginRight">@dimen/margin_right</item>
+    </style>
+    <style name="view_line_20">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">20dp</item>
+    </style>
+
+    <style name="view_line_default_15">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">15dp</item>
+    </style>
+
+    <style name="view_line_h45">
+        <item name="android:layout_width">1px</item>
+        <item name="android:layout_height">@dimen/line_high_45</item>
+    </style>
+
+    <style name="checkbox_base">
+        <item name="android:layout_width">20dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="btn_item_selector_new_count_bg_top_bottom_15">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/margin_top_15</item>
+        <item name="android:paddingBottom">@dimen/margin_bottom_15</item>
+    </style>
+
+    <style name="btn_item_selector_news_recomment_count">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">26dp</item>
+    </style>
+
+    <style name="btn_item_selector_top_bottom_10">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/margin_top_10</item>
+        <item name="android:paddingBottom">@dimen/margin_bottom_10</item>
+    </style>
+
+    <style name="btn_comment_like">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">40dp</item>
+    </style>
+
+    <style name="btn_item_selector_top_bottom_15">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/margin_top_15</item>
+        <item name="android:paddingBottom">@dimen/margin_bottom_15</item>
+    </style>
+    <style name="btn_item_selector_padall_15">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/margin_top_15</item>
+        <item name="android:paddingBottom">@dimen/margin_bottom_15</item>
+        <item name="android:paddingLeft">@dimen/margin_left</item>
+        <item name="android:paddingRight">@dimen/margin_right</item>
+    </style>
+
+    <style name="btn_item_selector_eeeeee_top_bottom_15">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/margin_top_15</item>
+        <item name="android:paddingBottom">@dimen/margin_bottom_15</item>
+    </style>
+    
+<!--     ok -->
+
+    <style name="base_textview">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="base_no_margin_textview">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="base_edit_no_icon_h40">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginLeft">@dimen/margin_left</item>
+        <item name="android:layout_marginRight">@dimen/margin_right</item>
+    </style>
+    <style name="base_edit_no_icon_h45">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:layout_marginLeft">@dimen/margin_left</item>
+        <item name="android:layout_marginRight">@dimen/margin_right</item>
+    </style>
+
+    <style name="base_edit_no_icon_h30">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_marginLeft">@dimen/margin_left</item>
+        <item name="android:layout_marginRight">@dimen/margin_right</item>
+    </style>
+
+    <style name="base_edit_h_wrap">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/margin_left</item>
+        <item name="android:layout_marginRight">@dimen/margin_right</item>
+        <item name="android:layout_marginTop">@dimen/margin_top_15</item>
+        <item name="android:layout_marginBottom">@dimen/margin_bottom_15</item>
+    </style>
+
+    <style name="base_edit_h40">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:paddingRight">@dimen/margin_right</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:background">@color/day_bg_color_f8f8</item>
+    </style>
+    <style name="base_edit_h50">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:paddingRight">@dimen/margin_right</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:background">@color/day_bg_color_white</item>
+    </style>
+    <style name="base_edit_h60">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:paddingRight">@dimen/margin_right</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:background">@color/day_bg_color_white</item>
+    </style>
+
+    <style name="base_edit_nick">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginLeft">@dimen/margin_left</item>
+        <item name="android:layout_marginRight">@dimen/margin_right</item>
+    </style>
+
+    <style name="edit_search_h40">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:imeOptions">actionSearch</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_marginLeft">@dimen/margin_left</item>
+        <item name="android:layout_marginRight">52dp</item>
+    </style>
+    
+    <style name="edit_search_h40_nomargin">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:imeOptions">actionSearch</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_marginLeft">@dimen/margin_left_10</item>
+        <item name="android:layout_marginRight">@dimen/margin_right_10</item>
+    </style>
+
+    <style name="base_edit_search_h100">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:layout_marginLeft">@dimen/margin_left</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+    </style>
+
+    <style name="base_btn_blue">
+        <item name="android:layout_marginTop">@dimen/margin_top_10</item>
+        <item name="android:layout_marginBottom">@dimen/margin_bottom_10</item>
+        <item name="android:layout_marginRight">@dimen/margin_right</item>
+    </style>
+
+    <style name="base_btn_blue_top_bottom_8">
+        <item name="android:layout_marginTop">@dimen/margin_top_8</item>
+        <item name="android:layout_marginBottom">@dimen/margin_bottom_8</item>
+        <item name="android:layout_marginRight">@dimen/margin_right</item>
+    </style>
+
+    <style name="base_btn_red">
+        <item name="android:background">@drawable/btn_red_sel</item>
+        <item name="android:textColor">@color/word_red_sel</item>
+        <item name="android:layout_marginTop">@dimen/margin_top_10</item>
+        <item name="android:layout_marginBottom">@dimen/margin_bottom_10</item>
+        <item name="android:layout_marginRight">@dimen/margin_right</item>
+    </style>
+
+    <style name="btn_blue_100_40" parent="@style/base_btn_blue">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginLeft">@dimen/margin_left_10</item>
+        <item name="android:layout_marginRight">@dimen/margin_right</item>
+    </style>
+
+    <style name="btn_new_normal_borderless" parent="Base.Widget.AppCompat.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginLeft">@dimen/margin_left</item>
+        <item name="android:layout_marginRight">@dimen/margin_right</item>
+    </style>
+
+
+    <style name="btn_blue_f_40">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">41dp</item>
+        <item name="android:layout_marginLeft">@dimen/margin_left</item>
+        <item name="android:layout_marginRight">@dimen/margin_right</item>
+    </style>
+
+    <style name="btn_blue_w_40">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginLeft">@dimen/margin_left</item>
+        <item name="android:layout_marginRight">@dimen/margin_right</item>
+    </style>
+
+    <style name="btn_blue_f_40_top_bottom_8" parent="@style/base_btn_blue_top_bottom_8">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginLeft">@dimen/margin_left</item>
+        <item name="android:layout_marginRight">@dimen/margin_right</item>
+    </style>
+
+    <style name="btn_blue_f_40_feiye">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginLeft">@dimen/margin_left</item>
+        <item name="android:layout_marginRight">@dimen/margin_right</item>
+        <item name="android:layout_marginTop">@dimen/margin_top_10</item>
+        <item name="android:layout_marginBottom">@dimen/margin_bottom_10</item>
+    </style>
+
+    <style name="btn_blue_send_30" parent="@style/base_btn_blue">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">30dp</item>
+    </style>
+
+    <style name="btn_red_f_40" parent="@style/base_btn_red">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginLeft">@dimen/margin_left</item>
+    </style>
+
+    <style name="btn_dialog_nologin_cancel">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">40dp</item>
+    </style>
+
+    <style name="btn_mycomment">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">30dp</item>
+    </style>
+
+    <style name="btn_pop_ok" parent="@style/base_btn_blue">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:textSize">@dimen/text_size_15</item>
+    </style>
+    
+<!--     ok -->
+
+</resources>

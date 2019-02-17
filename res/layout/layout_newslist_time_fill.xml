@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:skin="http://schemas.android.com/android/skin"
+    style="@style/bg_fw"
+    android:orientation="horizontal"
+    skin:enable="true" >
+
+    <LinearLayout
+        android:id="@+id/lin_addlabel_fill"
+        style="@style/bg_ww"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="@dimen/margin_right_5"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        skin:enable="true" >
+    </LinearLayout>
+
+    <TextView
+        style="@style/bg_ww"
+        android:layout_gravity="center_vertical"
+        android:text=""
+        android:textColor="@color/default_color_737373_white"
+        android:textSize="@dimen/text_size_10"
+        android:visibility="gone"
+        skin:enable="true" />
+
+    <TextView
+        android:id="@+id/txt_source_fill"
+        style="@style/bg_ww"
+        android:layout_gravity="center_vertical"
+        android:text="xxx"
+        android:maxEms="7"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/default_color_737373_white"
+        android:textSize="@dimen/text_size_12"
+        skin:enable="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <ImageView
+            style="@style/bg_ww"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_left_10"
+            android:paddingTop="2dp"
+            android:src="@drawable/label_comment2x"
+            android:visibility="gone"
+            skin:enable="true" />
+
+        <TextView
+            android:id="@+id/txt_comment_fill"
+            style="@style/bg_ww"
+            android:textSize="@dimen/text_size_12"
+            android:textColor="@color/day_text_color_737373"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_left_10"
+            android:visibility="gone"
+            android:singleLine="true"
+            android:text="xxx"
+            skin:enable="true" />
+
+        <ImageView
+            style="@style/bg_ww"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_left_10"
+            android:src="@drawable/label_collection"
+            android:visibility="gone"
+            skin:enable="true" />
+
+        <TextView
+            style="@style/bg_ww"
+            android:textSize="@dimen/text_size_10"
+            android:textColor="@color/word_red_737373_pressed"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_left_5"
+            android:singleLine="true"
+            android:visibility="gone"
+            android:text="0"
+            skin:enable="true" />
+
+        <TextView
+            android:id="@+id/txt_time_fill"
+            style="@style/bg_ww"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_left_10"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="xxx"
+            android:textColor="@color/default_color_737373_white"
+            android:textSize="@dimen/text_size_12"
+            skin:enable="true" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/news_more_fill"
+        style="@style/bg_ww"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/icon_close_butt"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:visibility="visible"
+        skin:enable="true" />
+    <TextView
+        android:id="@+id/txt_offline_fill"
+        style="@style/bg_ww"
+        android:layout_gravity="center_vertical"
+        android:singleLine="true"
+        android:paddingLeft="10dp"
+        android:text="@string/txt_offline_tag"
+        android:textStyle="bold"
+        android:textColor="@color/day_tag_news"
+        android:textSize="@dimen/text_size_11"
+        skin:enable="true"
+        android:visibility="gone"/>
+
+</LinearLayout>

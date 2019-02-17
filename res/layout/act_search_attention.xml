@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:skin="http://schemas.android.com/android/skin"
+    style="@style/bg_ff"
+    android:background="@color/day_bg_color"
+    skin:enable="true">
+
+    <LinearLayout
+        style="@style/bg_ff"
+        android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/bg_fw"
+            android:background="@drawable/selector_bg_e0e0"
+            android:gravity="center_vertical">
+
+            <RelativeLayout
+                style="@style/bg_fw"
+                android:paddingBottom="@dimen/margin_top_5"
+                android:paddingTop="@dimen/margin_top_5">
+
+                <ImageView
+                    android:id="@+id/img_search_back"
+                    style="@style/bg_ww"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_left"
+                    android:src="@drawable/btn_back_red_white" />
+
+                <EditText
+                    android:id="@+id/edit_search_attention"
+                    style="@style/edit_search_h40"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/margin_right"
+                    android:layout_toRightOf="@+id/img_search_back"
+                    android:background="@drawable/bg_edittext"
+                    android:ems="10"
+                    android:hint="@string/title_search"
+                    android:paddingLeft="@dimen/margin_left_10"
+                    android:paddingRight="70dp"
+                    android:textColor="@color/day_text_color_737373"
+                    android:textSize="@dimen/text_size_15" />
+
+                <ImageView
+                    android:id="@+id/img_delete_attention"
+                    style="@style/bg_ww"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/img_search_attention"
+                    android:paddingBottom="@dimen/margin_bottom_10"
+                    android:paddingTop="@dimen/margin_top_10"
+                    android:src="@drawable/btn_search_del"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/img_search_attention"
+                    style="@style/bg_ww"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/margin_right"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/margin_left_10"
+                    android:src="@drawable/btn_search_ok" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            style="@style/view_line_1px"
+            android:background="@color/day_line1_color" />
+
+        <com.jcodecraeer.xrecyclerview.XRecyclerView
+            android:id="@+id/list_search_attention"
+            style="@style/bg_ff" />
+    </LinearLayout>
+
+    <com.baiyi.jj.app.views.MyLoadingBar
+        android:id="@+id/loading"
+        style="@style/bg_ww"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        skin:enable="true" />
+
+</RelativeLayout>

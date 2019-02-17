@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 单表数据库配置 -->
+    <string-array name="single_db_beans">
+        <item>com.baiyi.jj.app.entity.ChannelItem</item>
+        <item>com.baiyi.jj.app.entity.ArticleHistoryEntity</item>
+        <item>com.baiyi.jj.app.sqlloader.dao.entity.CollectEntity</item>
+        <item>com.baiyi.jj.app.sqlloader.dao.entity.NewsSupportEntity</item>
+        <item>com.baiyi.jj.app.sqlloader.dao.entity.ReadedEntity</item>
+        <item>com.baiyi.jj.app.sqlloader.dao.entity.ArticleCacheEntity</item>
+        <item>com.baiyi.jj.app.sqlloader.dao.entity.FeedBackEntity</item>
+        <item>com.baiyi.jj.app.entity.NewsListEntity</item>
+        <item>com.baiyi.jj.app.entity.article.ArticleEntity</item>
+        <item>com.baiyi.jj.app.entity.article.ArticleChannel</item>
+        <item>com.baiyi.jj.app.sqlloader.dao.entity.ArticleSeqEntity</item>
+        <item>com.baiyi.jj.app.entity.UserInfoEntity</item>
+        <item>com.baiyi.jj.app.sqlloader.dao.entity.MessageEntity</item>
+
+    </string-array>
+
+    <integer-array name="single_db_version">
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+    </integer-array>
+
+</resources>

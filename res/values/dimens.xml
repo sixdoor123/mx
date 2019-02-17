@@ -1,0 +1,67 @@
+<resources>
+
+    <dimen name="margin_left_3">3dp</dimen>
+    <dimen name="margin_left_5">5dp</dimen>
+
+    <dimen name="margin_left_10">10dp</dimen>
+    <dimen name="margin_left_12">12dp</dimen>
+    <dimen name="margin_left_list">15dp</dimen>
+    <dimen name="margin_left">15dp</dimen>
+    <dimen name="margin_left_20">20dp</dimen>
+    <dimen name="margin_top_20">20dp</dimen>
+    <dimen name="margin_top_16">16dp</dimen>
+    <dimen name="margin_top_15">15dp</dimen>
+    <dimen name="margin_top_10">10dp</dimen>
+    <dimen name="margin_top_7">7dp</dimen>
+    <dimen name="margin_top_8">8dp</dimen>
+    <dimen name="margin_top_6">6dp</dimen>
+    <dimen name="margin_top_5">5dp</dimen>
+    <dimen name="margin_top_4">4dp</dimen>
+    <dimen name="margin_top_3">3dp</dimen>
+    <dimen name="margin_bottom_8">8dp</dimen>
+    <dimen name="margin_bottom_10">10dp</dimen>
+    <dimen name="margin_bottom_15">15dp</dimen>
+    <dimen name="margin_bottom_16">16dp</dimen>
+    <dimen name="margin_top_25">25dp</dimen>
+    <dimen name="margin_20">20dp</dimen>
+    <dimen name="margin_30">30dp</dimen>
+    <dimen name="margin_40">40dp</dimen>
+    <dimen name="margin_80">80dp</dimen>
+    <dimen name="margin_top_100">100dp</dimen>
+    <dimen name="margin_top_200">200dp</dimen>
+    <dimen name="margin_dialog_bottom_8">8dp</dimen>
+    <dimen name="text_size_10">10sp</dimen>
+    <dimen name="text_size_11">11sp</dimen>
+    <dimen name="text_size_12">12sp</dimen>
+    <dimen name="text_size_14">14sp</dimen>
+    <dimen name="text_size_15">15sp</dimen>
+    <dimen name="text_size_16">16sp</dimen>
+    <dimen name="text_size_17">17sp</dimen>
+    <dimen name="text_size_18">18sp</dimen>
+    <dimen name="text_size_19">19sp</dimen>
+    <dimen name="text_size_20">20sp</dimen>
+    <dimen name="text_size_22">22sp</dimen>
+    <dimen name="text_size_30">30sp</dimen>
+    <dimen name="text_size_36">36sp</dimen>
+    <dimen name="line_high_45">45dp</dimen>
+    <dimen name="spacin_text">3dp</dimen>
+
+    <dimen name="margin_right_5">5dp</dimen>
+    <dimen name="margin_right_10">10dp</dimen>
+    <dimen name="margin_right_list">15dp</dimen>
+    <dimen name="margin_right">15dp</dimen>
+    <dimen name="margin_right_20">20dp</dimen>
+    <dimen name="margin_center_7.5">7.5dp</dimen>
+
+    <dimen name="tab_height">45dp</dimen>
+    <dimen name="margin_top_tab">2dp</dimen>
+
+    <dimen name="indicator_right_padding">10dp</dimen>
+    <dimen name="indicator_corner_radius">12dp</dimen>
+    <dimen name="indicator_internal_padding">4dp</dimen>
+    <dimen name="header_footer_left_right_padding">24dp</dimen>
+    <dimen name="header_footer_top_bottom_padding">30dp</dimen>
+
+    <dimen name="attention_menu_wight">92dp</dimen>
+
+</resources>

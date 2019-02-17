@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/day_text_color_red">
+            <LinearLayout
+                android:id="@+id/lin_left"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:paddingLeft="@dimen/margin_left_12"
+                android:paddingRight="6dp"
+                android:orientation="vertical"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:layout_centerVertical="true">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0%"
+                    android:textColor="@color/day_bg_color_white"
+                    android:textSize="8sp"
+                    android:visibility="gone"/>
+                <ImageView
+                    android:id="@+id/img_leftdown"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/icon_download_start"
+                    android:visibility="gone"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/btn_title_search" />
+                <TextView
+                    android:id="@+id/txt_progress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0%"
+                    android:textColor="@color/day_bg_color_white"
+                    android:textSize="8sp"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/progress_down"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/bg_progress"
+                android:visibility="gone"/>
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/news_tablayout"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_toRightOf="@+id/lin_left"
+
+                app:tabPaddingStart="0dp"
+                app:tabPaddingEnd="0dp"
+                app:tabMinWidth="0dp"
+
+                android:layout_toLeftOf="@+id/img_rightchannel"
+                android:background="@color/day_text_color_red"
+                app:tabIndicatorColor="@color/day_bg_color_white"
+                app:tabTextColor="@color/day_text_color_write"
+                app:tabIndicatorHeight="0dp"
+                app:tabMode="scrollable"/>
+
+            <ImageView
+                android:id="@+id/img_rightchannel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@color/day_text_color_red"
+                android:paddingLeft="6dp"
+                android:paddingRight="@dimen/margin_left_12"
+                android:src="@drawable/icon_addchannel" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <android.support.v4.view.ViewPager
+                android:id="@+id/news_viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+            <RelativeLayout
+                android:id="@+id/news_new_count_group"
+                style="@style/btn_item_selector_news_recomment_count"
+                android:background="@drawable/bg_button_red_90_select"
+                android:visibility="gone"
+                android:alpha="0.8" >
+
+                <TextView
+                    android:id="@+id/news_new_count"
+                    style="@style/bg_ww"
+                    android:layout_centerInParent="true"
+                    android:text="@string/txt_tip"
+                    android:textColor="@color/day_bg_color_white"
+                    android:textSize="@dimen/text_size_12" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/page_channel_manager"
+        layout="@layout/page_channel_manager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</FrameLayout>

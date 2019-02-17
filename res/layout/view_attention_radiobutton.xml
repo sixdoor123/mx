@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioButton xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/bg_ww"
+    android:background="@drawable/btn_hui_leftblue"
+    android:paddingLeft="@dimen/margin_left"
+    android:paddingRight="@dimen/margin_right_10"
+    android:singleLine="true"
+    android:button="@null"
+    android:gravity="left|center_vertical"
+    android:textColor="@color/day_text_color" />

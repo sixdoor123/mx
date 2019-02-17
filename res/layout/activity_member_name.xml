@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:skin="http://schemas.android.com/android/skin"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/bg_ff"
+    android:background="@color/day_bg_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/margin_40"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edit_account_name"
+            style="@style/base_edit_h60"
+            android:drawableLeft="@drawable/icon_user"
+            android:gravity="center"
+            android:hint="@string/txt_account"
+            android:maxLength="20"
+            android:paddingLeft="@dimen/margin_30"
+            android:paddingRight="@dimen/margin_40"
+            android:textColor="@color/day_text_color_black"
+            android:textSize="@dimen/text_size_17"
+            skin:enable="true" />
+
+        <View
+            style="@style/view_1px_margin_15"
+            android:background="@color/day_text_color_5black" />
+
+        <Button
+            android:id="@+id/btn_save_member_name"
+            style="@style/btn_blue_f_40"
+            android:layout_marginTop="@dimen/margin_20"
+            android:background="@drawable/btn_red_sel_2"
+            android:text="@string/txt_save"
+            android:textColor="@color/word_white_red_press"
+            android:textSize="@dimen/text_size_17"
+            skin:enable="true" />
+
+
+    </LinearLayout>
+
+    <com.baiyi.jj.app.views.MyLoadingBar
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        skin:enable="true" />
+
+</RelativeLayout>

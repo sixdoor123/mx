@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:skin="http://schemas.android.com/android/skin"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/bg_ff"
+    android:background="@color/day_bg_color_f6f6"
+    skin:enable="true">
+
+    <LinearLayout
+        style="@style/bg_ff"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/loading"
+        android:orientation="vertical"
+        skin:enable="true">
+
+        <TextView
+            style="@style/base_edit_h_wrap"
+            android:text="@string/txt_tixian4"
+            android:textColor="@color/day_text_color_title"
+            android:textSize="@dimen/text_size_16"
+            skin:enable="true" />
+
+        <TextView
+            android:id="@+id/tv_available"
+            style="@style/base_edit_h_wrap"
+            android:gravity="center_horizontal"
+            android:text="$ 0.00"
+            android:textColor="@color/day_text_color_green"
+            android:textSize="@dimen/text_size_36"
+            skin:enable="true" />
+
+        <LinearLayout
+            style="@style/bg_fw_all"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/bg_ww"
+                android:text="@string/txt_withdraw"
+                android:textColor="@color/day_text_color_title"
+                android:textSize="@dimen/text_size_16"
+                skin:enable="true" />
+
+            <TextView
+                style="@style/bg_fw"
+                android:text="@string/txt_tixian_tip6"
+                android:singleLine="true"
+                android:textColor="@color/day_text_color_737373"
+                android:textSize="@dimen/text_size_14"
+                skin:enable="true" />
+        </LinearLayout>
+
+        <View
+            style="@style/view_line_1px"
+            android:background="@color/day_line1_color"
+            skin:enable="true" />
+
+        <EditText
+            android:id="@+id/edit_withdraw"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:background="@color/day_bg_color_white"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:maxLength="8"
+            android:textColor="@color/day_text_color_title"
+            android:textSize="@dimen/text_size_16"
+            skin:enable="true" />
+
+        <View
+            style="@style/view_line_1px"
+            android:background="@color/day_line1_color"
+            skin:enable="true" />
+
+        <Button
+            android:id="@+id/btn_next"
+            style="@style/btn_blue_f_40"
+            android:layout_marginTop="@dimen/margin_top_20"
+            android:background="@drawable/btn_red_sel_2"
+            android:text="@string/txt_button27"
+            android:textColor="@color/day_bg_color_white"
+            android:textSize="@dimen/text_size_18"
+            skin:enable="true" />
+    </LinearLayout>
+
+    <com.baiyi.jj.app.views.MyLoadingBar
+        android:id="@+id/loading"
+        style="@style/bg_ww"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

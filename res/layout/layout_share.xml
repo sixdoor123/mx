@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:skin="http://schemas.android.com/android/skin"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/view_parent"
+    style="@style/bg_fw"
+    android:background="@color/day_bg_color"
+    android:orientation="vertical"
+    skin:enable="true">
+
+    <View
+        style="@style/view_line_1px"
+        android:background="@color/day_line1_color"
+        skin:enable="true" />
+
+    <LinearLayout
+        style="@style/bg_fw"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        skin:enable="true">
+
+        <LinearLayout
+            style="@style/bg_ww"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            skin:enable="true">
+
+            <LinearLayout
+                style="@style/share_layout_lin"
+                android:background="@drawable/selector_white_item"
+                android:visibility="gone"
+                skin:enable="true">
+
+                <ImageView
+                    style="@style/bg_ww"
+                    android:src="@drawable/share_weixin2x"
+                    skin:enable="true" />
+
+                <TextView
+                    style="@style/bg_ww"
+                    android:layout_marginTop="@dimen/margin_top_10"
+                    android:gravity="center"
+                    android:text="@string/txt_weixin"
+                    android:textColor="@color/default_color_737373_white"
+                    android:textSize="@dimen/text_size_15"
+                    skin:enable="true" />
+            </LinearLayout>
+
+            <View
+                style="@style/view_line_1px"
+                android:background="@color/day_line1_color"
+                skin:enable="true" />
+
+            <LinearLayout
+                style="@style/share_layout_lin"
+                android:background="@drawable/selector_white_item"
+                android:visibility="gone"
+                skin:enable="true">
+
+                <ImageView
+                    style="@style/bg_ww"
+                    android:src="@drawable/share_sina2x"
+                    skin:enable="true" />
+
+                <TextView
+                    style="@style/bg_ww"
+                    android:layout_marginTop="@dimen/margin_top_10"
+                    android:gravity="center"
+                    android:text="@string/txt_sina"
+                    android:textColor="@color/default_color_737373_white"
+                    android:textSize="@dimen/text_size_15"
+                    skin:enable="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_facebook"
+                style="@style/share_layout_lin"
+                android:background="@drawable/selector_white_item"
+                skin:enable="true">
+
+                <ImageView
+                    style="@style/bg_ww"
+                    android:src="@drawable/share_facebook"
+                    skin:enable="true" />
+
+                <TextView
+                    style="@style/bg_ww"
+                    android:layout_marginTop="@dimen/margin_top_10"
+                    android:gravity="center"
+                    android:text="@string/txt_facebook"
+                    android:textColor="@color/default_color_737373_white"
+                    android:textSize="@dimen/text_size_15"
+                    skin:enable="true" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="@color/day_line1_color"
+            skin:enable="true" />
+
+        <LinearLayout
+            style="@style/bg_ww"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/share_layout_lin"
+                android:background="@drawable/selector_white_item"
+                android:orientation="vertical"
+                android:visibility="gone"
+                skin:enable="true">
+
+                <ImageView
+                    style="@style/bg_ww"
+                    android:src="@drawable/share_weixin_circle_friends2x"
+                    skin:enable="true" />
+
+                <TextView
+                    style="@style/bg_ww"
+                    android:layout_marginTop="@dimen/margin_top_10"
+                    android:gravity="center"
+                    android:text="@string/txt_pyq"
+                    android:textColor="@color/default_color_737373_white"
+                    android:textSize="@dimen/text_size_15"
+                    skin:enable="true" />
+            </LinearLayout>
+
+            <View
+                style="@style/view_line_1px"
+                android:background="@color/day_line1_color"
+                skin:enable="true" />
+
+            <LinearLayout
+                android:id="@+id/lin_email"
+                style="@style/share_layout_lin"
+                android:background="@drawable/selector_white_item"
+                skin:enable="true">
+
+                <ImageView
+                    style="@style/bg_ww"
+                    android:src="@drawable/share_e_mail2x"
+                    skin:enable="true" />
+
+                <TextView
+                    style="@style/bg_ww"
+                    android:layout_marginTop="@dimen/margin_top_10"
+                    android:gravity="center"
+                    android:text="@string/txt_my_email"
+                    android:textColor="@color/default_color_737373_white"
+                    android:textSize="@dimen/text_size_15"
+                    skin:enable="true" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="@color/day_line1_color"
+            skin:enable="true" />
+
+        <LinearLayout
+            style="@style/bg_ww"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/share_layout_lin"
+                android:background="@drawable/selector_white_item"
+                android:visibility="gone"
+                skin:enable="true">
+
+                <ImageView
+                    style="@style/bg_ww"
+                    android:src="@drawable/share_tel_qq2x"
+                    skin:enable="true" />
+
+                <TextView
+                    style="@style/bg_ww"
+                    android:layout_marginTop="@dimen/margin_top_10"
+                    android:gravity="center"
+                    android:text="@string/txt_qq"
+                    android:textColor="@color/default_color_737373_white"
+                    android:textSize="@dimen/text_size_15"
+                    skin:enable="true" />
+            </LinearLayout>
+
+            <View
+                style="@style/view_line_1px"
+                android:background="@color/day_line1_color"
+                skin:enable="true" />
+
+            <LinearLayout
+                android:id="@+id/lin_copyurl"
+                style="@style/share_layout_lin"
+                android:background="@drawable/selector_white_item"
+                skin:enable="true">
+
+                <ImageView
+                    style="@style/bg_ww"
+                    android:src="@drawable/share_link2x"
+                    skin:enable="true" />
+
+                <TextView
+                    style="@style/bg_ww"
+                    android:layout_marginTop="@dimen/margin_top_10"
+                    android:gravity="center"
+                    android:text="@string/txt_copy"
+                    android:textColor="@color/default_color_737373_white"
+                    android:textSize="@dimen/text_size_15"
+                    skin:enable="true" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="@color/day_line1_color"
+            skin:enable="true" />
+
+
+        <LinearLayout
+            style="@style/bg_wf"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <View
+                style="@style/view_line_1px"
+                android:background="@color/day_line1_color"
+                skin:enable="true" />
+
+            <LinearLayout
+                android:id="@+id/lin_e"
+                style="@style/share_layout_lin"
+                android:background="@drawable/selector_white_item"
+                skin:enable="true">
+
+                <ImageView
+                    style="@style/bg_ww"
+                    android:src="@drawable/icon_share_e"
+                    skin:enable="true" />
+
+                <TextView
+                    style="@style/bg_ww"
+                    android:layout_marginTop="@dimen/margin_top_10"
+                    android:gravity="center"
+                    android:text="@string/txt_open"
+                    android:textColor="@color/default_color_737373_white"
+                    android:textSize="@dimen/text_size_15"
+                    skin:enable="true" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="@color/day_line1_color"
+            skin:enable="true" />
+
+        <LinearLayout
+            style="@style/bg_wf"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                style="@style/share_layout_lin"
+                android:background="@drawable/selector_white_item"
+                skin:enable="true">
+
+                <ImageView
+                    style="@style/bg_ww"
+                    android:src="@drawable/share_qqspace2x"
+                    skin:enable="true" />
+
+                <TextView
+                    style="@style/bg_ww"
+                    android:layout_marginTop="@dimen/margin_top_10"
+                    android:gravity="center"
+                    android:text="@string/txt_qq_space"
+                    android:textColor="@color/default_color_737373_white"
+                    android:textSize="@dimen/text_size_15"
+                    skin:enable="true" />
+            </LinearLayout>
+
+            <View
+                style="@style/view_line_1px"
+                android:background="@color/day_line1_color"
+                skin:enable="true" />
+
+            <LinearLayout
+                style="@style/share_layout_lin"
+                android:background="@drawable/selector_white_item"
+                android:visibility="gone"
+                skin:enable="true">
+
+                <ImageView
+                    style="@style/bg_ww"
+                    android:src="@drawable/share_xiaoxi2x"
+                    skin:enable="true" />
+
+                <TextView
+                    style="@style/bg_ww"
+                    android:layout_marginTop="@dimen/margin_top_10"
+                    android:gravity="center"
+                    android:text="@string/txt_renren"
+                    android:textColor="@color/default_color_737373_white"
+                    android:textSize="@dimen/text_size_15"
+                    skin:enable="true" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        style="@style/view_line_1px"
+        android:background="@color/day_line1_color"
+        skin:enable="true" />
+
+</LinearLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:skin="http://schemas.android.com/android/skin"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lin_item"
+    style="@style/bg_fw"
+
+    android:orientation="vertical"
+    skin:enable="true">
+
+    <LinearLayout
+        android:id="@+id/lin_parent"
+        style="@style/bg_fw"
+        android:background="@drawable/selector_news_item"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/margin_bottom_16"
+        android:paddingLeft="@dimen/margin_left_list"
+        android:paddingTop="@dimen/margin_top_16"
+        skin:enable="true">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+
+            skin:enable="true">
+
+            <LinearLayout
+                style="@style/bg_fw"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                skin:enable="true">
+
+                <TextView
+                    android:id="@+id/txt_newstitle1"
+                    style="@style/bg_ww"
+                    android:layout_marginRight="@dimen/margin_left_5"
+                    android:includeFontPadding="false"
+                    android:maxLines="3"
+                    android:text="@string/name_news_title"
+                    android:textColor="@color/news_title_color"
+                    android:textSize="@dimen/text_size_16"
+                    skin:enable="true" />
+
+
+                <FrameLayout
+                    android:id="@+id/fram_2line"
+                    style="@style/bg_fw"
+                    android:layout_marginTop="@dimen/margin_top_4">
+
+                    <include
+                        android:id="@+id/title_2line"
+                        style="@style/bg_fw"
+                        layout="@layout/layout_newslist_time" />
+
+                </FrameLayout>
+            </LinearLayout>
+
+            <com.baiyi.jj.app.views.RemoteImageView
+                android:id="@+id/img_one_left"
+                style="@style/baseimg_news_left"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/margin_right_list"
+                skin:enable="true" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/fram_3line"
+            style="@style/bg_fw"
+            android:layout_marginRight="@dimen/margin_right_list"
+            android:layout_marginTop="@dimen/margin_top_7">
+
+            <include
+                android:id="@+id/title_3line"
+                style="@style/bg_fw"
+                layout="@layout/layout_newslist_3line_time" />
+
+        </RelativeLayout>
+
+        <include
+            style="@style/bg_fw"
+            layout="@layout/list_item_news_imgright_abstract" />
+    </LinearLayout>
+
+    <View
+        style="@style/view_line_1px"
+        android:background="@color/day_line1_color"
+        skin:enable="true" />
+
+</LinearLayout>

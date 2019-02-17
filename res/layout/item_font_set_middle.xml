@@ -1,0 +1,17 @@
+<RadioButton xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:skin="http://schemas.android.com/android/skin"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/set_font_button"
+    style="@style/bg_ww"
+    android:background="@drawable/btn_set_font_center"
+    android:button="@null"
+    android:gravity="center"
+    android:paddingBottom="@dimen/margin_top_5"
+    android:paddingLeft="@dimen/margin_left"
+    android:paddingRight="@dimen/margin_right"
+    android:paddingTop="@dimen/margin_top_5"
+    android:textColor="@color/word_red_white_checked"
+    android:textSize="@dimen/text_size_14"
+    skin:enable="true">
+
+</RadioButton>

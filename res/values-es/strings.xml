@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="txt_reading">Sugerencias</string>
+    <string name="txt_please_tags">Suggested Tags</string>
+    <string name="or">O</string>
+    <string name="skip_now">Salte por ahora</string>
+    <string name="app_name">Primera Noticia</string>
+    <string name="title_news">Primera Noticia</string>
+    <string name="title_explore">Primera Noticia Explore</string>
+    <string name="name_news">Inicio</string>
+    <string name="name_video">Videos</string>
+    <string name="name_notification">Notification</string>
+    <string name="name_attention">Tags</string>
+    <string name="title_search">Buscar</string>
+    <string name="title_support">FQA y Apoyo</string>
+    <string name="title_about">Sobre nosotros</string>
+    <string name="txt_account_country">País</string>
+    <string name="txt_account_language">Idioma</string>
+    <string name="title_account">Nombre</string>
+    <string name="title_email">Correo</string>
+    <string name="title_paypal">PayPal</string>
+    <string name="title_setpwd">Cambiar la contraseña</string>
+    <string name="title_channel">Canales</string>
+
+    <string name="name_news_title">Headline information</string>
+    <string name="name_read">Explorar</string>
+    <!-- 趣味 -->
+    <string name="name_interest">Hobby</string>
+    <string name="name_mine">Cuenta</string>
+    <!-- 视觉 -->
+    <string name="name_photo">sense of sight</string>
+    <string name="name_comprehensive">Integrated</string>
+    <string name="name_more">Más</string>
+    <!-- 阅读搜索 -->
+    <string name="name_jj">Primera Noticia</string>
+
+    <string name="title_web">  Web  </string>
+    <string name="title_local">Reading</string>
+    <string name="edit_writecomment">Toque para escribir comentarios ...</string>
+    <string name="txt_logout">Log Out</string>
+    <string name="txt_tip">Consejos</string>
+    <string name="txt_set">Ajustes</string>
+    <string name="txt_Channel_close">Volver a casa</string>
+    <string name="txt_complete">Hecho</string>
+    <string name="txt_progress_loading">Cargando…</string>
+    <string name="txt_progress_loading3">Eliminación de la colección ...</string>
+    <string name="txt_progress_loading4">Switching in progress…</string>
+    <string name="txt_comment">Comentario</string>
+    <string name="txt_table_name">Section Name</string>
+    <string name="txt_account">Nombre de usuario</string>
+    <string name="txt_current_load">Acaba de cargar hasta aquí, haga clic en actualizar</string>
+    <string name="txt_again_refresh"></string>
+    <string name="txt_weixin">  WeChat   </string>
+    <string name="txt_sina">Sina Weibo</string>
+    <string name="txt_pyq">WeChat circle of friends</string>
+    <string name="txt_qq">Phone QQ</string>
+    <string name="txt_copy">Copy Link</string>
+    <string name="txt_open">Browser</string>
+    <string name="txt_open_top">View Original Web</string>
+    <string name="txt_qq_space">QQ Space</string>
+    <string name="txt_facebook">Facebook</string>
+    <string name="txt_renren">   renren  </string>
+    <string name="txt_my_email">Correo electrónico</string>
+    <string name="txt_my_paypal">PayPal</string>
+    <string name="txt_withdraw_history">Withdraw History</string>
+    <string name="txt_withdraw">Withdraw</string>
+    <string name="txt_credit">Credits</string>
+    <string name="txt_availintegral">Available Credits</string>
+    <string name="txt_integral">Available Credits</string>
+    <string name="txt_credits_history">Credits Statement</string>
+    <string name="txt_policies">Policies</string>
+    <string name="txt_terms">Términos de Uso</string>
+    <string name="txt_forget_pwd">¿Olvidaste tu contraseña?</string>
+    <string name="txt_have_account">¿Ya tienes una cuenta? registrarse</string>
+    <string name="txt_read_agree_login">Stay signed in</string>
+    <string name="txt_maohap">\t\t</string>
+
+    <string name="txt_term_tips">In clicking \"Sign In\" or \"Sign in by Facebook\" you are agreeing to the </string>
+    <string name="txt_term_tips1">Al hacer clic en "Registrarse", acepta los  </string>
+    <string name="txt_term_tips2"> términos y condiciones.</string>
+
+    <string name="txt_exit_app">Toque de nuevo para salir</string>
+    <string name="tip_cannel">Cancelar</string>
+    <string name="txt_save_success">guardar éxito</string>
+    <string name="txt_save_fail">Guardar falló</string>
+    <string name="txt_save">Conservar</string>
+    <string name="txt_error_code">El código  no es válido,por favor introduzca de nuevo</string>
+    <string name="txt_error_token">You have not logged in, or COOKIES has failed, please log in again</string>
+    <string name="txt_time1">Hace 3 minutos</string>
+    <string name="txt_time2">Hace 5 minutos</string>
+    <string name="txt_time3">Hace 10 minutos</string>
+    <string name="txt_time4">Hace 15 minutos</string>
+    <string name="txt_time5">Hace 30 minutos</string>
+    <string name="txt_time6">Hace 1 hora</string>
+    <string name="txt_time7">Hace 2 horas</string>
+    <string name="txt_time8">Hace 3 horas</string>
+    <string name="txt_time9">Hace 6 horas</string>
+    <string name="txt_time10">Hace 12 horas</string>
+    <string name="txt_time11">Hace 24 horas</string>
+    <string name="txt_time12">Hace 2 días</string>
+    <string name="txt_time13">Hace 3 días</string>
+    <string name="txt_time14">Hace 3 días</string>
+    <string name="name_just">Justo</string>
+
+    <string name="txt_button3">OK</string>
+    <string name="txt_breaktip">Noticias de última hora</string>
+    <string name="txt_button_view">Ver</string>
+    <string name="txt_button18">Enviar</string>
+    <string name="txt_button24">Sign in by Facebook</string>
+    <string name="txt_button25">Guardar</string>
+    <string name="txt_button26">Commit</string>
+    <string name="txt_button27">Siguiente</string>
+
+    <string name="txt_edit_hint4">Contraseña nueva</string>
+    <string name="txt_edit_hint5">Repetir la contraseña</string>
+    <string name="txt_edit_hint32">Correo electrónico / Nombre de usuario</string>
+    <string name="txt_edit_hint36">PayPal</string>
+    <string name="txt_edit_hint38">Withdraw value cannot exceed credits</string>
+    <string name="txt_edit_hint37">Contraseña actual</string>
+    <string name="txt_edit_hint40">Código</string>
+
+    <string name="txt_contnet23">content</string>
+    <string name="txt_contnet27">Limpiar historia de búsqueda</string>
+
+    <!-- 输入兑换积分 -->
+    <string name="tip_point_large">Withdraw value cannot exceed credits</string>
+    <string name="tip_point_10000">You only can withdraw 10,000 each time</string>
+
+    <!-- 输入密码提示信息 -->
+    <string name="tip_pwd_input_error_old">Su contraseña actual no cumple con la longitud requerida (6 a 25 caracteres)</string>
+    <string name="tip_pwd_input_error">Su nueva contraseña no cumple con la longitud requerida (6 a 25 caracteres)</string>
+    <string name="tip_pwd_input_two_diff">Las contraseñas no coinciden</string>
+    <string name="tip_pwd_input_new_old">No se pueden iguales la contraseña actual y la nueva.</string>
+
+    <!-- 修改密码 -->
+    <string name="tip_set_pwd_suc">Modificar la contraseña de éxito</string>
+    <string name="tip_set_pwd_fal">No modificar la contraseña de éxito</string>
+    <string name="tip_set_pwd_old_null">The current password cannot be empty</string>
+    <string name="tip_verification_code_send_fail">El correo electrónico no se envió</string>
+    <string name="old_pwd_not_right">Contraseña invalida</string>
+
+    <!-- 登陆提示 -->
+    <string name="tip_dialog_unlongin">Inicie sesión para continuar</string>
+    <string name="tip_dialog_unlongin_token">Token expirado, por favor, inicie sesión</string>
+    <string name="tip_login_success">Iniciar sesión</string>
+    <string name="tip_login_failure">El correo electrónico o la contrase?a que ingresaste no coincide</string>
+
+    <!-- 注册提示 -->
+    <string name="tip_regist_failure">Registration failed, Please re-register</string>
+
+    <!--评论 -->
+    <string name="tip_comm_nocontent">Escriba su comentario ...</string>
+    <string name="tip_comm_vote_myself">Can not thump up for yourself comment</string>
+    <string name="tip_comm_too_long">Comentario demasiado largo, máximo 2000 caracteres</string>
+
+    <string name="tip_dialog_title">Consejos</string>
+    <string name="tip_dialog_title5">Cambiar la contraseña</string>
+    <string name="tip_dialog_title12">¿Log Out ?</string>
+    <string name="tip_dialog_longin">Por favor sign in</string>
+
+    <!-- 网络 -->
+    <string name="tip_net_fault">No hay conexión de red, inténtalo de nuevo.</string>
+
+    <!-- 搜索提示 -->
+    <string name="tip_search_key_null">Please enter search entry</string>
+    <string name="tip_search_content_null">Empty search result</string>
+
+    <!-- 发表评论 -->
+    <string name="tip_comment_send_fal">Error de comentario</string>
+
+    <!-- 详情 -->
+    <string name="tip_newsdetail_vote_repeat">¡Por favor no dé LIKES dos veces！</string>
+
+    <!-- 收藏 -->
+    <string name="tip_collect_fal">Marcador fallido, vuelve a intentarlo</string>
+    <string name="tip_canel_collect_fal">Cancelar fracaso de la colección</string>
+
+    <!-- 下载 -->
+    <string name="tip_loaddata_failure">El servidor está ocupado, por favor solicite de nuevo</string>
+    <string name="tip_loaddata_null">Sin datos</string>
+    <string name="tip_loaddata_timeout">Horas extras, por favor inténtelo de nuevo</string>
+    <string name="tip_loaddata_pushnull">No datos,por favor inténtelo de nuevo</string>
+    <string name="tip_recomment1"></string>
+    <string name="tip_recomment2">Noticias nuevas</string>
+
+    <!-- 找回登录密码 -->
+    <string name="name_title_find_pwd">¿Ha olvidado su contraseña</string>
+
+    <!-- 登录 -->
+    <string name="name_title_login">Registrarse</string>
+    <string name="tip_login_fail">Fallo de inicio de sesión</string>
+    <string name="login_password">Contraseña</string>
+    <!-- 注册 -->
+    <string name="name_title_register">Crear</string>
+    <string name="register_pwd_no_equals">Las contraseñas no coinciden</string>
+    <string name="register_failure">Fallo en el Registro</string>
+    <string name="resgister_email_wrong">Email inválido</string>
+    <string name="txt_jump_1">Ir a la pantalla de inicio de sesión después de</string>
+
+    <!-- 评论 -->
+    <string name="name_title_comment">Comentarios</string>
+
+    <!-- 收藏 -->
+    <string name="name_title_collect">Marcador</string>
+    <string name="name_title_collect_title">¿Está seguro de borrar la colección?</string>
+
+    <!-- 分享 -->
+    <string name="name_title_share">Compartir</string>
+    <string name="txt_share1">This is what I share in primera noticia</string>
+    <string name="txt_share2">Seleccione el software para enviar,Por favor</string>
+    <string name="txt_share5">The connection has been copied to the clipboard</string>
+    <string name="txt_share_tofriend">Compartir con amigos</string>
+    <string name="txt_share_content">Primera Noticia - Una Aplicación de Noticias Hecha Para Ti</string>
+
+    <!-- 会员提现 -->
+    <string name="txt_tixian1">Withdraw succeed</string>
+    <string name="txt_tixian5">PIN</string>
+    <string name="txt_tixian4">Available Credits</string>
+    <string name="txt_tixian_tip1">Withdraw fail, please contact support</string>
+    <string name="txt_tixian_tip2">Please set up PIN first</string>
+    <string name="txt_tixian_tip3">Invalid PIN</string>
+    <string name="txt_tixian_tip4">Please link paypal first</string>
+    <string name="txt_tixian_tip5">withdrawal limit:$5</string>
+    <string name="txt_tixian_tip6">(withdrawal limit:$5)</string>
+
+    <string name="txt_date">Date</string>
+    <string name="txt_state">Status</string>
+    <string name="txt_worth">Amounts</string>
+    <string name="txt_tixian_pending">Pending</string>
+    <string name="txt_tixian_processed">Processed</string>
+    <string name="txt_tixian_colose">Closed</string>
+
+    <!-- PayPal设置-->
+    <string name="txt_paypal_changepaypal">Relink Paypal</string>
+    <string name="txt_paypal_changepwd">Change PIN</string>
+    <string name="txt_paypal_forgetpwd">Forgot PIN</string>
+    <string name="txt_paypal_newpaypal">New PayPal</string>
+
+    <string name="txt_paypal_pin">PIN</string>
+    <string name="txt_paypal_current_pin">Current PIN</string>
+    <string name="txt_paypal_new_pin">New PIN</string>
+    <string name="txt_paypal_reenter_pin">Re-enter PIN</string>
+
+    <string name="txt_paypal_change_failure">Fracaso</string>
+    <string name="txt_paypal_change_success">Exitoso</string>
+    <string name="txt_paypal_getinfo">Timeout, please try again</string>
+    <string name="txt_pin_reset_succeed">PIN reset succeed</string>
+    <string name="txt_pin_reset_failed">PIN reset failed</string>
+    <string name="current_pin_not_right">Invalid PIN</string>
+
+    <string name="tip_paypal_pwd_input_error_old">Your current PIN does not meet the required length(6 to 25 characters)</string>
+    <string name="tip_paypal_pwd_input_error">Your new PIN does not meet the required length(6 to 25 characters)</string>
+    <string name="tip_paypal_not_match">PIN don\'t match</string>
+    <string name="tip_paypal_input_new_old">The current and new PIN can not same</string>
+
+    <!-- 频道 -->
+    <string name="txt_messge_nochannel">No hay cancelar suscritos</string>
+    <string name="txt_messge_addchannel">Suscribirse</string>
+    <string name="txt_choose_3channel">Por favor seleccione al menos 3 temas que le puedan interesar</string>
+    <string name="txt_channel_read">Read My Tailored News</string>
+
+    <!-- 我的消息 -->
+    <string name="txt_messge_null">No Message</string>
+
+    <!-- 清除缓存 -->
+    <string name="tip_clearcahe_success">Cache eliminado</string>
+
+    <string name="tip_clearcahe_btn">Limpiar</string>
+    <string name="tip_clear_all">Limpiar todo</string>
+    <string name="tip_clearcahe_txt">Limpiar la caché</string>
+    <string name="txt_cache_current">Cache actual</string>
+    <string name="txt_cache_isclear">¿Limpiar la caché?</string>
+
+    <string name="txt_contact_us">Contáctenos</string>
+    <string name="txt_abstract">Show the abstract</string>
+    <string name="txt_wifi_show"> Calidad de la imagen</string>
+    <string name="txt_wifi_show_2g">2G/3G/4G</string>
+    <string name="txt_font">Letra</string>
+    <string name="txt_theme">Tema</string>
+    <string name="txt_country">País</string>
+    <string name="txt_theme_small">SM</string>
+    <string name="txt_theme_middle">MD</string>
+    <string name="txt_theme_large">LG</string>
+    <string name="txt_theme_morelarge">XL</string>
+    <string name="txt_theme_night">night</string>
+    <string name="txt_theme_day">day</string>
+    <string name="txt_abstract_show">Display</string>
+    <string name="txt_abstract_unshow">Hide</string>
+    <string name="txt_country_us">U.S.</string>
+    <string name="txt_country_india">India</string>
+    <string name="txt_wifi_hide">Hide</string>
+    <string name="txt_wifi_sd">SD</string>
+    <string name="txt_wifi_hd">HD</string>
+
+    <string name="listview_header_hint_normal"> </string>
+    <string name="listview_header_hint_release"> </string>
+    <!-- 智能推荐中 -->
+    <string name="refreshing">Actualizando ...</string>
+    <string name="refresh_done">Actualizacion completa</string>
+    <string name="listview_header_last_time">Cargando……</string>
+    <string name="listview_foot">Sin más datos</string>
+
+    <string name="pull_to_refresh_from_bottom_pull_label">@string/pull_to_refresh_pull_label</string>
+    <string name="pull_to_refresh_from_bottom_release_label">@string/pull_to_refresh_release_label</string>
+    <string name="pull_to_refresh_from_bottom_refreshing_label">@string/pull_to_refresh_refreshing_label</string>
+    <string name="pull_to_refresh_pull_label">Dejar para actualizar</string>
+    <string name="pull_to_refresh_release_label">Dejar para actualizar</string>
+    <string name="pull_to_refresh_refreshing_label">Actualizando</string>
+
+    <!-- 姓名 -->
+    <string name="tip_first_name_required">Su nuevo nombre no cumple con la longitud requerida (4 a 20 caracteres)</string>
+    <string name="tip_user_name_required">Tu nuevo nombre de usuario no cumple con la longitud requerida (6 a 20 caracteres)</string>
+    <string name="tip_dialog_title_name">Editar el nombre</string>
+        <string name="tip_dialog_title_user_name">Editar el nombre de usuario</string>
+
+    <!-- 修改邮箱 -->
+    <string name="tip_title_modify_email">Modificar el correo electrónico</string>
+    <string name="tip_text_new_email">Nuevo Email</string>
+    <string name="tip_modify_email_fal">Error al modificar el correo electrónico. Por favor, inténtelo de nuevo</string>
+    <string name="tip_bind_email_title">Enlazar el correo electrónico</string>
+    <string name="tip_email_exists">El Email ya existe.</string>
+
+    <!--  基本信息 -->
+    <string name="txt_head">Foto de perfil</string>
+    <string name="txt_base_info">Perfil</string>
+    <string name="txt_gust_show">turístico</string>
+    <string name="tip_change_avatar_fail">No se puede cambiar la foto del perfil; inténtalo de nuevo</string>
+
+    <!--  关注 -->
+    <string name="txt_attention_title">Following Tags</string>
+    <string name="txt_attention_more">More Tags</string>
+    <string name="txt_attention_cancel">Unfollow</string>
+    <string name="txt_attention_btn">Follow</string>
+    <string name="txt_attention_alre">Unfollow</string>
+    <string name="txt_attention_addf">Fail to Follow</string>
+    <string name="txt_attention_canf">Fail to Unfollow</string>
+    <string name="txt_attention_null">No following Tags</string>
+    <string name="txt_article_null">¡Lo siento, el artículo no se encuentra! </string>
+    <string name="txt_attention_gofol">Follow</string>
+
+    <string name="txt_dislike">No estoy interesado en</string>
+    <string name="txt_dislike_reduce">Ver menos noticias como eso</string>
+    <string name="txt_show_nonet1">No hay conexion de red,</string>
+    <string name="txt_show_nonet2">Inténtalo de nuevo</string>
+    <string name="txt_show_nodata1">El servidor está ocupado,</string>
+    <string name="txt_show_nodata2">Se request againplea</string>
+
+
+    <!-- 专题-->
+    <string name="txt_editition_title">Edición</string>
+    <string name="txt_editition_top">Arriba</string>
+
+    <string name="txt_point">·</string>
+    <string name="txt_nodata">Lo siento, no hay datos</string>
+    <string name="txt_foryou">Para ti</string>
+    <string name="txt_yes">SÍ</string>
+    <string name="txt_no">No</string>
+    <string name="txt_switch_language">¿Cambiar a otro idioma?</string>
+    <string name="txt_offline_reading">Lectura sin conexión</string>
+
+    <string name="txt_language_en">English</string>
+    <string name="txt_language_hi">español</string>
+
+    <string name="txt_offline_size">Número de noticias permitidas para cada canal en el modo de lectura fuera de línea</string>
+    <string name="txt_addmore">Añadir más</string>
+    <string name="txt_clear_offline">Borrar el archivo de lectura sin conexión</string>
+    <string name="txt_offline_mode">¿Activar el modo de lectura sin conexión?</string>
+    <string name="txt_offline_tag">OFFLINE</string>
+    <string name="tip_offline_downshow"> Historias descargas</string>
+
+    <string name="txt_other">Otra</string>
+
+    <string name="txt_touch1">Tire para actualizar historias</string>
+    <string name="txt_touch2">Toque para ver la historia completa</string>
+    <string name="txt_touch3">Deslizar para cambiar de canal.</string>
+    <string name="txt_touch4">Toca para seleccionar los cancelar favoritos</string>
+    <string name="txt_touch5">Toca para activar la descarga sin conexión</string>
+
+    <string name="tip_show_notification">Recibir notificaciones</string>
+
+    <string name="tip_no_comment">¡ Esperamos a su comentario！</string>
+
+    <string name="tip_tag_edition">EDICIÓN</string>
+
+    <string name="tip_quick_view">Ver en la página Web</string>
+    <string name="tip_title_web">  Web  </string>
+    <string name="tip_title_speedy">Rápido</string>
+
+    <string name="tip_morning_title">Periódico Matutino</string>
+
+    <string name="tip_select_interests">Elija su interés</string>
+    <string name="tip_redit_has_communties">Primera Noticia tiene categorías abundantes para ti</string>
+    <string name="tip_skip">Saltar</string>
+
+    <string name="tip_dialog_updatetitle">Hay una nueva versión de Primera Noticia disponible. Por favor, actualiza a la versión</string>
+    <string name="tip_dialog_nowupdate">Actualizar</string>
+    <string name="tip_dialog_skipthis">Saltar esta versión</string>
+    <string name="tip_dialog_cancel">La próxima vez</string>
+
+    <string name="tip_currentver">Versión actual</string>
+    <string name="tip_location_failure">Localización fracasa</string>
+    <string name="tip_location_loading">Está localizando...</string>
+</resources>

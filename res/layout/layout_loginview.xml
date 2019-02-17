@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:skin="http://schemas.android.com/android/skin"
+    android:id="@+id/lin_loginview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_shan">
+
+    <ImageView
+        android:id="@+id/bg_have_login"
+        style="@style/bg_fw"
+        android:layout_height="155dp"
+        android:background="@drawable/bg_button_red85"
+        android:scaleType="fitXY"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/bg_no_login"
+        style="@style/bg_fw"
+        android:layout_height="175dp"
+        android:background="@drawable/bg_button_red85"
+        android:scaleType="fitXY"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/btn_setting"
+        style="@style/bg_ww"
+        android:padding="@dimen/margin_top_15"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/selector_setting"/>
+
+    <LinearLayout
+        android:id="@+id/lin_have_login"
+        style="@style/bg_fw"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_head"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_40"
+            android:src="@drawable/default_head" />
+
+        <TextView
+            android:id="@+id/txt_name"
+            style="@style/bg_ww"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/margin_bottom_15"
+            android:layout_marginTop="@dimen/margin_top_10"
+            android:text="lzllzl"
+            android:textColor="@color/day_text_color_write"
+            android:textSize="@dimen/text_size_16" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_no_login"
+        style="@style/bg_fw"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            style="@style/bg_fw"
+            android:layout_marginTop="@dimen/margin_40"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <View style="@style/bg_weight_line" />
+
+            <ImageView
+                android:id="@+id/facebook_login"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/share_facebook" />
+
+            <View style="@style/bg_weight_line"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/share_google_red"
+                android:visibility="gone"/>
+
+            <View style="@style/bg_weight_line" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_sign_in"
+            android:layout_width="128dp"
+            android:layout_height="32dp"
+            android:layout_marginBottom="@dimen/margin_top_20"
+            android:layout_marginTop="@dimen/margin_top_20"
+            android:background="@drawable/btn_red_sel"
+            android:gravity="center"
+            android:text="@string/name_title_login"
+            android:textColor="@color/word_red_sel"
+            android:textSize="@dimen/text_size_17" />
+    </LinearLayout>
+</RelativeLayout>

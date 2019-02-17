@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:src="@color/day_bg_color"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <RelativeLayout
+            android:id="@+id/real_unclicked"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/margin_bottom_15"
+                android:paddingLeft="@dimen/margin_left"
+                android:paddingRight="@dimen/margin_right"
+                android:paddingTop="@dimen/margin_top_15">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="@dimen/margin_bottom_10">
+                    <ImageView
+                        android:layout_width="5dp"
+                        android:layout_height="20dp"
+                        android:background="@color/day_text_red"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_size_20"
+                        android:textColor="@color/day_text_color_black"
+                        android:layout_marginLeft="@dimen/margin_left_10"
+                        android:text="@string/tip_morning_title"/>
+                </LinearLayout>
+
+                <com.bigkoo.convenientbanner.ConvenientBanner
+                    android:id="@+id/morning_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </com.bigkoo.convenientbanner.ConvenientBanner>
+
+                <TextView
+                    android:id="@+id/title_morning"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/margin_top_15"
+                    android:text="Morning Paper 27 Dec 2017"
+                    android:textColor="@color/day_bg_color_white"
+                    android:visibility="gone"
+                    android:textSize="@dimen/text_size_30" />
+                <TextView
+                    android:id="@+id/txt_title_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:layout_marginTop="@dimen/margin_top_10"
+                    android:text="27 Dec 2017"
+                    android:textColor="@color/day_text_color_50black"
+                    android:textSize="@dimen/text_size_12" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/real_clicked"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/img_high"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@color/day_bg_color_white" />
+
+            <LinearLayout
+                android:id="@+id/lin_morningnews2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_left">
+
+                <ImageView
+                    android:id="@+id/img_leftimg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/txt_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_left_10"
+                    android:textColor="@color/day_bg_color_white"
+                    android:textSize="@dimen/text_size_16" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="1px"
+      android:background="@color/day_line1_color"/>
+
+
+</LinearLayout>

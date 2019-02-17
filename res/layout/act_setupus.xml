@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:skin="http://schemas.android.com/android/skin"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/bg_ff"
+    android:background="@color/day_bg_color_fafafa"
+    android:orientation="vertical"
+    skin:enable="true">
+
+    <LinearLayout
+        style="@style/bg_ff"
+        android:orientation="vertical"
+        skin:enable="true">
+
+
+        <LinearLayout
+            style="@style/bg_fw"
+            android:background="@drawable/selector_white_item"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/margin_bottom_10"
+            android:paddingTop="@dimen/margin_top_10"
+            android:visibility="gone"
+            skin:enable="true">
+
+            <TextView
+                style="@style/bg_ww"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="@string/txt_theme"
+                android:textColor="@color/default_color_313131_white"
+                android:textSize="@dimen/text_size_16"
+                skin:enable="true" />
+
+            <RadioGroup
+                android:id="@+id/rg_theme"
+                style="@style/bg_ww"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_marginRight="@dimen/margin_right"
+                android:orientation="horizontal"></RadioGroup>
+        </LinearLayout>
+
+        <View
+            style="@style/view_line_1px_pading"
+            android:background="@color/day_line1_color"
+            android:visibility="gone"
+            skin:enable="true" />
+
+        <LinearLayout
+            style="@style/bg_fw"
+            android:background="@drawable/selector_white_item"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/margin_bottom_10"
+            android:paddingTop="@dimen/margin_top_10"
+            android:visibility="gone"
+            skin:enable="true">
+
+            <TextView
+                style="@style/bg_ww"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="@string/txt_country"
+                android:textColor="@color/default_color_313131_white"
+                android:textSize="@dimen/text_size_16"
+                skin:enable="true" />
+
+            <RadioGroup
+                android:id="@+id/rg_country"
+                style="@style/bg_ww"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_marginRight="@dimen/margin_right"
+                android:orientation="horizontal"></RadioGroup>
+        </LinearLayout>
+
+        <View
+            style="@style/view_line_1px_pading"
+            android:background="@color/day_line1_color"
+            skin:enable="true" />
+
+        <LinearLayout
+            style="@style/bg_fw"
+            android:background="@drawable/selector_white_item"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/margin_bottom_10"
+            android:paddingTop="@dimen/margin_top_10"
+            skin:enable="true">
+
+            <TextView
+                style="@style/bg_ww"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="@string/txt_font"
+                android:textColor="@color/default_color_313131_white"
+                android:textSize="@dimen/text_size_16"
+                skin:enable="true" />
+
+            <RadioGroup
+                android:id="@+id/rg_font"
+                style="@style/bg_ww"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_marginRight="@dimen/margin_right"
+                android:orientation="horizontal"
+                skin:enable="true"></RadioGroup>
+        </LinearLayout>
+
+        <View
+            style="@style/view_line_1px_pading"
+            android:background="@color/day_line1_color"
+            android:visibility="gone"
+            skin:enable="true" />
+
+        <LinearLayout
+            style="@style/bg_fw"
+            android:background="@drawable/selector_white_item"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/margin_bottom_10"
+            android:paddingTop="@dimen/margin_top_10"
+            android:visibility="gone"
+            skin:enable="true">
+
+            <TextView
+                style="@style/bg_ww"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="@string/txt_abstract"
+                android:textColor="@color/default_color_313131_white"
+                android:textSize="@dimen/text_size_16"
+                skin:enable="true" />
+
+            <RadioGroup
+                android:id="@+id/rg_abstract"
+                style="@style/bg_ww"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_marginRight="@dimen/margin_right"
+                android:orientation="horizontal"></RadioGroup>
+        </LinearLayout>
+
+        <View
+            style="@style/view_line_1px_pading"
+            android:background="@color/day_line1_color"
+            android:visibility="visible"
+            skin:enable="true" />
+
+        <LinearLayout
+            style="@style/bg_fw"
+            android:background="@drawable/selector_white_item"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/margin_bottom_10"
+            android:paddingTop="@dimen/margin_top_10"
+            android:visibility="visible"
+            skin:enable="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/bg_ww"
+                    android:layout_marginLeft="@dimen/margin_left"
+                    android:singleLine="true"
+                    android:text="@string/txt_wifi_show"
+                    android:textColor="@color/default_color_313131_white"
+                    android:textSize="@dimen/text_size_16"
+                    skin:enable="true" />
+
+                <TextView
+                    style="@style/bg_ww"
+                    android:layout_marginLeft="@dimen/margin_left"
+                    android:singleLine="true"
+                    android:text="@string/txt_wifi_show_2g"
+                    android:textColor="@color/day_text_color_737373"
+                    android:textSize="@dimen/text_size_14"
+                    skin:enable="true" />
+            </LinearLayout>
+
+
+            <RadioGroup
+                android:id="@+id/rg_wifibig"
+                style="@style/bg_ww"
+                android:layout_gravity="right"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_marginRight="@dimen/margin_right"
+                android:layout_marginTop="@dimen/margin_top_10"
+                android:orientation="horizontal"></RadioGroup>
+        </LinearLayout>
+        <View
+            style="@style/view_line_1px_pading"
+            android:background="@color/day_line1_color"
+            android:visibility="visible"
+            skin:enable="true" />
+        <LinearLayout
+            style="@style/bg_fw"
+            android:background="@drawable/selector_white_item"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/margin_bottom_10"
+            android:paddingTop="@dimen/margin_top_10"
+            android:visibility="visible"
+            skin:enable="true">
+
+            <TextView
+                style="@style/bg_ww"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="@string/tip_show_notification"
+                android:textColor="@color/default_color_313131_white"
+                android:textSize="@dimen/text_size_16"
+                skin:enable="true" />
+
+            <RadioGroup
+                android:id="@+id/rg_notifiction"
+                style="@style/bg_ww"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_marginRight="@dimen/margin_right"
+                android:orientation="horizontal"></RadioGroup>
+        </LinearLayout>
+
+        <View
+            style="@style/view_line_1px"
+            android:background="@color/day_line1_color"
+            skin:enable="true" />
+
+        <View
+            style="@style/view_line_15"
+            android:background="@color/day_line15_color"
+            skin:enable="true" />
+
+        <View
+            style="@style/view_line_1px"
+            android:background="@color/day_line1_color"
+            skin:enable="true" />
+
+        <LinearLayout
+            style="@style/btn_item_selector_padall_15"
+            android:background="@drawable/selector_white_item"
+            android:gravity="center_vertical"
+            skin:enable="true">
+
+            <TextView
+                style="@style/bg_ww"
+                android:layout_weight="1"
+                android:text="@string/tip_clearcahe_txt"
+                android:textColor="@color/day_text_color"
+                android:textSize="@dimen/text_size_16"
+                skin:enable="true" />
+
+            <TextView
+                style="@style/bg_ww"
+                android:text="@string/txt_cache_current"
+                android:textColor="@color/day_text_color_737373"
+                android:textSize="@dimen/text_size_16"
+                skin:enable="true" />
+
+            <TextView
+                android:id="@+id/txt_cache_size"
+                style="@style/bg_ww"
+                android:layout_marginLeft="@dimen/margin_left_5"
+                android:textColor="@color/day_text_color_737373"
+                android:textSize="@dimen/text_size_16"
+                skin:enable="true" />
+        </LinearLayout>
+
+        <View
+            style="@style/view_line_1px_pading"
+            android:background="@color/day_line1_color"
+            skin:enable="true" />
+
+        <LinearLayout
+            style="@style/bg_fw"
+            android:background="@drawable/selector_white_item"
+            android:gravity="center_vertical"
+            skin:enable="true">
+
+            <TextView
+                style="@style/bg_ww"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_weight="1"
+                android:text="@string/txt_cache_isclear"
+                android:textColor="@color/day_text_color_737373"
+                android:textSize="@dimen/text_size_16"
+                skin:enable="true" />
+
+            <Button
+                android:id="@+id/btn_clear_cache"
+                style="@style/btn_blue_send_30"
+                android:background="@drawable/btn_red_sel_90"
+                android:text="@string/tip_clearcahe_btn"
+                android:textColor="@color/word_white_red_press"
+                android:textSize="@dimen/text_size_16"
+                skin:enable="true" />
+        </LinearLayout>
+
+        <View
+            style="@style/view_line_1px"
+            android:background="@color/day_line1_color"
+            skin:enable="true" />
+
+        <View
+            style="@style/view_line_15"
+            android:background="@color/day_line15_color"
+            skin:enable="true" />
+
+
+    </LinearLayout>
+
+    <com.baiyi.jj.app.views.MyLoadingBar
+        android:id="@+id/loading"
+        style="@style/bg_ww"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        skin:enable="true" />
+</RelativeLayout>

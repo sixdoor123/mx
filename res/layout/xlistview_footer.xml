@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    xmlns:skin="http://schemas.android.com/android/skin"
+    android:layout_height="36dp"
+    android:orientation="vertical">
+    <View
+        style="@style/view_line_1px"
+        android:background="@color/day_line1_color"
+        skin:enable="true" />
+
+    <RelativeLayout
+        android:id="@+id/xlistview_footer_content"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp" >
+
+        <LinearLayout
+            style="@style/bg_ww"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            skin:enable="true" >
+
+            <ImageView
+                android:id="@+id/foot_loading"
+                style="@style/bg_ww"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/anim_loading"
+                android:visibility="gone"
+                skin:enable="true" />
+
+            <ProgressBar
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/xlistview_footer_progressbar" />
+
+            <ImageView
+                android:id="@+id/foot_noload"
+                style="@style/bg_ww"
+                android:layout_margin="@dimen/margin_top_5"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/refresh_grey"
+                android:visibility="gone"
+                skin:enable="true" />
+
+            <TextView
+                android:id="@+id/more_text_end"
+                style="@style/bg_ww"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:text="@string/txt_progress_loading"
+                android:textColor="@color/default_color_737373_white"
+                android:textSize="@dimen/text_size_12"
+                skin:enable="true" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

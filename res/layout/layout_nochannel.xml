@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lin_shownochannel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:visibility="gone"
+    android:paddingTop="@dimen/margin_top_100">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_messge_null" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top_15"
+        android:text="@string/txt_messge_nochannel"
+        android:textColor="@color/day_text_color_737373"
+        android:textSize="@dimen/text_size_18" />
+
+    <Button
+        android:id="@+id/btn_addchannel"
+        android:layout_marginTop="@dimen/margin_top_100"
+        style="@style/btn_blue_f_40_feiye"
+        android:background="@drawable/btn_red_sel_2"
+        android:text="@string/txt_messge_addchannel"
+        android:textColor="@color/word_white_red_press"
+        android:textSize="@dimen/text_size_16" />
+</LinearLayout>

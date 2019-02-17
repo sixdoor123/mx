@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:skin="http://schemas.android.com/android/skin"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/bg_ff"
+    android:background="@color/day_bg_color_fafafa"
+    skin:enable="true">
+
+    <LinearLayout
+        style="@style/bg_ff"
+        android:background="@color/day_line15_color"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <include
+                    layout="@layout/layout_loginview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    style="@style/view_line_1px"
+                    android:background="@color/day_line1_color"
+                    skin:enable="true" />
+
+
+                <include
+                    layout="@layout/layout_set_usercenter_credits"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+
+                <include
+                    layout="@layout/layout_set_usercenter_about"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+
+                <include
+                    layout="@layout/layout_loginout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    skin:enable="true" />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <com.baiyi.jj.app.views.MyLoadingBar
+        android:id="@+id/my_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        skin:enable="true" />
+</RelativeLayout>

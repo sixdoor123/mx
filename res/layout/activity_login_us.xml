@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:skin="http://schemas.android.com/android/skin"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/day_bg_color">
+
+    <LinearLayout
+        style="@style/bg_ff"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/eidt_userName"
+            style="@style/base_edit_h60"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/margin_40"
+            android:background="@color/day_bg_color_white"
+            android:drawableLeft="@drawable/icon_user"
+            android:gravity="center"
+            android:hint="@string/txt_edit_hint32"
+            android:paddingLeft="@dimen/margin_30"
+            android:paddingRight="@dimen/margin_40"
+            android:textColor="@color/day_text_color_black"
+            android:textSize="@dimen/text_size_17"
+            skin:enable="true" />
+
+        <View
+            style="@style/view_1px_margin_15"
+            android:background="@color/day_text_color_5black" />
+
+        <EditText
+            android:id="@+id/edit_pwd"
+            style="@style/base_edit_h60"
+            android:layout_centerVertical="true"
+            android:background="@color/day_bg_color_white"
+            android:drawableLeft="@drawable/icon_paw1"
+            android:gravity="center"
+            android:hint="@string/login_password"
+            android:inputType="textPassword"
+            android:paddingLeft="@dimen/margin_30"
+            android:paddingRight="@dimen/margin_40"
+            android:textColor="@color/day_text_color_black"
+            android:textSize="@dimen/text_size_17"
+            skin:enable="true" />
+
+        <View
+            style="@style/view_1px_margin_15"
+            android:background="@color/day_text_color_5black" />
+
+        <LinearLayout
+            style="@style/bg_fw"
+            android:layout_marginTop="@dimen/margin_top_10"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/margin_left"
+            android:visibility="gone"
+            skin:enable="true">
+
+            <CheckBox
+                android:id="@+id/regist_agreement_checkBox"
+                style="@style/checkbox_base"
+                android:button="@drawable/checkbox_square"
+                android:checked="true"
+                skin:enable="true" />
+
+            <TextView
+                style="@style/bg_ww"
+                android:layout_marginLeft="@dimen/margin_left_10"
+                android:text="@string/txt_read_agree_login"
+                android:textColor="@color/default_color_313131_white"
+                android:textSize="@dimen/text_size_14"
+                skin:enable="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/bg_fw"
+            android:layout_margin="@dimen/margin_top_20"
+            android:gravity="center_vertical|right"
+            skin:enable="true">
+
+            <TextView
+                android:id="@+id/forget_password"
+                style="@style/bg_ww"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:text="@string/txt_forget_pwd"
+                android:textColor="@color/day_text_color_007AFF"
+                android:textSize="@dimen/text_size_14"
+                skin:enable="true" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/login"
+            style="@style/btn_blue_f_40"
+            android:background="@drawable/btn_red_sel_2"
+            android:text="@string/name_title_login"
+            android:textColor="@color/word_white_red_press"
+            android:textSize="@dimen/text_size_17"
+            skin:enable="true" />
+
+    </LinearLayout>
+
+    <com.baiyi.jj.app.views.MyLoadingBar
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        skin:enable="true" />
+</RelativeLayout>

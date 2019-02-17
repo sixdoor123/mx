@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:skin="http://schemas.android.com/android/skin"
+    style="@style/bg_fw"
+    android:layout_height="fill_parent"
+    android:background="@color/day_bg_color"
+    android:orientation="vertical"
+    skin:enable="true" >
+
+    <include
+        style="@style/bg_fw"
+        layout="@layout/layout_share"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/lin_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_cancel"
+        style="@style/btn_blue_f_40"
+        android:background="@drawable/btn_red_sel_2"
+        android:text="@string/tip_cannel"
+        android:textColor="@color/word_red_sel"
+        android:textSize="@dimen/text_size_16"
+        skin:enable="true" />
+
+</LinearLayout>

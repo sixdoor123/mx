@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/day_bg_color"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/logo_img"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/ic_launcher"
+            android:visibility="gone"
+            android:scaleType="fitCenter" />
+        <LinearLayout
+            android:id="@+id/lin_firstlogin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="50dp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:background="@color/day_bg_color_white"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_sign_in"
+                style="@style/btn_blue_f_40"
+                android:layout_marginTop="@dimen/margin_top_100"
+                android:background="@drawable/btn_red_sel_2"
+                android:text="@string/name_title_login"
+                android:textColor="@color/day_bg_color_white"
+                android:textSize="@dimen/text_size_18" />
+
+            <Button
+                android:id="@+id/btn_sign_up"
+                style="@style/btn_blue_f_40"
+                android:layout_marginTop="@dimen/margin_top_15"
+                android:background="@drawable/btn_blue_white"
+                android:text="@string/name_title_register"
+                android:textColor="@color/word_red_sel"
+                android:textSize="@dimen/text_size_18" />
+
+            <Button
+                android:id="@+id/btn_skip_now"
+                style="@style/btn_blue_f_40"
+                android:layout_marginTop="@dimen/margin_top_15"
+                android:background="@drawable/btn_blue_white"
+                android:text="@string/skip_now"
+                android:textColor="@color/word_red_sel"
+                android:textSize="@dimen/text_size_18" />
+        </LinearLayout>
+
+        <com.baiyi.jj.app.views.MyLoadingBar
+            android:id="@+id/loading"
+            style="@style/bg_ww"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+
+</LinearLayout>

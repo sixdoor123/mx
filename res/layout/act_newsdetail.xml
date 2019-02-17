@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:skin="http://schemas.android.com/android/skin"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/bg_ff"
+    android:background="@color/day_bg_color_white"
+    android:orientation="vertical"
+    skin:enable="true">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <include
+                android:id="@+id/lin_title"
+                layout="@layout/title_newsdetail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+            <include
+                layout="@layout/layout_videoframe"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fillViewport="false"
+                    skin:enable="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/day_bg_color_white">
+
+                            <WebView
+                                android:id="@+id/news_detail_local"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:focusable="false"
+                                android:visibility="gone"
+                                skin:enable="true" />
+
+                            <WebView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:focusable="false"
+                                android:visibility="gone"
+                                skin:enable="true" />
+
+                            <include layout="@layout/item_gif_detail" />
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:id="@+id/view_ad_detail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone"
+                            android:layout_marginBottom="@dimen/margin_bottom_15"/>
+
+                        <include
+                            layout="@layout/bottom_news_detail"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+                </ScrollView>
+
+                <com.baiyi.jj.app.views.MyLoadingBar
+                    android:id="@+id/loading"
+                    style="@style/bg_ff"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    skin:enable="true" />
+
+                <include layout="@layout/item_no_data" />
+                <LinearLayout
+                    android:id="@+id/lin_quick_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:paddingLeft="@dimen/margin_20"
+                    android:paddingRight="@dimen/margin_20"
+                    android:layout_marginBottom="@dimen/margin_bottom_10"
+                    android:orientation="horizontal"
+                    android:background="@drawable/bj_quickview_60"
+                    android:visibility="gone"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_quikview"
+                        android:visibility="gone"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_left_5"
+                        android:text="@string/tip_quick_view"
+                        android:textSize="@dimen/text_size_16"
+                        android:textColor="@color/day_text_color_write"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <include
+                layout="@layout/menu_news_detail_3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fullscreen_lin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/day_text_red"
+            android:visibility="gone"></LinearLayout>
+    </RelativeLayout>
+
+
+
+</LinearLayout>

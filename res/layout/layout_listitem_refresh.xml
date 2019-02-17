@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:skin="http://schemas.android.com/android/skin"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/bg_fw"
+    android:orientation="vertical"
+    skin:enable="true">
+
+    <LinearLayout
+        android:id="@+id/btn_refresh"
+        style="@style/bg_fw"
+        android:layout_height="40dp"
+        android:background="@color/day_text_color_cecece"
+        android:gravity="center"
+        android:orientation="horizontal"
+        skin:enable="true">
+
+        <TextView
+            style="@style/bg_ww"
+            android:singleLine="true"
+            android:text="@string/txt_current_load"
+            android:textColor="@color/day_text_color_0da7e2"
+            android:textSize="@dimen/text_size_12"
+            skin:enable="true" />
+
+        <TextView
+            style="@style/bg_ww"
+            android:layout_marginRight="@dimen/margin_right"
+            android:singleLine="true"
+            android:text="@string/txt_again_refresh"
+            android:textColor="@color/day_text_color_0da7e2"
+            android:textSize="@dimen/text_size_12"
+            skin:enable="true" />
+    </LinearLayout>
+
+    <View
+        style="@style/view_line_1px"
+        android:background="@color/day_line1_color"
+        skin:enable="true" />
+
+</LinearLayout>
