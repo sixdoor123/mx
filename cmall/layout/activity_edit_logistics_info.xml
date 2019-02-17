@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    android:orientation="vertical" >
+
+    <FrameLayout style="@style/bg_ff" >
+
+        <LinearLayout
+            style="@style/bg_ff"
+            android:orientation="vertical" >
+
+            <TableLayout
+                style="@style/bg_fw"
+                android:collapseColumns="3" >
+
+                <TableRow
+                    style="@style/bg_fw"
+                    android:padding="@dimen/margin_top_10" >
+
+                    <TextView
+                        android:id="@+id/company"
+                        style="@style/bg_ww"
+                        android:gravity="right"
+                        android:text="@string/company"
+                        android:textColor="@color/bg_black"
+                        android:textSize="@dimen/text_size_15" />
+
+                    <EditText
+                        android:id="@+id/edt_company_name"
+                        style="@style/sty_edit_text"
+                        android:layout_marginLeft="@dimen/margin_left"
+                        android:background="@drawable/edittext_select"
+                        android:hint="请输入公司名称"
+                        android:maxLength="30"
+                        android:singleLine="true"
+                        android:textColor="@color/bg_hui1"
+                        android:textSize="@dimen/text_size_15" />
+                </TableRow>
+
+                <View style="@style/view_line_1px" />
+
+                <TableRow
+                    style="@style/bg_fw"
+                    android:padding="@dimen/margin_top_10" >
+
+                    <TextView
+                        android:id="@+id/contact"
+                        style="@style/bg_ww"
+                        android:gravity="right"
+                        android:text="@string/contact"
+                        android:textColor="@color/bg_black"
+                        android:textSize="@dimen/text_size_15" />
+
+                    <EditText
+                        android:id="@+id/edt_contact_person"
+                        style="@style/sty_edit_text"
+                        android:layout_marginLeft="@dimen/margin_left"
+                        android:background="@drawable/edittext_select"
+                        android:hint="请输入联系人"
+                        android:singleLine="true"
+                        android:maxLength="20"
+                        android:textColor="@color/bg_hui1"
+                        android:textSize="@dimen/text_size_15" />
+                </TableRow>
+
+                <View style="@style/view_line_1px" />
+
+                <TableRow
+                    style="@style/bg_fw"
+                    android:padding="@dimen/margin_top_10" >
+
+                    <TextView
+                        android:id="@+id/moble"
+                        style="@style/bg_ww"
+                        android:gravity="right"
+                        android:text="@string/moble"
+                        android:textColor="@color/bg_black"
+                        android:textSize="@dimen/text_size_15" />
+
+                    <EditText
+                        android:id="@+id/edt_contact_num"
+                        style="@style/sty_edit_text"
+                        android:layout_marginLeft="@dimen/margin_left"
+                        android:background="@drawable/edittext_select"
+                        android:hint="请输入联系方式"
+                        android:inputType="phone"
+                        android:singleLine="true"
+                        android:textColor="@color/bg_hui1"
+                        android:textSize="@dimen/text_size_15" />
+                </TableRow>
+
+                <View style="@style/view_line_15dp" />
+
+                <TableRow
+                    style="@style/bg_fw"
+                    android:padding="@dimen/margin_top_10" >
+
+                    <TextView
+                        android:id="@+id/title"
+                        style="@style/bg_ww"
+                        android:gravity="right"
+                        android:text="@string/title"
+                        android:textColor="@color/bg_black"
+                        android:textSize="@dimen/text_size_15" />
+
+                    <EditText
+                        android:id="@+id/edt_goods_title"
+                        style="@style/sty_edit_text"
+                        android:layout_marginLeft="@dimen/margin_left"
+                        android:background="@drawable/edittext_select"
+                        android:hint="请输入标题"
+                        android:maxLength="30"
+                        android:singleLine="true"
+                        android:textColor="@color/bg_hui1"
+                        android:textSize="@dimen/text_size_15" />
+                </TableRow>
+
+                <View style="@style/view_line_1px" />
+
+                <TableRow
+                    style="@style/bg_fw"
+                    android:padding="@dimen/margin_top_10" >
+
+                    <TextView
+                        android:id="@+id/content"
+                        style="@style/bg_ww"
+                        android:gravity="right"
+                        android:text="@string/content"
+                        android:textColor="@color/bg_black"
+                        android:textSize="@dimen/text_size_15" />
+
+                    <EditText
+                        android:id="@+id/edt_goods_cintent"
+                        style="@style/bg_1w"
+                        android:layout_marginLeft="@dimen/margin_left"
+                        android:background="@drawable/edittext_select"
+                        android:gravity="top"
+                        android:hint="请输入内容"
+                        android:minLines="4"
+                        android:maxLength="1000"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:paddingLeft="@dimen/margin_left_5"
+                        android:paddingTop="@dimen/margin_left_5"
+                        android:scrollbars="vertical"
+                        android:textColor="@color/bg_hui1"
+                        android:textSize="@dimen/text_size_15" />
+                </TableRow>
+            </TableLayout>
+
+            <View style="@style/view_line_1px" />
+
+            <include layout="@layout/activity_edit_ligistics_add" />
+
+            <LinearLayout
+                style="@style/bg_fw"
+                android:layout_marginBottom="@dimen/margin_bottom_15"
+                android:layout_marginTop="@dimen/margin_top_15"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/bg_fw"
+                    android:layout_marginLeft="@dimen/margin_left"
+                    android:text="注意 : 点击此处可将信息补充的更完整吆 。"
+                    android:textColor="@color/bg_black"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    android:id="@+id/txt_detail_up_down"
+                    style="@style/bg_fw"
+                    android:layout_marginLeft="@dimen/margin_left"
+                    android:layout_marginRight="@dimen/margin_right"
+                    android:layout_marginTop="@dimen/margin_top_10"
+                    android:gravity="right"
+                    android:text="委托完善↓"
+                    android:textColor="@color/bg_buyer"
+                    android:textSize="@dimen/text_size_16" />
+            </LinearLayout>
+
+            <View style="@style/view_line_15dp" />
+        </LinearLayout>
+
+        <com.baiyi.cmall.views.MyLoadingBar
+            android:id="@+id/load"
+            style="@style/bg_fw"
+            android:layout_gravity="center"
+            android:visibility="gone" >
+        </com.baiyi.cmall.views.MyLoadingBar>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/btn_commit_complete"
+        style="@style/bg_fw"
+        android:layout_marginBottom="@dimen/margin_bottom_10"
+        android:layout_marginLeft="@dimen/margin_bottom_10"
+        android:layout_marginRight="@dimen/margin_bottom_10"
+        android:layout_marginTop="@dimen/margin_bottom_20"
+        android:background="@drawable/submit_select_bg"
+        android:gravity="center"
+        android:paddingBottom="@dimen/margin_bottom_10"
+        android:paddingTop="@dimen/margin_bottom_10"
+        android:text="完成"
+        android:textColor="@color/word_croci_white"
+        android:textSize="@dimen/text_size_16" />
+
+</LinearLayout>

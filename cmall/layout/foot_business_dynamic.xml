@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/margin_bottom_10"
+    android:paddingTop="@dimen/margin_top_10" >
+
+    <ImageView
+        android:id="@+id/arrow"
+        style="@style/img_arrow_right"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/margin_right" />
+
+    <TextView
+        style="@style/bg_fw"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="@dimen/margin_right_5"
+        android:layout_toLeftOf="@id/arrow"
+        android:gravity="right"
+        android:text="更多" />
+
+</RelativeLayout>

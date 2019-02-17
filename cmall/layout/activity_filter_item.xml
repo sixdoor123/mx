@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/bg_fw"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/rg_grop_category"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/bg_white"
+        android:orientation="horizontal" >
+
+        <com.baiyi.cmall.views.itemview.MyRadioButton
+            android:id="@+id/rb_category"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_white_hui3"
+            android:gravity="center"
+            android:paddingLeft="@dimen/margin_left"
+            android:paddingRight="@dimen/margin_right"
+            android:singleLine="true" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/bg_hui3" />
+
+        <com.baiyi.cmall.views.itemview.MyRadioButton
+            android:id="@+id/rb_area"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_white_hui3"
+            android:gravity="center"
+            android:paddingLeft="@dimen/margin_left"
+            android:paddingRight="@dimen/margin_right"
+            android:singleLine="true" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/bg_hui3" />
+
+        <com.baiyi.cmall.views.itemview.MyRadioButton
+            android:id="@+id/rb_default_sort"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_white_hui3"
+            android:gravity="center"
+            android:paddingLeft="@dimen/margin_left"
+            android:paddingRight="@dimen/margin_right"
+            android:singleLine="true" />
+    </RadioGroup>
+
+    <View style="@style/view_line_1px" />
+
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_list_invoice"
+    android:gravity="center"
+    android:id="@+id/ll_item"
+    android:orientation="horizontal"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp" >
+
+    <ImageView
+        android:id="@+id/img_icon"
+        style="@style/bg_ww"
+        android:layout_gravity="bottom"
+        android:src="@drawable/bg_icon_invoice" />
+
+    <TextView
+        android:id="@+id/tv_icon_text" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:duplicateParentState="true"
+        android:singleLine="true"
+        android:text="XXX"
+        android:textColor="@color/list_invoice_words"
+        android:textSize="@dimen/text_size_15" />
+
+</LinearLayout>

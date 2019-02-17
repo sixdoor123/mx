@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <WebView
+        android:id="@+id/web_zhaohang"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.baiyi.cmall.views.MyLoadingBar
+        android:id="@+id/web_load"
+        style="@style/bg_ww"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

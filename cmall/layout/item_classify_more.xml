@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 市场行情更多 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/bg_fw" >
+
+    <TextView
+        android:id="@+id/tv_more"
+        style="@style/bg_fw"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_shuibo"
+        android:gravity="center"
+        android:paddingBottom="@dimen/margin_bottom_10"
+        android:text="..."
+        android:textColor="@color/bg_hui2"
+        android:textSize="@dimen/text_size_16" >
+    </TextView>
+
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/bg_ww"
+    android:orientation="horizontal"
+android:id="@+id/rl_is_visible">
+
+    <TextView
+        android:id="@+id/tv_his"
+        style="@style/bg_fw_all"
+        android:textColor="@color/bg_black"
+        android:textSize="@dimen/text_size_15"
+        android:background="@drawable/bg_shuibo"
+        android:text="歷史" />
+
+    <LinearLayout 
+        android:id="@+id/lin_his_delete"
+        style="@style/bg_ww_all"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/bg_shuibo">
+         <ImageView
+        style="@style/bg_ww"
+        android:background="@drawable/iconfont_delete" />
+        
+    </LinearLayout>
+   
+</RelativeLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/btn_yue"
+        style="@style/bg_fw"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/margin_bottom_15"
+        android:paddingTop="@dimen/margin_top_15" >
+
+        <ImageView
+            style="@style/img_yue"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_5" />
+
+        <TextView
+            style="@style/bg_fw"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_weight="1"
+            android:text="余额支付"
+            android:textColor="@color/word_313131"
+            android:textSize="@dimen/text_size_16" />
+
+        <ImageView
+            style="@style/img_arrow_right"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/margin_right" />
+    </LinearLayout>
+
+    <View style="@style/view_line_1px" />
+
+    <LinearLayout
+        android:id="@+id/btn_card"
+        style="@style/bg_fw"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/margin_bottom_15"
+        android:paddingTop="@dimen/margin_top_15" >
+
+        <ImageView
+            style="@style/img_card"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_5" />
+
+        <TextView
+            style="@style/bg_fw"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_weight="1"
+            android:text="储蓄卡支付"
+            android:textColor="@color/word_313131"
+            android:textSize="@dimen/text_size_16" />
+
+        <ImageView
+            style="@style/img_arrow_right"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/margin_right" />
+    </LinearLayout>
+
+    <View style="@style/view_line_1px" />
+
+    <LinearLayout
+        android:id="@+id/btn_credit"
+        style="@style/bg_fw"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/margin_bottom_15"
+        android:paddingTop="@dimen/margin_top_15" >
+
+        <ImageView
+            style="@style/img_credit"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_5" />
+
+        <TextView
+            style="@style/bg_fw"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_weight="1"
+            android:text="信用卡支付"
+            android:textColor="@color/word_313131"
+            android:textSize="@dimen/text_size_16" />
+
+        <ImageView
+            style="@style/img_arrow_right"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/margin_right" />
+    </LinearLayout>
+
+    <View style="@style/view_line_1px" />
+
+    <LinearLayout
+        android:id="@+id/btn_other"
+        style="@style/bg_fw"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/margin_bottom_15"
+        android:paddingTop="@dimen/margin_top_15" >
+
+        <ImageView
+            style="@style/img_other"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_5" />
+
+        <TextView
+            style="@style/bg_fw"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_weight="1"
+            android:text="第三方支付"
+            android:textColor="@color/word_313131"
+            android:textSize="@dimen/text_size_16" />
+
+        <ImageView
+            style="@style/img_arrow_right"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/margin_right" />
+    </LinearLayout>
+
+    <View style="@style/view_line_1px" />
+
+</LinearLayout>

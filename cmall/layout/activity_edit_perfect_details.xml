@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="gone" >
+
+    <TableLayout
+        style="@style/bg_ff"
+        android:collapseColumns="3"
+        android:orientation="horizontal" >
+
+        <TableRow
+            android:id="@+id/tb_person_city"
+            style="@style/bg_fw_all"
+            android:background="@drawable/bg_shuibo" >
+
+            <TextView
+                style="@style/bg_ww"
+                android:gravity="right"
+                android:text="联系人城市"
+                android:textColor="@color/bg_black"
+                android:textSize="@dimen/text_size_16" />
+
+            <TextView
+                android:id="@+id/txt_person_city"
+                style="@style/bg_1w"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_marginRight="@dimen/margin_right"
+                android:gravity="right"
+                android:text="请选择"
+                android:textColor="@color/bg_hui1"
+                android:textSize="@dimen/text_size_15" />
+
+            <ImageView
+                style="@style/bg_ww"
+                android:src="@drawable/right_arrow" />
+        </TableRow>
+
+        <View style="@style/view_line_1px" />
+
+        <TableRow
+            android:id="@+id/tb_address"
+            style="@style/bg_fw_all"
+            android:background="@drawable/bg_shuibo" >
+
+            <TextView
+                style="@style/bg_ww"
+                android:gravity="right"
+                android:text="详细地址"
+                android:textColor="@color/bg_black"
+                android:textSize="@dimen/text_size_16" />
+
+            <EditText
+                android:id="@+id/txt_address"
+                style="@style/sty_edit_text"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_marginRight="@dimen/margin_left"
+                android:background="@drawable/edittext_select"
+                android:hint="请输入联系人详细地址" />
+        </TableRow>
+
+        <View style="@style/view_line_1px" />
+
+        <TableRow
+            android:id="@+id/tb_category"
+            style="@style/bg_fw_all"
+            android:background="@drawable/bg_shuibo" >
+
+            <TextView
+                style="@style/bg_ww"
+                android:gravity="right"
+                android:text="分类"
+                android:textColor="@color/bg_black"
+                android:textSize="@dimen/text_size_16" />
+
+            <TextView
+                android:id="@+id/txt_category"
+                style="@style/bg_1w"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_marginRight="@dimen/margin_right"
+                android:gravity="right"
+                android:text="请选择"
+                android:textColor="@color/bg_hui1"
+                android:textSize="@dimen/text_size_15" />
+
+            <ImageView
+                style="@style/bg_ww"
+                android:src="@drawable/right_arrow" />
+        </TableRow>
+
+        <View style="@style/view_line_1px" />
+
+        <TableRow
+            android:id="@+id/tb_delivery"
+            style="@style/bg_fw_all"
+            android:background="@drawable/bg_shuibo" >
+
+            <TextView
+                style="@style/bg_ww"
+                android:gravity="right"
+                android:text="交割地"
+                android:textColor="@color/bg_black"
+                android:textSize="@dimen/text_size_16" />
+
+            <TextView
+                android:id="@+id/txt_delivery"
+                style="@style/bg_1w"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_marginRight="@dimen/margin_right"
+                android:gravity="right"
+                android:text="请选择"
+                android:textColor="@color/bg_hui1"
+                android:textSize="@dimen/text_size_15" />
+
+            <ImageView
+                style="@style/bg_ww"
+                android:src="@drawable/right_arrow" />
+        </TableRow>
+
+        <View style="@style/view_line_1px" />
+
+        <TableRow
+            android:id="@+id/tb_place"
+            style="@style/bg_fw_all"
+            android:background="@drawable/bg_shuibo" >
+
+            <TextView
+                style="@style/bg_ww"
+                android:gravity="right"
+                android:text="产地"
+                android:textColor="@color/bg_black"
+                android:textSize="@dimen/text_size_16" />
+
+            <TextView
+                android:id="@+id/txt_place"
+                style="@style/bg_1w"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_marginRight="@dimen/margin_right"
+                android:gravity="right"
+                android:text="请选择"
+                android:textColor="@color/bg_hui1"
+                android:textSize="@dimen/text_size_15" />
+
+            <ImageView
+                style="@style/bg_ww"
+                android:src="@drawable/right_arrow" />
+        </TableRow>
+
+        <View style="@style/view_line_1px" />
+
+        <TableRow
+            android:id="@+id/tb_brand"
+            style="@style/bg_fw_all"
+            android:background="@drawable/bg_shuibo" >
+
+            <TextView
+                style="@style/bg_ww"
+                android:gravity="right"
+                android:text="品牌"
+                android:textColor="@color/bg_black"
+                android:textSize="@dimen/text_size_16" />
+
+            <EditText
+                android:id="@+id/edt_brand"
+                style="@style/sty_edit_text"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_marginRight="@dimen/margin_left"
+                android:background="@drawable/edittext_select"
+                android:text="" />
+        </TableRow>
+
+        <View style="@style/view_line_1px" />
+
+        <TableRow style="@style/bg_fw_all" >
+
+            <TextView
+                style="@style/bg_ww"
+                android:gravity="right"
+                android:text="数量"
+                android:textColor="@color/bg_black"
+                android:textSize="@dimen/text_size_15" />
+
+            <EditText
+                android:id="@+id/edt_weight"
+                style="@style/sty_edit_text"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:background="@drawable/edittext_select"
+                android:hint="最大值为9999999"
+                android:singleLine="true"
+                android:textColor="@color/bg_hui1" />
+
+            <TextView
+                style="@style/bg_ww"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:text="吨"
+                android:textColor="@color/bg_black"
+                android:textSize="@dimen/text_size_15" />
+        </TableRow>
+
+        <View style="@style/view_line_1px" />
+
+        <TableRow style="@style/bg_fw_all" >
+
+            <TextView
+                style="@style/bg_ww"
+                android:gravity="right"
+                android:text="价格"
+                android:textColor="@color/bg_black"
+                android:textSize="@dimen/text_size_15" />
+
+            <EditText
+                android:id="@+id/edt_price"
+                style="@style/sty_edit_text"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:background="@drawable/edittext_select"
+                android:hint="最大值为99999.99"
+                 android:inputType="numberDecimal"
+                android:singleLine="true"
+                android:textColor="@color/bg_hui1" />
+
+            <TextView
+                style="@style/bg_ww"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:text="元/吨"
+                android:textColor="@color/bg_black"
+                android:textSize="@dimen/text_size_15" />
+        </TableRow>
+
+
+        <View style="@style/view_line_1px" />
+    </TableLayout>
+
+</LinearLayout>

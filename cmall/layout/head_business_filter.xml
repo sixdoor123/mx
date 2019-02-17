@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <View style="@style/view_line_1px" />
+
+    <View style="@style/view_line_15dp" />
+
+    <View style="@style/view_line_1px" />
+
+    <LinearLayout
+        style="@style/bg_fw"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            style="@style/bg_fw"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/margin_bottom_10"
+            android:paddingTop="@dimen/margin_top_10" >
+
+            <TextView
+                style="@style/bg_ww"
+                android:duplicateParentState="true"
+                android:text="销量"
+                android:textSize="@dimen/text_size_15" />
+
+            <ImageView
+                style="@style/bg_ww"
+                android:layout_marginLeft="@dimen/margin_5"
+                android:src="@drawable/selector_mall_price" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/bg_fw"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/margin_bottom_10"
+            android:paddingTop="@dimen/margin_top_10" >
+
+            <TextView
+                style="@style/bg_ww"
+                android:duplicateParentState="true"
+                android:text="最新"
+                android:textSize="@dimen/text_size_15" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/bg_fw"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/margin_bottom_10"
+            android:paddingTop="@dimen/margin_top_10" >
+
+            <TextView
+                style="@style/bg_ww"
+                android:duplicateParentState="true"
+                android:text="价格"
+                android:textSize="@dimen/text_size_15" />
+
+            <ImageView
+                style="@style/bg_ww"
+                android:layout_marginLeft="@dimen/margin_5"
+                android:src="@drawable/selector_mall_price" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View style="@style/view_line_1px" />
+
+</LinearLayout>

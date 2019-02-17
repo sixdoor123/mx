@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/bg_ff" >
+
+    <LinearLayout
+        style="@style/bg_ff"
+        android:background="@color/bg_white"
+        android:orientation="horizontal" >
+
+        <com.baiyi.cmall.activities.main.mall.views.MallMenuView
+            android:id="@+id/mall_category_menu"
+            android:layout_width="@dimen/mall_menu_wight"
+            android:layout_height="match_parent" >
+        </com.baiyi.cmall.activities.main.mall.views.MallMenuView>
+
+        <!-- <include layout="@layout/activity_shop_bus"/> -->
+
+        <FrameLayout
+            style="@style/bg_ff">
+
+            <com.jcodecraeer.xrecyclerview.XRecyclerView
+                android:id="@+id/mallcategory__listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <com.baiyi.cmall.views.MyLoadingBar
+                android:id="@+id/load_category"
+                style="@style/bg_fw"
+                android:layout_gravity="center_vertical"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/no_data"
+                style="@style/bg_ff"
+                android:gravity="center"
+                android:text="暂无商品"
+                android:textColor="@color/bg_buyer"
+                android:textSize="@dimen/text_size_15"
+                android:visibility="gone" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_reload"
+        style="@style/bg_ff"
+        android:gravity="center"
+        android:background="@drawable/bg_shuibo"
+        android:text="加载失败\n\n请点击空白处重新加载"
+        android:textColor="@color/bg_hui1"
+        android:textSize="@dimen/text_size_10"
+        android:visibility="gone" />
+
+</FrameLayout>

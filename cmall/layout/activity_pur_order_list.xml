@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/bg_ff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll"
+        style="@style/bg_fw"
+        android:background="@drawable/bg_shuibo"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/margin_bottom_15"
+        android:paddingTop="@dimen/margin_top_15" >
+
+        <TextView
+            android:id="@+id/txt_company_name"
+            style="@style/bg_1w"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:singleLine="true"
+            android:text="详细内容"
+            android:textColor="@color/bg_black"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/txt_total_weight"
+            style="@style/bg_ww"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginRight="@dimen/margin_right"
+            android:gravity="center_horizontal"
+            android:text="数量"
+            android:textColor="@color/bg_black"
+            android:textSize="@dimen/text_size_16" />
+
+        <ImageView
+            style="@style/bg_ww"
+            android:layout_marginRight="@dimen/margin_right"
+            android:src="@drawable/right_arrow" />
+    </LinearLayout>
+
+    <View style="@style/view_line_1px" />
+
+    <LinearLayout
+        android:id="@+id/group"
+        style="@style/bg_fw"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v_line"
+        style="@style/view_line_15dp" />
+
+</LinearLayout>

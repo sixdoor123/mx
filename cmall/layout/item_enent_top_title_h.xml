@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- activity的头部标题 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/bg_fw"
+    android:background="@color/bg_green"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingTop="25dp" >
+
+    <LinearLayout
+        android:id="@+id/img_back"
+        style="@style/bg_ww"
+        android:background="@drawable/bg_white_hui3"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp" >
+
+        <ImageView
+            style="@style/bg_ww"
+            android:background="@drawable/ic_back" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_event_name"
+        style="@style/bg_1w"
+        android:gravity="center_horizontal"
+        android:textColor="@color/bg_white"
+        android:textSize="@dimen/text_size_16" />
+
+    <FrameLayout
+        android:id="@+id/msg_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp" >
+
+        <ImageView
+            android:id="@+id/btn_news"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:duplicateParentState="true"
+            android:padding="@dimen/margin_left_5"
+            android:src="@drawable/selector_title_msg" />
+
+        <TextView
+            android:id="@+id/news_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:background="@drawable/icon_msg_luber"
+            android:duplicateParentState="true"
+            android:gravity="center"
+            android:textColor="@color/word_msg_count"
+            android:textSize="10sp" />
+    </FrameLayout>
+
+</LinearLayout>

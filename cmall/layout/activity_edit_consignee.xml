@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TableRow
+        style="@style/bg_fw"
+        android:padding="@dimen/margin_top_10" >
+
+        <TextView
+            style="@style/bg_ww"
+            android:gravity="right"
+            android:text="收货人"
+            android:textColor="@color/bg_black"
+            android:textSize="@dimen/text_size_15" />
+
+        <EditText
+            android:id="@+id/edt_person_name"
+            style="@style/sty_edit_text"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:background="@drawable/edittext_select"
+            android:hint="请输入收货人姓名"
+            android:singleLine="true"
+            android:textColor="@color/bg_hui1"
+            android:textSize="@dimen/text_size_15" />
+    </TableRow>
+
+    <View style="@style/view_line_1px" />
+
+    <TableRow
+        style="@style/bg_fw"
+        android:padding="@dimen/margin_top_10" >
+
+        <TextView
+            style="@style/bg_ww"
+            android:gravity="right"
+            android:text="手机号码"
+            android:textColor="@color/bg_black"
+            android:textSize="@dimen/text_size_15" />
+
+        <EditText
+            android:id="@+id/edt_phone_num"
+            style="@style/sty_edit_text"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:background="@drawable/edittext_select"
+            android:hint="请输入手机号码"
+            android:inputType="phone"
+            android:singleLine="true"
+            android:textColor="@color/bg_hui1"
+            android:textSize="@dimen/text_size_15" />
+    </TableRow>
+
+    <View style="@style/view_line_1px" />
+
+    <TableRow
+        android:id="@+id/trb_city"
+        style="@style/bg_fw_all"
+        android:background="@drawable/bg_shuibo" >
+
+        <TextView
+            style="@style/bg_ww"
+            android:gravity="right"
+            android:text="地区"
+            android:textColor="@color/bg_black"
+            android:textSize="@dimen/text_size_15" />
+
+        <TextView
+            android:id="@+id/tv_edit_city"
+            style="@style/bg_1w"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:drawableRight="@drawable/right_arrow"
+            android:gravity="right"
+            android:text="请选择"
+            android:textColor="@color/bg_hui1"
+            android:textSize="@dimen/text_size_15" />
+    </TableRow>
+
+    <View style="@style/view_line_1px" />
+
+    <TableRow
+        style="@style/bg_fw"
+        android:padding="@dimen/margin_top_10" >
+
+        <TextView
+            style="@style/bg_ww"
+            android:gravity="right"
+            android:text="详细地址"
+            android:textColor="@color/bg_black"
+            android:textSize="@dimen/text_size_15" />
+
+        <EditText
+            android:id="@+id/edt_edit_address"
+            style="@style/sty_edit_text"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:background="@drawable/edittext_select"
+            android:hint="请输入详细地址"
+            android:singleLine="true"
+            android:textColor="@color/bg_hui1"
+            android:textSize="@dimen/text_size_15" />
+    </TableRow>
+
+    <View style="@style/view_line_1px" />
+
+    <CheckBox
+        android:id="@+id/rb_is_default"
+        style="@style/bg_ww"
+        android:layout_marginTop="@dimen/margin_top_10"
+        android:text="设置为默认地址" />
+
+    <TextView
+        android:id="@+id/btn_save"
+        style="@style/bg_fw"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginRight="@dimen/margin_right"
+        android:layout_marginTop="@dimen/margin_top_15"
+        android:background="@drawable/xiadan_select_bg"
+        android:gravity="center"
+        android:paddingBottom="@dimen/margin_bottom_10"
+        android:paddingTop="@dimen/margin_bottom_10"
+        android:text="保存"
+        android:textColor="@color/word_white_croci"
+        android:textSize="@dimen/text_size_16" />
+
+</TableLayout>

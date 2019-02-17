@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/bg_fw"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        style="@style/bg_fw_all"
+        android:background="@drawable/bg_shuibo" >
+
+        <ImageView
+            android:id="@+id/img_is_select"
+            style="@style/bg_ww"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_right"
+            android:src="@drawable/selected_red"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            style="@style/bg_ww"
+            android:layout_toLeftOf="@+id/img_line"
+            android:layout_toRightOf="@+id/img_is_select" >
+
+            <LinearLayout
+                android:id="@+id/lin_1"
+                style="@style/bg_fw"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/bg_ww"
+                    android:layout_marginRight="@dimen/margin_right"
+                    android:text="收货人:"
+                    android:textColor="@color/bg_black"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    android:id="@+id/tv_receive_person"
+                    style="@style/bg_1w"
+                    android:layout_marginRight="@dimen/margin_right"
+                    android:singleLine="true"
+                    android:text="XXX"
+                    android:textColor="@color/bg_black"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    android:id="@+id/tv_tel_phone"
+                    style="@style/bg_ww"
+                    android:text="150****6666"
+                    android:textColor="@color/bg_black"
+                    android:textSize="@dimen/text_size_16" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_2"
+                style="@style/bg_fw"
+                android:layout_below="@+id/lin_1"
+                android:layout_marginTop="@dimen/margin_top_10"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/bg_ww"
+                    android:layout_marginRight="@dimen/margin_right"
+                    android:text="地区:"
+                    android:textColor="@color/bg_hui1"
+                    android:textSize="@dimen/text_size_15" />
+
+                <TextView
+                    android:id="@+id/tv_city"
+                    style="@style/bg_ww"
+                    android:text="陕西 西安市 "
+                    android:textColor="@color/bg_hui1"
+                    android:textSize="@dimen/text_size_15" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/bg_fw"
+                android:layout_below="@+id/lin_2"
+                android:layout_marginTop="@dimen/margin_top_10"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/bg_ww"
+                    android:layout_marginRight="@dimen/margin_right"
+                    android:text="详细地址:"
+                    android:textColor="@color/bg_hui1"
+                    android:textSize="@dimen/text_size_15" />
+
+                <TextView
+                    android:id="@+id/tv_goods_address"
+                    style="@style/bg_ww"
+                    android:text="陕西 西安市 雁塔区  凯利大厦 西座 801"
+                    android:textColor="@color/bg_hui1"
+                    android:textSize="@dimen/text_size_15" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/img_line"
+            style="@style/bg_wf"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_toLeftOf="@+id/img_consignee_edit"
+            android:background="@drawable/m_tab_bg" />
+
+        <ImageView
+            android:id="@+id/img_consignee_edit"
+            style="@style/bg_wf"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_shuibo"
+            android:padding="@dimen/margin_left"
+            android:src="@drawable/edit" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/holder"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_delete"
+        android:clickable="true" >
+
+        <TextView
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawableLeft="@drawable/del_icon_normal"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="删除"
+            android:textColor="@color/bg_white" />
+    </RelativeLayout>
+
+</LinearLayout>

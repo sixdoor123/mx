@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/bg_ff"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        style="@style/bg_fw_all"
+        android:background="@drawable/bg_shuibo" >
+
+        <ImageView
+            android:id="@+id/img_is_select"
+            style="@style/bg_ww"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_right"
+            android:src="@drawable/selected_red"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            style="@style/bg_ww"
+            android:layout_toLeftOf="@+id/img_line"
+            android:layout_toRightOf="@+id/img_is_select" >
+
+            <LinearLayout
+                android:id="@+id/lin_1"
+                style="@style/bg_fw"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/bg_ww"
+                    android:layout_marginRight="@dimen/margin_right"
+                    android:text="发票类型:"
+                    android:textColor="@color/bg_black"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    android:id="@+id/tv_invoice_type"
+                    style="@style/bg_1w"
+                    android:layout_marginRight="@dimen/margin_right"
+                    android:text="XXX"
+                    android:textColor="@color/bg_black"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    android:id="@+id/tv_invoice_content"
+                    style="@style/bg_ww"
+                    android:text="XXX"
+                    android:textColor="@color/bg_black"
+                    android:textSize="@dimen/text_size_16" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_invoice_title"
+                style="@style/bg_ww"
+                android:layout_below="@+id/lin_1"
+                android:layout_marginTop="@dimen/margin_top_10"
+                android:text="陕西白衣软件責任公司 "
+                android:textColor="@color/bg_hui1"
+                android:textSize="@dimen/text_size_15" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/img_line"
+            style="@style/bg_wf"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_toLeftOf="@+id/img_invoice_edit"
+            android:background="@drawable/m_tab_bg" />
+
+        <ImageView
+            android:id="@+id/img_invoice_edit"
+            style="@style/bg_wf"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_shuibo"
+            android:padding="@dimen/margin_left"
+            android:src="@drawable/edit" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/holder"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_delete"
+        android:clickable="true" >
+
+        <TextView
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawableLeft="@drawable/del_icon_normal"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="删除"
+            android:textColor="@color/bg_white" />
+    </RelativeLayout>
+
+</LinearLayout>

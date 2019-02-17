@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/bg_fw"
+    android:background="@color/bg_white"
+    android:orientation="vertical" >
+
+    <View style="@style/view_line_1px" />
+
+    <View style="@style/view_line_15dp" />
+
+    <View style="@style/view_line_1px" />
+
+    <LinearLayout
+        style="@style/bg_fw"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/margin_bottom_10"
+        android:paddingTop="@dimen/margin_top_10" >
+
+        <CheckBox
+            android:id="@+id/checkbox_shoppingcar_shop"
+            style="@style/checkbox_shoppingcar"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_left" />
+
+        <ImageView
+            style="@style/icon_business"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_5" />
+
+        <TextView
+            android:id="@+id/txt_shoppingcar_shopname"
+            style="@style/bg_ww"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:text="陕西百益化工"
+            android:textColor="@color/word_737373"
+            android:textSize="@dimen/text_size_16" />
+
+        <ImageView
+            style="@style/img_arrow_right"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <View style="@style/view_line_1px" />
+
+    <com.baiyi.cmall.activities.main.buy.item.ShoppingCarProItem
+        android:id="@+id/layout_shoppingcar_pro"
+        style="@style/bg_fw"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/margin_5"
+        android:paddingTop="@dimen/margin_5" >
+    </com.baiyi.cmall.activities.main.buy.item.ShoppingCarProItem>
+
+    <TextView
+        android:id="@+id/txt_shoppingcar_settlement"
+        style="@style/bg_fw"
+        android:layout_marginBottom="@dimen/margin_5"
+        android:layout_marginLeft="@dimen/margin_left_45"
+        android:layout_marginTop="@dimen/margin_5"
+        android:text="小计:￥123.00"
+        android:textColor="@color/word_ff6633"
+        android:textSize="@dimen/text_size_16" />
+
+    <View style="@style/view_line_1px" />
+
+</LinearLayout>

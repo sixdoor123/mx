@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/view_parent"
+    style="@style/bg_fw"
+    android:background="@drawable/dialog_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/btn_title"
+        style="@style/bg_fw"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/margin_bottom_20"
+        android:paddingTop="@dimen/margin_bottom_20" >
+
+        <TextView
+            android:id="@+id/msgbox_title"
+            style="@style/bg_ww"
+            android:text="信息"
+            android:textColor="@color/bg_black"
+            android:textSize="@dimen/text_size_18" />
+    </LinearLayout>
+
+    <View
+        style="@style/view_line_2px"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginRight="@dimen/margin_right" />
+
+    <LinearLayout
+        android:id="@+id/btn_content"
+        style="@style/bg_fw"
+        android:paddingTop="@dimen/margin_top_15"
+        android:paddingBottom="@dimen/margin_bottom_15"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/msgbox_txt1"
+            style="@style/bg_ww"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginRight="@dimen/margin_right"
+            android:text="用户名或密码错误，请你重新输入"
+            android:textColor="@color/bg_hui1"
+            android:textSize="@dimen/text_size_15" />
+    </LinearLayout>
+
+</LinearLayout>

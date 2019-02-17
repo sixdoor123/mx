@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/bg_ff"
+    android:background="@color/bg_white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_green_1d8c59" >
+
+        <ImageView
+            android:id="@+id/mall_detail_back"
+            style="@style/img_arrow"
+            android:background="@drawable/bg_white_hui3"
+            android:padding="15dp" />
+
+        <me.relex.seamlessviewpagerheader.widget.SlidingTabLayout
+            android:id="@+id/tabs"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/tabs_height"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:id="@+id/mall_detail_next"
+            style="@style/img_arrow"
+            android:layout_marginTop="13dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bg_white_hui3"
+            android:src="@drawable/icon_more2x" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/bg_ff"
+        android:layout_weight="1" >
+
+        <com.baiyi.cmall.pageviews.MyViewPager
+            android:id="@+id/mall_detail_pager"
+            style="@style/bg_ff" >
+        </com.baiyi.cmall.pageviews.MyViewPager>
+
+        <com.baiyi.cmall.views.MyLoadingBar
+            android:id="@+id/pur_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        layout="@layout/menu_mall_detail" />
+
+</LinearLayout>

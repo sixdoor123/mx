@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginRight="@dimen/margin_right"
+        android:id="@+id/edt_account"
+        style="@style/bg_fw_all"
+        android:drawableLeft="@drawable/account"
+        android:drawablePadding="@dimen/margin_left"
+        android:textColor="@color/bg_hui1"
+        android:hint="用户名/已验证手机号" />
+
+    <View
+        style="@style/view_line_15dp"
+        android:layout_marginTop="@dimen/margin_bottom_15" />
+
+    <TextView
+        android:id="@+id/btn_next"
+        style="@style/bg_fw"
+        android:layout_marginLeft="@dimen/margin_bottom_10"
+        android:layout_marginRight="@dimen/margin_bottom_10"
+        android:layout_marginTop="@dimen/margin_bottom_15"
+        android:background="@drawable/submit_select_bg"
+        android:gravity="center"
+        android:paddingBottom="@dimen/margin_bottom_10"
+        android:paddingTop="@dimen/margin_bottom_10"
+        android:text="下一步"
+        android:textColor="@color/word_croci_white"
+        android:textSize="@dimen/text_size_16" />
+
+</LinearLayout>

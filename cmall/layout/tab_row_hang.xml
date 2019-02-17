@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/bg_fw_all" >
+
+    <TextView
+        android:id="@+id/tv_jian"
+        style="@style/bg_ww"
+        android:gravity="right"
+        android:text="XXX:"
+        android:textColor="@color/bg_black"
+        android:textSize="@dimen/text_size_15" />
+
+    <TextView
+        android:id="@+id/tv_zhi"
+        style="@style/bg_1w"
+        android:layout_marginLeft="@dimen/margin_top_10"
+        android:text="XXX"
+        android:textColor="@color/bg_hui1"
+        android:textSize="@dimen/text_size_15" />
+
+</TableRow>

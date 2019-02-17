@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioButton xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/bg_fw"
+    android:padding="5dp"
+    android:background="@drawable/bg_shuibo"
+    android:button="@null"
+    android:drawableLeft="@drawable/radio_select"
+    android:drawablePadding="10dp"
+    android:text="XXX"
+    android:textColor="@color/bg_hui1"
+    android:textSize="@dimen/text_size_15" >
+
+</RadioButton>

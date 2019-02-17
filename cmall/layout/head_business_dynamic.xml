@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/bg_fw"
+    android:orientation="vertical" >
+
+    <View style="@style/view_line_1px" />
+
+    <View style="@style/view_line_15dp" />
+
+    <View style="@style/view_line_1px" />
+
+    <LinearLayout
+        style="@style/bg_fw"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/margin_bottom_15"
+        android:paddingTop="@dimen/margin_top_15" >
+
+        <LinearLayout
+            style="@style/bg_ww"
+            android:layout_marginLeft="@dimen/margin_left_30"
+            android:layout_marginRight="@dimen/margin_left_30"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/bg_ww"
+                android:layout_gravity="center"
+                android:text="98%"
+                android:textColor="@color/word_ff6633"
+                android:textSize="@dimen/text_size_24" />
+
+            <TextView
+                style="@style/bg_ww"
+                android:layout_gravity="center"
+                android:text="好评度"
+                android:textColor="@color/word_737373"
+                android:textSize="@dimen/text_size_16" />
+        </LinearLayout>
+
+        <View
+            style="@style/view_line_h45"
+            android:layout_gravity="center_vertical" />
+
+        <LinearLayout
+            style="@style/bg_ww"
+            android:layout_marginLeft="@dimen/margin_left_15"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                style="@style/bg_fw"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/bg_ww"
+                    android:layout_gravity="center"
+                    android:text="好评"
+                    android:textColor="@color/word_313131"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    style="@style/bg_ww"
+                    android:layout_gravity="center"
+                    android:text=":(98%)"
+                    android:textColor="@color/word_737373"
+                    android:textSize="@dimen/text_size_16" />
+
+                <ProgressBar
+                    android:layout_marginLeft="@dimen/margin_left"
+                    style="@style/StyleProgressBarMini"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/shape_progressbar_bg"
+                    android:max="100"
+                    android:progress="98" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/bg_fw"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/margin_top_10"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/bg_ww"
+                    android:layout_gravity="center"
+                    android:text="差评"
+                    android:textColor="@color/word_313131"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    style="@style/bg_ww"
+                    android:layout_gravity="center"
+                    android:text=":(2%)"
+                    android:textColor="@color/word_737373"
+                    android:textSize="@dimen/text_size_16" />
+
+                <ProgressBar
+                    android:layout_marginLeft="@dimen/margin_left"
+                    style="@style/StyleProgressBarMini"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/shape_progressbar_bg"
+                    android:max="100"
+                    android:progress="2" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View style="@style/view_line_1px" />
+
+    <View style="@style/view_line_15dp" />
+
+    <View style="@style/view_line_1px" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/margin_bottom_10"
+        android:paddingTop="@dimen/margin_top_10" >
+
+        <ImageView
+            style="@style/img_mall_list_item_sigin"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_left" />
+
+        <TextView
+            style="@style/bg_fw"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:text="上新12件商品,接下来看你的"
+            android:textColor="@color/word_313131"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            style="@style/bg_ww"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:text="2016-4-17 14:25"
+            android:textColor="@color/word_313131"
+            android:textSize="@dimen/text_size_16" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     style="@style/bg_fw"
+    android:background="@color/bg_white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/bg_fw"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/margin_bottom_15"
+        android:paddingTop="@dimen/margin_top_15" >
+
+        <TextView
+            style="@style/bg_ww"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:text="已绑定手机号"
+            android:textColor="@color/bg_black"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/txt_phone_number"
+            style="@style/bg_1w"
+            android:layout_marginLeft="@dimen/margin_left_20"
+            android:singleLine="true"
+            android:text="18729218605"
+            android:textColor="@color/bg_black"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/btn_send_code"
+            style="@style/bg_ww"
+            android:layout_marginLeft="@dimen/margin_bottom_10"
+            android:layout_marginRight="@dimen/margin_bottom_10"
+            android:background="@drawable/cancel_select_bg"
+            android:gravity="center"
+            android:paddingBottom="@dimen/margin_bottom_10"
+            android:paddingLeft="@dimen/margin_bottom_10"
+            android:paddingRight="@dimen/margin_bottom_10"
+            android:paddingTop="@dimen/margin_bottom_10"
+            android:text="发送验证码"
+            android:textColor="@color/word_blue_white"
+            android:textSize="@dimen/text_size_16" />
+    </LinearLayout>
+
+    <View
+         style="@style/view_line_1px" />
+
+    <EditText
+        android:id="@+id/edt_input_code"
+        style="@style/bg_fw"
+        android:layout_marginBottom="@dimen/margin_bottom_15"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginRight="@dimen/margin_right"
+        android:layout_marginTop="@dimen/margin_top_15"
+        android:background="@drawable/edittext_select"
+        android:hint="请输入短信中的验证码"
+        android:singleLine="true"
+        android:paddingBottom="@dimen/margin_top_15"
+        android:paddingLeft="@dimen/margin_left_5"
+        android:paddingTop="@dimen/margin_top_10" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/bg_hui3" />
+
+    <TextView
+        android:id="@+id/btn_next_step"
+        style="@style/bg_fw"
+        android:layout_marginBottom="@dimen/margin_bottom_20"
+        android:layout_marginLeft="@dimen/margin_bottom_10"
+        android:layout_marginRight="@dimen/margin_bottom_10"
+        android:layout_marginTop="@dimen/margin_bottom_10"
+        android:background="@drawable/cancel_select_bg"
+        android:gravity="center"
+        android:paddingBottom="@dimen/margin_bottom_10"
+        android:paddingTop="@dimen/margin_bottom_10"
+        android:text="下一步"
+        android:textColor="@color/word_blue_white"
+        android:textSize="@dimen/text_size_16" />
+
+</LinearLayout>

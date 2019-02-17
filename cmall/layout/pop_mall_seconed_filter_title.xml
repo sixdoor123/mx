@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/bg_ff" >
+
+    <TextView
+        android:id="@+id/btn_cancel"
+        style="@style/bg_ww"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/margin_left"
+        android:text="取消"
+        android:textColor="@color/word_hui1_croci"
+        android:textSize="@dimen/text_size_16" />
+
+    <TextView
+        android:id="@+id/txt_category_name"
+        style="@style/bg_ww"
+        android:layout_centerInParent="true"
+        android:text="筛选"
+        android:textColor="@color/word_313131"
+        android:textSize="@dimen/text_size_18" />
+
+    <TextView
+        android:id="@+id/btn_sure"
+        style="@style/bg_ww"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/margin_left"
+        android:text="确定"
+        android:textColor="@color/word_hui1_croci"
+        android:textSize="@dimen/text_size_16" />
+
+</RelativeLayout>

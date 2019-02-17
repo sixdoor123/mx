@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/lin_num"
+        style="@style/bg_fw_all"
+        android:background="@drawable/bg_shuibo"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/bg_ww"
+            android:layout_marginRight="@dimen/margin_right"
+            android:text="意向编号："
+            android:textColor="@color/bg_black"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/tv_attention_id"
+            style="@style/bg_1w"
+            android:text=""
+            android:textColor="@color/bg_black"
+            android:textSize="@dimen/text_size_16" />
+
+        <ImageView
+            android:id="@+id/img_icon_right"
+            style="@style/bg_ww"
+            android:background="@drawable/right_arrow" />
+    </LinearLayout>
+
+    <View style="@style/view_line_1px" />
+
+</LinearLayout>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/margin_left"
+    android:paddingTop="@dimen/margin_top_15"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/bg_fw"
+        android:layout_marginBottom="@dimen/margin_bottom_10"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/pur_company_name"
+            style="@style/bg_ww"
+            android:layout_marginRight="@dimen/margin_right"
+            android:text="商家:"
+            android:textColor="@color/bg_hui1"
+            android:textSize="@dimen/text_size_15" />
+
+        <TextView
+            android:id="@+id/tv_merchact_name"
+            style="@style/bg_ww"
+            android:layout_marginRight="@dimen/margin_right"
+            android:text=""
+            android:textColor="@color/bg_hui1"
+            android:textSize="@dimen/text_size_15" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/bg_fw"
+        android:layout_marginBottom="@dimen/margin_bottom_10"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/bg_ww"
+            android:layout_marginRight="@dimen/margin_right"
+            android:text="分类:"
+            android:textColor="@color/bg_hui1"
+            android:textSize="@dimen/text_size_15" />
+
+        <TextView
+            android:id="@+id/tv_category"
+            style="@style/bg_ww"
+            android:text=""
+            android:textColor="@color/bg_hui1"
+            android:textSize="@dimen/text_size_15" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/bg_fw"
+        android:layout_marginBottom="@dimen/margin_bottom_10"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/bg_ww"
+            android:layout_marginRight="@dimen/margin_right"
+            android:text="品牌:"
+            android:textColor="@color/bg_hui1"
+            android:textSize="@dimen/text_size_15" />
+
+        <TextView
+            android:id="@+id/tv_brand"
+            style="@style/bg_ww"
+            android:text=""
+            android:textColor="@color/bg_hui1"
+            android:textSize="@dimen/text_size_15" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/bg_fw"
+        android:layout_marginBottom="@dimen/margin_bottom_10"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/bg_ww"
+            android:layout_marginRight="@dimen/margin_right"
+            android:text="数量:"
+            android:textColor="@color/bg_hui1"
+            android:textSize="@dimen/text_size_15" />
+
+        <TextView
+            android:id="@+id/tv_weight"
+            style="@style/bg_ww"
+            android:text=""
+            android:textColor="@color/bg_hui1"
+            android:textSize="@dimen/text_size_15" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/bg_fw"
+        android:layout_marginBottom="@dimen/margin_bottom_10"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/bg_ww"
+            android:layout_marginRight="@dimen/margin_right"
+            android:text="单价:"
+            android:textColor="@color/bg_hui1"
+            android:textSize="@dimen/text_size_15" />
+
+        <TextView
+            android:id="@+id/tv_price"
+            style="@style/bg_ww"
+            android:text=""
+            android:textColor="@color/bg_hui1"
+            android:textSize="@dimen/text_size_15" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/bg_fw"
+        android:layout_marginBottom="@dimen/margin_bottom_10"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/bg_ww"
+            android:layout_marginRight="@dimen/margin_right"
+            android:text="预付金额:"
+            android:textColor="@color/bg_hui1"
+            android:textSize="@dimen/text_size_15" />
+
+        <TextView
+            android:id="@+id/tv_pre_price"
+            style="@style/bg_ww"
+            android:text=""
+            android:textColor="@color/bg_buyer"
+            android:textSize="@dimen/text_size_15" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/bg_fw"
+        android:layout_marginBottom="@dimen/margin_bottom_10"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/bg_ww"
+            android:layout_marginRight="@dimen/margin_right"
+            android:text="总金额:"
+            android:textColor="@color/bg_hui1"
+            android:textSize="@dimen/text_size_15" />
+
+        <TextView
+            android:id="@+id/tv_all_price"
+            style="@style/bg_ww"
+            android:text=""
+            android:textColor="@color/bg_buyer"
+            android:textSize="@dimen/text_size_15" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/bg_fw"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/bg_ww"
+            android:layout_marginRight="@dimen/margin_right"
+            android:text="状态:"
+            android:textColor="@color/bg_hui1"
+            android:textSize="@dimen/text_size_15" />
+
+        <TextView
+            android:id="@+id/tv_state"
+            style="@style/bg_ww"
+            android:text=""
+            android:textColor="@color/bg_hui1"
+            android:textSize="@dimen/text_size_15" />
+    </LinearLayout>
+
+</LinearLayout>

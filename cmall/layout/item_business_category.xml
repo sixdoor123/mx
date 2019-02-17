@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/bg_fw"
+    android:background="@drawable/selector_mall_item_pop"
+    android:paddingBottom="@dimen/margin_bottom_15"
+    android:paddingTop="@dimen/margin_top_15" >
+
+    <TextView
+        android:id="@+id/item"
+        style="@style/bg_fw"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:textColor="@color/word_313131" />
+
+</LinearLayout>

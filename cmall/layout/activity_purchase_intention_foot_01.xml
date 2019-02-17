@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/bg_ff"
+    android:background="@color/bg_white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/btn_sure_purchase_order_copy"
+        style="@style/bg_fw"
+         android:layout_marginTop="@dimen/margin_left_15"
+        android:layout_marginLeft="@dimen/margin_bottom_10"
+        android:layout_marginRight="@dimen/margin_bottom_10"
+        android:background="@drawable/submit_select_bg"
+        android:gravity="center"
+        android:paddingBottom="@dimen/margin_bottom_10"
+        android:paddingTop="@dimen/margin_bottom_10"
+        android:text="确认采购意向单"
+        android:textColor="@color/word_croci_white"
+        android:textSize="@dimen/text_size_16" />
+
+    <TextView
+        android:id="@+id/btn_cancel_purchase_order_copy"
+        style="@style/bg_fw"
+        android:layout_marginLeft="@dimen/margin_bottom_10"
+        android:layout_marginRight="@dimen/margin_bottom_10"
+        android:layout_marginTop="@dimen/margin_left_15"
+        android:background="@drawable/cancel_select_bg"
+        android:gravity="center"
+        android:paddingBottom="@dimen/margin_bottom_10"
+        android:paddingTop="@dimen/margin_bottom_10"
+        android:text="取消采购意向单"
+        android:textColor="@color/word_blue_white"
+        android:textSize="@dimen/text_size_16" />
+
+    <TextView
+        android:id="@+id/btn_commit_purchase_order_copy"
+        style="@style/bg_fw"
+        android:layout_marginTop="@dimen/margin_left_15"
+        android:layout_marginLeft="@dimen/margin_bottom_10"
+        android:layout_marginRight="@dimen/margin_bottom_10"
+        android:background="@drawable/xiadan_select_bg"
+        android:gravity="center"
+        android:paddingBottom="@dimen/margin_bottom_10"
+        android:paddingTop="@dimen/margin_bottom_10"
+        android:text="下单"
+        android:textColor="@color/word_white_croci"
+        android:textSize="@dimen/text_size_16" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+</LinearLayout>

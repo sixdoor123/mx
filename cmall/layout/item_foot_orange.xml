@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/btn_empty"
+        style="@style/bg_fw"
+        android:layout_marginTop="@dimen/margin_top_15"
+        android:layout_marginBottom="@dimen/margin_bottom_15"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginRight="@dimen/margin_right"
+        android:background="@drawable/submit_select_bg"
+        android:gravity="center"
+        android:padding="@dimen/margin_bottom_10"
+        android:text="清空历史记录"
+        android:textColor="@color/word_croci_white"
+        android:textSize="@dimen/text_size_15" />
+
+</LinearLayout>

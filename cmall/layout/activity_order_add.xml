@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/add_purchase_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    android:orientation="vertical"
+    android:visibility="gone" >
+
+    <TableRow
+        android:id="@+id/trb_contact_city"
+        style="@style/bg_fw_all"
+        android:background="@drawable/bg_shuibo" >
+
+        <TextView
+            style="@style/bg_ww"
+            android:gravity="right"
+            android:paddingRight="@dimen/margin_right"
+            android:text="联系人城市"
+            android:textColor="@color/bg_black"
+            android:textSize="@dimen/text_size_15" />
+
+        <TextView
+            android:id="@+id/tv_contact_city"
+            style="@style/bg_1w"
+            android:drawableRight="@drawable/right_arrow"
+            android:gravity="end"
+            android:text="请选择"
+            android:textColor="@color/bg_hui1"
+            android:textSize="@dimen/text_size_15" />
+    </TableRow>
+
+    <View style="@style/view_line_1px" />
+
+    <TableRow
+        style="@style/bg_fw"
+        android:padding="@dimen/margin_top_10" >
+
+        <TextView
+            style="@style/bg_ww"
+            android:gravity="right"
+            android:paddingRight="@dimen/margin_right"
+            android:text="详细地址"
+            android:textColor="@color/bg_black"
+            android:textSize="@dimen/text_size_15" />
+
+        <EditText
+            android:id="@+id/edt_end_detail_address"
+            style="@style/sty_edit_text"
+            android:background="@drawable/edittext_select"
+            android:hint="请输入详细地址"
+            android:maxLength="30"
+            android:singleLine="true"
+            android:textColor="@color/bg_hui1" />
+    </TableRow>
+
+    <View style="@style/view_line_1px" />
+
+    <TableRow
+        android:id="@+id/trb_classify"
+        style="@style/bg_fw_all"
+        android:background="@drawable/bg_shuibo" >
+
+        <TextView
+            style="@style/bg_ww"
+            android:gravity="right"
+            android:paddingRight="@dimen/margin_right"
+            android:text="分类"
+            android:textColor="@color/bg_black"
+            android:textSize="@dimen/text_size_15" />
+
+        <TextView
+            android:id="@+id/tv_classify"
+            style="@style/bg_1w"
+            android:drawableRight="@drawable/right_arrow"
+            android:gravity="end"
+            android:text="请选择"
+            android:textColor="@color/bg_hui1"
+            android:textSize="@dimen/text_size_15" />
+    </TableRow>
+
+    <View style="@style/view_line_1px" />
+
+    <TableRow
+        android:id="@+id/trb_delivery_di"
+        style="@style/bg_fw_all"
+        android:background="@drawable/bg_shuibo" >
+
+        <TextView
+            style="@style/bg_ww"
+            android:gravity="right"
+            android:paddingRight="@dimen/margin_right"
+            android:text="交割地"
+            android:textColor="@color/bg_black"
+            android:textSize="@dimen/text_size_15" />
+
+        <TextView
+            android:id="@+id/tv_devilate_di"
+            style="@style/bg_1w"
+            android:drawableRight="@drawable/right_arrow"
+            android:gravity="end"
+            android:text="请选择"
+            android:textColor="@color/bg_hui1"
+            android:textSize="@dimen/text_size_15" />
+    </TableRow>
+
+    <View style="@style/view_line_1px" />
+
+    <TableRow
+        android:id="@+id/trb_Place"
+        style="@style/bg_fw_all"
+        android:background="@drawable/bg_shuibo" >
+
+        <TextView
+            style="@style/bg_ww"
+            android:gravity="right"
+            android:paddingRight="@dimen/margin_right"
+            android:text="产地"
+            android:textColor="@color/bg_black"
+            android:textSize="@dimen/text_size_15" />
+
+        <TextView
+            android:id="@+id/tv_place"
+            style="@style/bg_1w"
+            android:drawableRight="@drawable/right_arrow"
+            android:gravity="end"
+            android:text="请选择"
+            android:textColor="@color/bg_hui1"
+            android:textSize="@dimen/text_size_15" />
+    </TableRow>
+
+    <View style="@style/view_line_1px" />
+
+    <TableRow
+        android:id="@+id/trb_variety"
+        style="@style/bg_fw_all"
+        android:background="@drawable/bg_shuibo" >
+
+        <TextView
+            style="@style/bg_ww"
+            android:gravity="right"
+            android:paddingRight="@dimen/margin_right"
+            android:text="品牌"
+            android:textColor="@color/bg_black"
+            android:textSize="@dimen/text_size_15" />
+
+        <EditText
+            android:id="@+id/tv_variety"
+            style="@style/sty_edit_text"
+            android:background="@drawable/edittext_select"
+            android:hint="请输入品牌"
+            android:singleLine="true"
+            android:maxLength="50"
+            android:textColor="@color/bg_hui1" />
+    </TableRow>
+
+    <View style="@style/view_line_1px" />
+
+    <TableRow
+        style="@style/bg_fw"
+        android:padding="@dimen/margin_top_10" >
+
+        <TextView
+            style="@style/bg_ww"
+            android:gravity="right"
+            android:paddingRight="@dimen/margin_right"
+            android:text="数量"
+            android:textColor="@color/bg_black"
+            android:textSize="@dimen/text_size_15" />
+
+        <EditText
+            android:id="@+id/et_weight"
+            style="@style/sty_edit_text"
+            android:background="@drawable/edittext_select"
+            android:hint="最大值为9999999"
+            android:singleLine="true"
+            android:layout_marginRight="@dimen/margin_right"
+            android:inputType="number"
+            android:textColor="@color/bg_hui1" />
+        <TextView
+            style="@style/bg_ww"
+            android:text="吨"
+            android:textColor="@color/bg_hui1"
+            android:textSize="@dimen/text_size_15" />
+    </TableRow>
+
+    <View style="@style/view_line_1px" />
+
+    <TableRow
+        style="@style/bg_fw"
+        android:padding="@dimen/margin_top_10" >
+
+        <TextView
+            android:id="@+id/tv_price"
+            style="@style/bg_ww"
+            android:gravity="right"
+            android:paddingRight="@dimen/margin_right"
+            android:text="价格"
+            android:textColor="@color/bg_black"
+            android:textSize="@dimen/text_size_15" />
+
+        <EditText
+            android:id="@+id/et_price"
+            style="@style/sty_edit_text"
+            android:background="@drawable/edittext_select"
+            android:hint="最大值为99999.99"
+            android:singleLine="true"
+            android:layout_marginRight="@dimen/margin_right"
+            android:inputType="numberDecimal"
+            android:textColor="@color/bg_hui1" />
+        <TextView
+            style="@style/bg_ww"
+            android:text="元/吨"
+            android:textColor="@color/bg_hui1"
+            android:textSize="@dimen/text_size_15" />
+    </TableRow>
+
+    <View style="@style/view_line_1px" />
+
+</TableLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/bg_fw"
+    android:background="@color/bg_white"
+    android:orientation="vertical" >
+
+    <View style="@style/view_line_1dp" />
+
+    <TextView
+        android:id="@+id/btn_commit"
+        style="@style/bg_fw"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginRight="@dimen/margin_right"
+        android:layout_marginTop="@dimen/margin_top_15"
+        android:background="@drawable/xiadan_select_bg"
+        android:gravity="center"
+        android:paddingBottom="@dimen/margin_bottom_10"
+        android:paddingTop="@dimen/margin_bottom_10"
+        android:text="去支付"
+        android:textColor="@color/word_white_croci"
+        android:textSize="@dimen/text_size_16" />
+
+    <TextView
+        android:id="@+id/btn_cancel_form"
+        style="@style/bg_fw"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginRight="@dimen/margin_right"
+        android:layout_marginTop="@dimen/margin_bottom_15"
+        android:background="@drawable/cancel_select_bg"
+        android:gravity="center"
+        android:paddingBottom="@dimen/margin_bottom_10"
+        android:paddingTop="@dimen/margin_bottom_10"
+        android:text="取消订单"
+        android:textColor="@color/word_blue_white"
+        android:textSize="@dimen/text_size_16" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="@color/bg_white" /><View
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="@color/bg_white" />
+
+</LinearLayout>

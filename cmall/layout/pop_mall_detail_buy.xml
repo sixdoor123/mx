@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/bg_ff"
+    android:background="@color/bg_white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/bg_ff"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            style="@style/bg_fw"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/margin_bottom_10"
+            android:paddingTop="@dimen/margin_top_10" >
+
+            <ImageView
+                style="@style/img_test_mall_detail_pop_conver"
+                android:layout_marginLeft="@dimen/margin_left" />
+
+            <LinearLayout
+                style="@style/bg_fw"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_marginRight="@dimen/margin_right"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/pro_price"
+                    style="@style/bg_ww"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:text="@string/pop_price"
+                    android:textColor="@color/word_ff6633"
+                    android:textSize="@dimen/text_size_18" />
+
+                <TextView
+                    android:id="@+id/product_name"
+                    style="@style/bg_ww"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:text=""
+                    android:textColor="@color/word_737373"
+                    android:textSize="@dimen/text_size_18" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View style="@style/view_line_1px" />
+
+        <LinearLayout
+            android:id="@+id/mall_detail_buy_grid_group"
+            style="@style/bg_fw"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/bg_fw"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/margin_top_15" >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="28dp"
+                android:gravity="center"
+                android:text="数量"
+                android:textSize="@dimen/text_size_16" />
+
+            <com.baiyi.cmall.activities.main.mall.views.BuyNumView
+                android:id="@+id/layout_buynum"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            style="@style/bg_fw"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/margin_top_15" >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="28dp"
+                android:gravity="center"
+                android:text="库存"
+                android:textSize="@dimen/text_size_16" />
+
+            <TextView
+                android:id="@+id/txt_inventory"
+                android:textColor="@color/bg_buyer"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/bg_fw"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_mall_detail_menu_buy_shoppingcar"
+            style="@style/bg_ff"
+            android:layout_weight="1"
+            android:background="#ec6f1d"
+            android:gravity="center"
+            android:paddingBottom="@dimen/margin_bottom_10"
+            android:paddingTop="@dimen/margin_top_10"
+            android:text="加入购物车"
+            android:textColor="@color/bg_white"
+            android:textSize="@dimen/text_size_16" />
+
+        <Button
+            android:id="@+id/btn_mall_detail_menu_buy"
+            style="@style/bg_ff"
+            android:layout_weight="1"
+            android:background="#ee461f"
+            android:gravity="center"
+            android:paddingBottom="@dimen/margin_bottom_10"
+            android:paddingTop="@dimen/margin_top_10"
+            android:text="立即购买"
+            android:textColor="@color/bg_white"
+            android:textSize="@dimen/text_size_16" />
+    </LinearLayout>
+
+</LinearLayout>

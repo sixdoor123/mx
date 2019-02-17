@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/bg_fw"
+        android:layout_marginBottom="@dimen/margin_bottom_15"
+        android:layout_marginTop="@dimen/margin_top_15"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            style="@style/bg_ww"
+            android:src="@drawable/complete" />
+
+        <TextView
+            android:id="@+id/txt_success_info"
+            style="@style/bg_ww"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginRight="@dimen/margin_right"
+            android:layout_marginTop="@dimen/margin_top_10"
+            android:singleLine="true"
+            android:text="158******123注册账户成功"
+            android:textColor="@color/bg_hui1"
+            android:textSize="@dimen/text_size_15" />
+    </LinearLayout>
+
+    <View style="@style/view_line_15dp" />
+
+    <EditText
+        android:id="@+id/edt_member_name"
+        style="@style/bg_fw"
+        android:layout_marginBottom="@dimen/margin_bottom_15"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginRight="@dimen/margin_right"
+        android:layout_marginTop="@dimen/margin_top_15"
+        android:drawableLeft="@drawable/account"
+        android:hint="请输入你设置的会员名" />
+
+    <View style="@style/view_line_1px" />
+
+    <LinearLayout
+        style="@style/bg_fw"
+        android:layout_marginBottom="@dimen/margin_bottom_15"
+        android:layout_marginTop="@dimen/margin_top_15"
+        android:orientation="horizontal" >
+
+        <ImageView
+            style="@style/bg_ww"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:src="@drawable/prompt" />
+
+        <TextView
+            style="@style/bg_ww"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginRight="@dimen/margin_right"
+            android:singleLine="true"
+            android:text="提示"
+            android:textColor="@color/bg_hui1"
+            android:textSize="@dimen/text_size_15" />
+    </LinearLayout>
+
+    <View style="@style/view_line_1px" />
+
+    <LinearLayout
+        style="@style/bg_fw"
+        android:layout_marginBottom="@dimen/margin_bottom_15"
+        android:layout_marginTop="@dimen/margin_top_15"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/bg_ww"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginRight="@dimen/margin_right"
+            android:singleLine="true"
+            android:text="1、"
+            android:textColor="@color/bg_hui1"
+            android:textSize="@dimen/text_size_15" />
+
+        <TextView
+            style="@style/bg_ww"
+            android:lineSpacingExtra="10dp"
+            android:layout_marginRight="@dimen/margin_right"
+            android:text="为了管理账户的便利，以及确保账户、积分的安全，请设置你的会员名。"
+            android:textColor="@color/bg_hui1"
+            android:textSize="@dimen/text_size_15" />
+    </LinearLayout>
+
+    <View style="@style/view_line_1px" />
+
+    <LinearLayout
+        style="@style/bg_fw"
+        android:layout_marginBottom="@dimen/margin_bottom_15"
+        android:layout_marginTop="@dimen/margin_top_15"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/bg_ww"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginRight="@dimen/margin_right"
+            android:singleLine="true"
+            android:text="2、"
+            android:textColor="@color/bg_hui1"
+            android:textSize="@dimen/text_size_15" />
+
+        <TextView
+            android:lineSpacingExtra="10dp"
+            style="@style/bg_ww"
+            android:layout_marginRight="@dimen/margin_right"
+            android:text="设置会员名的机会只有一次，一旦完成，不可再更改。"
+            android:textColor="@color/bg_hui1"
+            android:textSize="@dimen/text_size_15" />
+    </LinearLayout>
+
+    <View style="@style/view_line_1px" />
+
+    <LinearLayout
+        style="@style/bg_fw"
+        android:layout_marginBottom="@dimen/margin_bottom_15"
+        android:layout_marginTop="@dimen/margin_top_15"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/bg_ww"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginRight="@dimen/margin_right"
+            android:singleLine="true"
+            android:text="3、"
+            android:textColor="@color/bg_hui1"
+            android:textSize="@dimen/text_size_15" />
+
+        <TextView
+            android:lineSpacingExtra="10dp"
+            style="@style/bg_ww"
+            android:layout_marginRight="@dimen/margin_right"
+            android:text="会员名可直接用于登录。"
+            android:textColor="@color/bg_hui1"
+            android:textSize="@dimen/text_size_15" />
+    </LinearLayout>
+
+    <View style="@style/view_line_1px" />
+
+    <LinearLayout
+        style="@style/bg_fw"
+        android:layout_marginBottom="@dimen/margin_bottom_15"
+        android:layout_marginTop="@dimen/margin_top_15"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/bg_ww"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginRight="@dimen/margin_right"
+            android:singleLine="true"
+            android:text="4、"
+            android:textColor="@color/bg_hui1"
+            android:textSize="@dimen/text_size_15" />
+
+        <TextView
+            android:lineSpacingExtra="10dp"
+            style="@style/bg_ww"
+            android:layout_marginRight="@dimen/margin_right"
+            android:text="设置会员名请使用6-25个字符，推荐使用8个字符或者4个汉子以上，不能全部位数字。"
+            android:textColor="@color/bg_hui1"
+            android:textSize="@dimen/text_size_15" />
+    </LinearLayout>
+
+    <View style="@style/view_line_1px" />
+
+</LinearLayout>

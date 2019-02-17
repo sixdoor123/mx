@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lin_item"
+    style="@style/bg_fw"
+    android:background="@drawable/listview_bg_selector"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/bg_fw"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/margin_bottom_10"
+        android:paddingTop="@dimen/margin_top_15" >
+
+        <TextView
+            android:id="@+id/news_title"
+            style="@style/bg_ww"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:text="聚焦365"
+            android:textColor="@color/msg_item_color"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/news_time"
+            style="@style/bg_ww"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/margin_right"
+            android:singleLine="true"
+            android:text="2015-04-18 15:20"
+            android:textColor="@color/bg_black"
+            android:textSize="@dimen/text_size_16" />
+    </LinearLayout>
+
+    <View
+        style="@style/view_line_1px" />
+
+    <TextView
+        android:id="@+id/news_content"
+        style="@style/bg_fw"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginRight="@dimen/margin_right"
+        android:lineSpacingExtra="@dimen/spacin_text"
+        android:paddingBottom="@dimen/margin_bottom_15"
+        android:paddingTop="@dimen/margin_top_10"
+        android:text="的呼声骄傲地的睡觉全：666332233，觉得还睡觉啊黄的睡觉奥会的呼声金卡还得健身卡哈的健身卡"
+        android:textColor="@color/msg_content_color"
+        android:textSize="@dimen/text_size_15" />
+
+    <View
+        style="@style/view_line_1px" />
+
+    <View
+        style="@style/view_line_15dp" />
+
+</LinearLayout>

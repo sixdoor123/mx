@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_sub_all_title"
+    style="@style/bg_ff"
+    android:background="@drawable/listview_bg_selector"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_my_information_item"
+        style="@style/bg_fw"
+        android:background="@drawable/bg_shuibo"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/margin_bottom_15"
+        android:paddingTop="@dimen/margin_top_15"
+        android:visibility="gone" >
+
+        <ImageView
+            style="@style/bg_ww"
+            android:paddingLeft="@dimen/margin_left"
+            android:src="@drawable/news" />
+
+        <TextView
+            style="@style/bg_ww"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:text="我的消息"
+            android:textColor="@color/bg_black"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/txt_information_number"
+            style="@style/bg_1w"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:text="@string/main_title_num"
+            android:textColor="@color/bg_hui1"
+            android:textSize="@dimen/text_size_16"
+            android:visibility="invisible" />
+
+        <ImageView
+            style="@style/bg_ww"
+            android:layout_marginRight="@dimen/margin_right"
+            android:src="@drawable/right_arrow" />
+    </LinearLayout>
+
+    <View
+        style="@style/view_line_1dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/ll_help_item"
+        style="@style/bg_fw"
+        android:background="@drawable/bg_shuibo"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/margin_bottom_15"
+        android:paddingLeft="@dimen/margin_left"
+        android:paddingTop="@dimen/margin_top_15" >
+
+        <ImageView
+            style="@style/bg_ww"
+            android:src="@drawable/user_help" />
+
+        <TextView
+            style="@style/bg_1w"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:text="帮助中心"
+            android:textColor="@color/bg_black"
+            android:textSize="@dimen/text_size_16" />
+
+        <ImageView
+            style="@style/bg_ww"
+            android:layout_marginRight="@dimen/margin_right"
+            android:src="@drawable/right_arrow" />
+    </LinearLayout>
+
+    <View style="@style/view_line_1dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_other_item"
+        style="@style/bg_fw"
+        android:background="@drawable/bg_shuibo"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/margin_bottom_15"
+        android:paddingLeft="@dimen/margin_left"
+        android:paddingTop="@dimen/margin_top_15" >
+
+        <ImageView
+            style="@style/bg_ww"
+            android:src="@drawable/user_other" />
+
+        <TextView
+            style="@style/bg_1w"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:text="其他"
+            android:textColor="@color/bg_black"
+            android:textSize="@dimen/text_size_16" />
+
+        <ImageView
+            style="@style/bg_ww"
+            android:layout_marginRight="@dimen/margin_right"
+            android:src="@drawable/right_arrow" />
+    </LinearLayout>
+
+    <View
+        style="@style/view_line_1dp"
+        android:layout_marginBottom="@dimen/margin_bottom_15" />
+
+</LinearLayout>

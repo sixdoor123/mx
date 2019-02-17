@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_pur_add"
+    style="@style/bg_ff"
+    android:background="@color/bg_white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_provider_info"
+        style="@style/bg_fw"
+        android:background="@drawable/bg_shuibo"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            style="@style/bg_ww"
+            android:paddingLeft="@dimen/margin_left"
+            android:src="@drawable/procurement" />
+
+        <TextView
+            style="@style/bg_1w"
+            android:button="@null"
+            android:paddingBottom="@dimen/margin_bottom_15"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:paddingTop="@dimen/margin_bottom_15"
+            android:text="采购信息"
+            android:textColor="@color/bg_black"
+            android:textSize="@dimen/text_size_16" />
+
+        <ImageView
+            android:id="@+id/img_provider_up_down"
+            style="@style/bg_ww"
+            android:paddingRight="@dimen/margin_right"
+            android:src="@drawable/down_arrow" />
+    </LinearLayout>
+
+    <View style="@style/view_line_1px" />
+
+</LinearLayout>

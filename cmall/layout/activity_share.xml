@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <GridView
+        android:layout_marginTop="@dimen/margin_top_15"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginRight="@dimen/margin_right"
+        android:id="@+id/gd_share"
+        android:clipToPadding="true"
+        style="@style/bg_ff"
+        android:numColumns="4" >
+    </GridView>
+
+</RelativeLayout>

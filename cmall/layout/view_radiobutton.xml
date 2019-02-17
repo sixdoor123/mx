@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioButton xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rb_mall_menu"
+    style="@style/bg_ww"
+    android:layout_gravity="center"
+    android:background="@drawable/selector_mall_category_menu"
+    android:button="@null"
+    android:gravity="center"
+    android:textColor="@color/word_gray_green" />

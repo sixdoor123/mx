@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/bg_fw"
+    android:background="@drawable/bg_shuibo"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_zixun_title"
+        style="@style/bg_ww"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginRight="@dimen/margin_right"
+        android:paddingTop="@dimen/margin_bottom_15"
+        android:text="标题"
+        android:textColor="@color/bg_black"
+        android:textSize="@dimen/text_size_15" />
+
+    <LinearLayout
+        style="@style/bg_fw"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/margin_bottom_15"
+        android:paddingTop="@dimen/margin_top_10" >
+
+        <TextView
+            android:id="@+id/tv_zixun_type"
+            style="@style/bg_1w"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:singleLine="true"
+            android:text="腾讯新闻"
+            android:textColor="@color/bg_hui1"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/tv_zixun_name"
+            style="@style/bg_1w"
+            android:layout_marginLeft="@dimen/margin_left_20"
+            android:singleLine="true"
+            android:text="张某某"
+            android:gravity="center"
+            android:textColor="@color/bg_hui1"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/tv_zixun_time"
+            style="@style/bg_1w"
+            android:layout_marginLeft="@dimen/margin_left_20"
+            android:layout_marginRight="@dimen/margin_right"
+            android:singleLine="true"
+            android:text="2015—04—26"
+            android:textColor="@color/bg_hui1"
+            android:textSize="@dimen/text_size_14" />
+    </LinearLayout>
+
+    <View style="@style/view_line_1px" />
+
+</LinearLayout>

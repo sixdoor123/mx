@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/bg_ff"
+    android:background="@color/bg_white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/bg_fw"
+        android:gravity="center"
+        android:orientation="vertical" >
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="@dimen/margin_bottom_20"
+            android:src="@drawable/complete" />
+
+        <TextView
+            android:id="@+id/tv_success_hint"
+            android:textColor="@color/bg_hui1"
+             android:layout_marginTop="@dimen/margin_bottom_10"
+            style="@style/bg_ww"
+            android:text="供应委托成功"
+            android:layout_marginBottom="@dimen/margin_bottom_20"
+            android:textSize="@dimen/text_size_16" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="@color/bg_line1_color" />
+
+    <TextView
+        android:id="@+id/btn_success_back"
+        style="@style/bg_fw"
+        android:layout_marginLeft="@dimen/margin_bottom_10"
+        android:layout_marginRight="@dimen/margin_bottom_10"
+        android:layout_marginTop="@dimen/margin_bottom_15"
+        android:background="@drawable/cancel_select_bg"
+        android:gravity="center"
+        android:paddingBottom="@dimen/margin_bottom_10"
+        android:paddingTop="@dimen/margin_bottom_10"
+        android:text="返回供应列表"
+        android:textColor="@color/word_blue_white"
+        android:textSize="@dimen/text_size_16" />
+
+</LinearLayout>

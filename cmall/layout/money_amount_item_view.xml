@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/margin_bottom_15"
+        android:paddingTop="@dimen/margin_top_15" >
+
+        <TextView
+            style="@style/bg_ww"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:text="实付款: "
+            android:textColor="@color/bg_hui1"
+            android:textSize="@dimen/text_size_15" />
+
+        <TextView
+            android:id="@+id/txt_pay_amount"
+            style="@style/bg_ww"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:text="¥ 123.00"
+            android:textColor="@color/bg_buyer"
+            android:textSize="@dimen/text_size_15" />
+    </LinearLayout>
+
+    <View style="@style/view_line_15dp" />
+
+</LinearLayout>

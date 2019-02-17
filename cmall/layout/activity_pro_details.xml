@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/bg_ff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/bg_fw"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_high_45" >
+
+            <RadioGroup
+                android:id="@+id/collect_group"
+                style="@style/bg_fw"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/provider_collection"
+                    style="@style/bg_ww"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="关注的采购 "
+                    android:textColor="@color/word_red_gray" />
+
+                <RadioButton
+                    android:id="@+id/purchase_collection"
+                    style="@style/bg_ww"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="关注的供应"
+                    android:textColor="@color/word_red_gray" />
+
+               
+            </RadioGroup>
+
+            <RelativeLayout
+                style="@style/bg_fw"
+                android:layout_alignParentBottom="@+id/collect_group" >
+
+                <ImageView
+                    android:id="@+id/view"
+                    style="@style/bg_fw"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/radiobutton_line" />
+
+                <LinearLayout
+                    style="@style/bg_fw"
+                    android:orientation="horizontal"
+                    android:layout_alignParentBottom="true" >
+
+                    <ImageView
+                        android:id="@+id/provider_choose"
+                        style="@style/bg_ww"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1"
+                        android:src="@drawable/icon_radiobutton_select"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:id="@+id/purchase_choose"
+                        style="@style/bg_ww"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1"
+                        android:src="@drawable/icon_radiobutton_select"
+                         android:visibility="invisible" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <com.baiyi.cmall.pageviews.MyViewPager
+            android:id="@+id/vp_collection"
+            style="@style/bg_f1" >
+        </com.baiyi.cmall.pageviews.MyViewPager>
+        
+       <LinearLayout style="@style/bg_fw"
+           android:orientation="vertical"
+           android:id="@+id/ll_add_button">
+           
+       </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

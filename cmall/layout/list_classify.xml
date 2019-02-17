@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.baiyi.cmall.views.pulldownview.PullToRefreshListView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lst_classify_price"
+    style="@style/bg_ff"
+    android:background="@color/bg_white"
+    android:divider="@color/bg_line1_color"
+    android:dividerHeight="15dp" >
+
+</com.baiyi.cmall.views.pulldownview.PullToRefreshListView>

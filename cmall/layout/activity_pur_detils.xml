@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.baiyi.cmall.views.pulldownview.PullToRefreshListView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lst_in_details"
+    style="@style/bg_fw"
+    android:divider="@color/bg_white"
+    android:focusable="false"
+    android:listSelector="@android:color/transparent"
+    android:scrollbars="none" >
+
+</com.baiyi.cmall.views.pulldownview.PullToRefreshListView>

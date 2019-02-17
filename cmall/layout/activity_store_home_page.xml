@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <com.baiyi.cmall.activities.main.store.MultiListView
+        android:id="@+id/lst_first_classies"
+        style="@style/bg_ww"
+        android:dividerHeight="1px"
+        android:divider="@color/bg_hui3"
+        android:layout_marginRight="5dp"
+        android:layout_weight="5" >
+    </com.baiyi.cmall.activities.main.store.MultiListView>
+
+    <ScrollView
+        style="@style/bg_ww"
+        android:fillViewport="true"
+        android:layout_weight="2" >
+
+        <LinearLayout
+            style="@style/bg_ww"
+            android:orientation="vertical" >
+
+            <include layout="@layout/activity_circle_indicator" />
+
+            <com.baiyi.cmall.activities.main.store.MultiGridView
+                android:id="@+id/gv_store_second_classies"
+                style="@style/bg_ff"
+                android:layout_width="match_parent"
+                android:numColumns="3" >
+            </com.baiyi.cmall.activities.main.store.MultiGridView>
+
+            <TextView
+                style="@style/bg_fw_all"
+                android:text="热销产品"
+                android:textColor="@color/bg_buyer"
+                android:textSize="@dimen/text_size_16" />
+
+            <com.baiyi.cmall.activities.main.store.MultiGridView
+                android:id="@+id/gv_store_goods_list"
+                style="@style/bg_ff"
+                android:numColumns="3" >
+            </com.baiyi.cmall.activities.main.store.MultiGridView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

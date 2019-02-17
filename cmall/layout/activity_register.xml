@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+         android:singleLine="true"
+        android:id="@+id/edt_phone_number"
+        style="@style/bg_fw"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginRight="@dimen/margin_right"
+        android:layout_marginTop="@dimen/margin_top_15"
+        android:drawableLeft="@drawable/phone"
+        android:hint="请输入你的手机号" />
+
+    <LinearLayout
+        style="@style/bg_fw"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/edt_phone_code"
+            style="@style/bg_1w"
+             android:singleLine="true"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginRight="@dimen/margin_right"
+            android:layout_marginTop="@dimen/margin_top_15"
+            android:drawableLeft="@drawable/verification_code"
+            android:hint="请输入验证码" />
+
+        <TextView
+            android:id="@+id/btn_get_code"
+            style="@style/bg_ww"
+            android:layout_gravity="bottom"
+            android:layout_marginRight="@dimen/margin_right"
+            android:background="@drawable/submit_select_bg"
+            android:padding="@dimen/margin_left"
+            android:text="发送验证码"
+            android:textColor="@color/word_croci_white"
+            android:textSize="@dimen/text_size_16" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edt_password"
+        style="@style/bg_fw"
+        android:password="true"
+        android:singleLine="true"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginRight="@dimen/margin_right"
+        android:layout_marginTop="@dimen/margin_top_15"
+        android:drawableLeft="@drawable/password"
+        android:hint="请输入你的密码" />
+
+    <EditText
+         android:password="true"
+        android:singleLine="true"
+        android:id="@+id/edt_password_again"
+        style="@style/bg_fw"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginRight="@dimen/margin_right"
+        android:layout_marginTop="@dimen/margin_top_15"
+        android:drawableLeft="@drawable/password"
+        android:hint="请再次输入你的密码" />
+
+    <LinearLayout
+        style="@style/bg_fw"
+        android:layout_marginBottom="@dimen/margin_top_15"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginRight="@dimen/margin_right"
+        android:layout_marginTop="@dimen/margin_top_15"
+        android:orientation="horizontal" >
+
+        <CheckBox 
+            android:id="@+id/ck_box"
+            style="@style/bg_ww"
+            />
+
+        <TextView
+            style="@style/bg_ww"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:text="我已阅读并同意"
+            android:textColor="@color/bg_black"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            style="@style/bg_ww"
+            android:text="《DMAll用户协议》"
+            android:textColor="@color/bg_buyer"
+            android:textSize="@dimen/text_size_16" />
+    </LinearLayout>
+
+    <View style="@style/view_line_15dp" />
+
+    <TextView
+        android:id="@+id/btn_commit_register"
+        style="@style/bg_fw"
+        android:layout_marginLeft="@dimen/margin_bottom_10"
+        android:layout_marginRight="@dimen/margin_bottom_10"
+        android:layout_marginTop="@dimen/margin_bottom_15"
+        android:background="@drawable/submit_select_bg"
+        android:gravity="center"
+        android:paddingBottom="@dimen/margin_bottom_10"
+        android:paddingTop="@dimen/margin_bottom_10"
+        android:text="立即注册"
+        android:textColor="@color/word_croci_white"
+        android:textSize="@dimen/text_size_16" />
+
+</LinearLayout>

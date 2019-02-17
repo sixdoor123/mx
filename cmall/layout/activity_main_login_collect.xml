@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    android:orientation="vertical" >
+
+    <View style="@style/view_line_15dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_main_collection"
+        style="@style/bg_fw"
+        android:background="@drawable/bg_shuibo"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/margin_bottom_15"
+        android:paddingLeft="@dimen/margin_left"
+        android:paddingTop="@dimen/margin_top_15" >
+
+        <ImageView
+            android:id="@+id/img_main_icon"
+            style="@style/bg_ww"
+            android:src="@drawable/user_follow" />
+
+        <TextView
+            android:id="@+id/txt_main_title"
+            style="@style/bg_ww"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:text="我的关注"
+            android:textColor="@color/bg_black"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/txt_attention_information_number"
+            style="@style/bg_1w"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:text="@string/main_title_num"
+            android:textColor="@color/bg_hui1"
+            android:textSize="@dimen/text_size_16"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/img_up_down_arrow"
+            style="@style/bg_ww"
+            android:layout_marginRight="@dimen/margin_right"
+            android:src="@drawable/down_arrow" />
+    </LinearLayout>
+
+    <View style="@style/view_line_1dp" />
+
+    <LinearLayout
+        android:id="@+id/control_collect"
+        style="@style/bg_fw"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/ll_first_sub_item"
+            style="@style/bg_fw"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginRight="@dimen/margin_right"
+            android:background="@drawable/bg_shuibo"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/margin_bottom_15"
+            android:paddingTop="@dimen/margin_top_15" >
+
+            <TextView
+                android:id="@+id/txt_first_sub_title"
+                style="@style/bg_1w"
+                android:layout_marginLeft="@dimen/margin_left_30"
+                android:text="子条目 1"
+                android:textColor="@color/bg_hui1"
+                android:textSize="@dimen/text_size_16" />
+
+            <TextView
+                android:id="@+id/txt_first_sub_number"
+                style="@style/bg_1w"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:text="@string/main_title_num"
+                android:textColor="@color/bg_hui1"
+                android:textSize="@dimen/text_size_15"
+                android:visibility="gone" />
+
+            <ImageView
+                style="@style/bg_ww"
+                android:layout_marginRight="@dimen/margin_right"
+                android:src="@drawable/right_arrow" />
+        </LinearLayout>
+
+        <View
+            style="@style/view_line_1px"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginRight="@dimen/margin_right" />
+
+        <LinearLayout
+            android:id="@+id/ll_seconed_sub_item"
+            style="@style/bg_fw"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginRight="@dimen/margin_right"
+            android:background="@drawable/bg_shuibo"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/margin_bottom_15"
+            android:paddingTop="@dimen/margin_top_15" >
+
+            <TextView
+                android:id="@+id/txt_seconed_sub_title"
+                style="@style/bg_1w"
+                android:layout_marginLeft="@dimen/margin_left_30"
+                android:text="子条目 2"
+                android:textColor="@color/bg_hui1"
+                android:textSize="@dimen/text_size_16" />
+
+            <TextView
+                android:id="@+id/txt_seconed_sub_number"
+                style="@style/bg_1w"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:text="@string/main_title_num"
+                android:textColor="@color/bg_hui1"
+                android:textSize="@dimen/text_size_15"
+                android:visibility="gone" />
+
+            <ImageView
+                style="@style/bg_ww"
+                android:layout_marginRight="@dimen/margin_right"
+                android:src="@drawable/right_arrow" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View style="@style/view_line_15dp" />
+
+</LinearLayout>

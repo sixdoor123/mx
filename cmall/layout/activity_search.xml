@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/bg_ff"
+    android:background="@color/bg_white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/lin_search_his"
+        style="@style/bg_ff"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/bg_fw_all"
+            android:text="搜索历史"
+            android:textColor="@color/bg_hui1"
+            android:textSize="@dimen/text_size_16" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/bg_hui2" />
+
+        <com.baiyi.cmall.views.pulldownview.PullToRefreshListView
+            android:id="@+id/lst_search_history"
+            style="@style/bg_ff"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginRight="@dimen/margin_right"
+            android:background="@color/bg_white"
+            android:divider="@color/bg_hui3"
+            android:dividerHeight="0.5dp" />
+    </LinearLayout>
+
+    <com.baiyi.cmall.views.pulldownview.PullToRefreshListView
+        android:id="@+id/lst_search_match"
+        style="@style/bg_fw_all"
+        android:background="@color/bg_white"
+        android:divider="@color/bg_hui3"
+        android:dividerHeight="0.5dp"
+        android:visibility="gone" />
+
+</LinearLayout>

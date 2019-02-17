@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/slayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1" >
+
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/recycleview"
+        style="@style/bg_fw" />
+
+    <com.baiyi.cmall.views.MyLoadingBar
+        android:id="@+id/loading"
+        style="@style/bg_fw"
+        android:layout_gravity="center_vertical"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/no_data"
+        style="@style/bg_ff"
+        android:gravity="center"
+        android:text="暂无数据"
+        android:textColor="@color/bg_hui1"
+        android:textSize="@dimen/text_size_15"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/darkview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dark_bg"
+        android:visibility="gone" />
+
+</FrameLayout>

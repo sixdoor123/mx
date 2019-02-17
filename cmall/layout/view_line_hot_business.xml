@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/bg_fw"
+    android:background="@drawable/bg_shuibo"
+    android:orientation="vertical" >
+
+    <View style="@style/view_line_10dp" />
+
+    <LinearLayout
+        android:id="@+id/lin_lin"
+        style="@style/bg_fw"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:background="@color/bg_green" />
+
+        <TextView
+            android:id="@+id/tv_list_title"
+            style="@style/bg_ww"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:singleLine="true"
+            android:text="推荐商家"
+            android:textColor="@color/bg_green"
+            android:textSize="@dimen/text_size_15" />
+    </LinearLayout>
+
+    <View style="@style/view_line_1dp" />
+
+</LinearLayout>

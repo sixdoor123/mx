@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/bg_fw"
+    android:orientation="vertical" >
+
+    <ScrollView style="@style/bg_ff" >
+
+        <LinearLayout
+            style="@style/bg_ff"
+            android:orientation="vertical" >
+
+            <View style="@style/view_line_1px" />
+
+            <View style="@style/view_line_15dp" />
+
+            <View style="@style/view_line_1px" />
+
+            <LinearLayout
+                style="@style/bg_fw"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/margin_bottom_10"
+                android:paddingTop="@dimen/margin_top_10" >
+
+                <TextView
+                    style="@style/bg_ww"
+                    android:layout_marginLeft="@dimen/margin_left"
+                    android:text="公司名称"
+                    android:textColor="@color/word_313131"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    android:id="@+id/txt_shop_name"
+                    style="@style/bg_fw"
+                    android:layout_marginLeft="@dimen/margin_left_20"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textColor="@color/word_313131"
+                    android:textSize="@dimen/text_size_16" />
+            </LinearLayout>
+
+            <View style="@style/view_line_1px" />
+
+            <LinearLayout
+                style="@style/bg_fw"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/margin_bottom_10"
+                android:paddingTop="@dimen/margin_top_10" >
+
+                <TextView
+                    style="@style/bg_ww"
+                    android:layout_marginLeft="@dimen/margin_left"
+                    android:text="公司类型"
+                    android:textColor="@color/word_313131"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    android:id="@+id/txt_shop_type"
+                    style="@style/bg_fw"
+                    android:layout_marginLeft="@dimen/margin_left_20"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textColor="@color/word_313131"
+                    android:textSize="@dimen/text_size_16" />
+            </LinearLayout>
+
+            <View style="@style/view_line_1px" />
+
+            <LinearLayout
+                style="@style/bg_fw"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/margin_bottom_10"
+                android:paddingTop="@dimen/margin_top_10" >
+
+                <TextView
+                    style="@style/bg_ww"
+                    android:layout_marginLeft="@dimen/margin_left"
+                    android:text="所在地区"
+                    android:textColor="@color/word_313131"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    android:id="@+id/txt_area"
+                    style="@style/bg_fw"
+                    android:layout_marginLeft="@dimen/margin_left_20"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textColor="@color/word_313131"
+                    android:textSize="@dimen/text_size_16" />
+
+                <ImageView
+                    android:id="@+id/service_help"
+                    style="@style/icon_test_service_help"
+                    android:layout_marginRight="@dimen/margin_right"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <View style="@style/view_line_1px" />
+
+            <LinearLayout
+                style="@style/bg_fw"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/margin_bottom_10"
+                android:paddingTop="@dimen/margin_top_10" >
+
+                <TextView
+                    style="@style/bg_ww"
+                    android:layout_marginLeft="@dimen/margin_left"
+                    android:text="注册时间"
+                    android:textColor="@color/word_313131"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    android:id="@+id/txt_register_time"
+                    style="@style/bg_fw"
+                    android:layout_marginLeft="@dimen/margin_left_20"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textColor="@color/word_313131"
+                    android:textSize="@dimen/text_size_16" />
+            </LinearLayout>
+
+            <View style="@style/view_line_1px" />
+
+            <LinearLayout
+                android:id="@+id/btn_shop_phonenum"
+                style="@style/bg_fw"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/margin_bottom_10"
+                android:paddingTop="@dimen/margin_top_10" >
+
+                <TextView
+                    style="@style/bg_ww"
+                    android:layout_marginLeft="@dimen/margin_left"
+                    android:text="商家电话"
+                    android:textColor="@color/word_313131"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    style="@style/bg_fw"
+                    android:id="@+id/txt_shop_phonenum"
+                    android:layout_marginLeft="@dimen/margin_left_20"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textColor="@color/word_313131"
+                    android:textSize="@dimen/text_size_16" />
+            </LinearLayout>
+
+            <View style="@style/view_line_1px" />
+
+            <View style="@style/view_line_15dp" />
+
+            <View style="@style/view_line_1px" />
+
+            <LinearLayout
+                android:id="@+id/btn_qr_code"
+                android:background="@drawable/selector_pop_item"
+                style="@style/bg_fw"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/margin_bottom_10"
+                android:paddingTop="@dimen/margin_top_10" >
+                
+                <View
+                    android:layout_height="match_parent"
+                    android:layout_width="1dp"
+                    android:background="@color/bg_buyer"/>
+
+                <TextView
+                    style="@style/bg_ww"
+                    android:layout_marginLeft="@dimen/margin_left"
+                    android:text="店铺二维码"
+                    android:textColor="@color/word_ff6633"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    style="@style/bg_fw"
+                    android:layout_marginLeft="@dimen/margin_left_20"
+                    android:layout_weight="1"
+                    android:textColor="@color/word_313131"
+                    android:textSize="@dimen/text_size_16" />
+
+                <ImageView
+                    android:id="@+id/qr_code"
+                    style="@style/icon_test_service_qr_code"
+                    android:layout_marginRight="@dimen/margin_right" />
+            </LinearLayout>
+
+            <View style="@style/view_line_1px" />
+
+            <View style="@style/view_line_15dp" />
+
+            <View style="@style/view_line_1px" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

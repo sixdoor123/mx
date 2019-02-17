@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/view_line"
+        style="@style/view_line_1px" />
+
+    <TextView
+        android:id="@+id/txt_standard_title"
+        style="@style/bg_fw"
+        android:layout_marginBottom="@dimen/margin_bottom_15"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginTop="@dimen/margin_top_15"
+        android:text="工业分析指标:"
+        android:textColor="@color/bg_black"
+        android:textSize="@dimen/text_size_16" />
+
+    <View style="@style/view_line_1px" />
+
+    <TableLayout
+        android:id="@+id/lin_layout"
+        style="@style/bg_fw"
+        android:orientation="vertical" >
+    </TableLayout>
+
+    <View
+        android:id="@+id/view_"
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+</LinearLayout>

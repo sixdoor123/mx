@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/bg_fw"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/margin_top_15" >
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="80dp"
+        android:layout_height="28dp"
+        android:gravity="center"
+        android:text="纯度" />
+
+    <com.baiyi.cmall.activities.main.mall.views.MyGridView
+        android:id="@+id/gridview_mall_buy"
+        style="@style/bg_fw"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginRight="@dimen/margin_right"
+        android:horizontalSpacing="@dimen/margin_left"
+        android:numColumns="3"
+        android:verticalSpacing="@dimen/margin_dialog_bottom_8" >
+    </com.baiyi.cmall.activities.main.mall.views.MyGridView>
+
+</LinearLayout>

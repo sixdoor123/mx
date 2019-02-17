@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/bg_ff" >
+
+    <LinearLayout
+        style="@style/bg_ff"
+        android:background="@color/bg_white"
+        android:orientation="vertical" >
+
+        <View style="@style/view_line_15dp" />
+
+        <LinearLayout
+            style="@style/bg_fw"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/margin_bottom_15"
+            android:paddingTop="@dimen/margin_bottom_15" >
+
+            <TextView
+                android:id="@+id/txt_merchant_name"
+                style="@style/bg_ww"
+                android:layout_marginLeft="@dimen/margin_bottom_10"
+                android:text="采购商"
+                android:textColor="@color/bg_black"
+                android:textSize="@dimen/text_size_15" />
+
+            <EditText
+                android:id="@+id/edt_supply_name"
+                style="@style/sty_edit_text"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_marginRight="@dimen/margin_right"
+                android:background="@drawable/edittext_select"
+                android:hint="请输入采购商名称"
+                android:maxLength="30"
+                android:singleLine="true"
+                android:textColor="@color/bg_hui1"
+                android:textSize="@dimen/text_size_15" />
+        </LinearLayout>
+
+        <View style="@style/view_line_1px" />
+
+        <LinearLayout
+            style="@style/bg_fw"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/margin_bottom_15"
+            android:paddingTop="@dimen/margin_bottom_15" >
+
+            <TextView
+                android:id="@+id/contact"
+                style="@style/bg_ww"
+                android:layout_marginLeft="@dimen/margin_bottom_10"
+                android:text="联系姓名"
+                android:textColor="@color/bg_black"
+                android:textSize="@dimen/text_size_15" />
+
+            <EditText
+                android:id="@+id/edt_contact_name"
+                style="@style/sty_edit_text"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_marginRight="@dimen/margin_right"
+                android:background="@drawable/edittext_select"
+                android:hint="请输入联系人姓名"
+                android:singleLine="true"
+                android:maxLength="20"
+                android:textColor="@color/bg_hui1"
+                android:textSize="@dimen/text_size_15" />
+        </LinearLayout>
+
+        <View style="@style/view_line_1px" />
+
+        <LinearLayout
+            style="@style/bg_fw"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/margin_bottom_15"
+            android:paddingTop="@dimen/margin_bottom_15" >
+
+            <TextView
+                android:id="@+id/mobile"
+                style="@style/bg_ww"
+                android:layout_marginLeft="@dimen/margin_bottom_10"
+                android:text="联系方式"
+                android:textColor="@color/bg_black"
+                android:textSize="@dimen/text_size_15" />
+
+            <EditText
+                android:id="@+id/edt_contact_number"
+                style="@style/sty_edit_text"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_marginRight="@dimen/margin_right"
+                android:background="@drawable/edittext_select"
+                android:hint="请输入电话号码"
+                android:inputType="phone"
+                android:singleLine="true"
+                android:textColor="@color/bg_hui1"
+                android:textSize="@dimen/text_size_15" />
+        </LinearLayout>
+
+        <View style="@style/view_line_1px" />
+
+        <LinearLayout
+            style="@style/bg_fw"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/margin_bottom_15"
+            android:paddingTop="@dimen/margin_bottom_15" >
+
+            <TextView
+                android:id="@+id/txt_supply_price"
+                style="@style/bg_ww"
+                android:layout_marginLeft="@dimen/margin_bottom_10"
+                android:text="需求描述"
+                android:textColor="@color/bg_black"
+                android:textSize="@dimen/text_size_15" />
+
+            <EditText
+                android:id="@+id/edt_supply_need"
+                style="@style/bg_fw"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_marginRight="@dimen/margin_right"
+                android:background="@drawable/edittext_select"
+                android:gravity="top"
+                android:hint="请输入需求描述信息"
+                android:maxLines="5"
+                android:minLines="5"
+                android:maxLength="1000"
+                android:scrollbars="vertical"
+                android:paddingBottom="9dp"
+                android:paddingLeft="@dimen/margin_left_5"
+                android:paddingTop="9dp"
+                android:textColor="@color/bg_hui1"
+                android:textSize="@dimen/text_size_15" />
+        </LinearLayout>
+
+        <View style="@style/view_line_1px" />
+
+        <include
+            android:id="@+id/ll_show"
+            layout="@layout/activity_edit_detegation_details" />
+
+        <LinearLayout
+            style="@style/bg_fw"
+            android:layout_marginBottom="@dimen/margin_bottom_15"
+            android:layout_marginTop="@dimen/margin_top_15"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/bg_1w"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_marginRight="@dimen/margin_right"
+                android:text="注意:点击此处可完善信息"
+                android:textColor="@color/bg_black"
+                android:textSize="@dimen/text_size_15" />
+
+            <TextView
+                android:id="@+id/txt_control"
+                style="@style/bg_ww"
+                android:layout_marginRight="@dimen/margin_right"
+                android:text="委托完善↓"
+                android:textColor="@color/bg_buyer"
+                android:textSize="@dimen/text_size_15" />
+        </LinearLayout>
+
+        <include layout="@layout/activity_button" />
+    </LinearLayout>
+
+    <com.baiyi.cmall.views.MyLoadingBar
+        android:id="@+id/load"
+        style="@style/bg_ww"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+</FrameLayout>

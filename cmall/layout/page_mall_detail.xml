@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/bg_ww"
+        android:layout_marginBottom="@dimen/margin_bottom_15"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginTop="@dimen/margin_top_15"
+        android:text="属性:"
+        android:textColor="@color/bg_black"
+        android:textSize="@dimen/text_size_16" />
+
+    <View style="@style/view_line_1px" />
+
+    <!-- 规格参数 -->
+
+    <LinearLayout
+        android:id="@+id/mall_deail_parameter_group"
+        style="@style/bg_fw"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/no_parameter_data"
+            style="@style/bg_fw_all"
+            android:gravity="center"
+            android:text="暂无数据"
+            android:textColor="@color/bg_hui1"
+            android:textSize="@dimen/text_size_15"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <View style="@style/view_line_15dp" />
+
+    <TextView
+        style="@style/bg_ww"
+        android:layout_marginBottom="@dimen/margin_bottom_15"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginTop="@dimen/margin_top_15"
+        android:text="产品详情:"
+        android:textColor="@color/bg_black"
+        android:textSize="@dimen/text_size_16" />
+
+    <View style="@style/view_line_1px" />
+
+    <TextView
+        android:id="@+id/no_mall_detail_data"
+        style="@style/bg_fw_all"
+        android:gravity="center"
+        android:text="暂无数据"
+        android:textColor="@color/bg_hui1"
+        android:textSize="@dimen/text_size_15"
+        android:visibility="gone" />
+
+</LinearLayout>

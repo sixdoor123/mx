@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_margin="10dp" >
+
+    <TextView
+        android:id="@+id/btn_ok"
+        style="@style/bg_1w"
+        android:layout_marginRight="@dimen/margin_right"
+        android:background="@drawable/cancel_select_bg"
+        android:gravity="center"
+        android:paddingBottom="@dimen/margin_bottom_10"
+        android:paddingTop="@dimen/margin_bottom_10"
+        android:text="付款成功—测试"
+        android:textColor="@color/word_blue_white"
+        android:textSize="@dimen/text_size_16" />
+
+    <TextView
+        android:id="@+id/btn_no"
+        style="@style/bg_1w"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:background="@drawable/cancel_select_bg"
+        android:gravity="center"
+        android:paddingBottom="@dimen/margin_bottom_10"
+        android:paddingTop="@dimen/margin_bottom_10"
+        android:text="付款失败—测试"
+        android:textColor="@color/word_blue_white"
+        android:textSize="@dimen/text_size_16" />
+
+</LinearLayout>

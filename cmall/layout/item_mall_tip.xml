@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/bg_fw"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/bg_fw"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/txt_name1"
+            style="@style/bg_ww"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginTop="@dimen/margin_top_10"
+            android:text="运费"
+            android:textColor="@color/word_737373"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/txt_info1"
+            style="@style/bg_fw"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginRight="@dimen/margin_right"
+            android:layout_marginTop="@dimen/margin_top_10"
+            android:text="免运费"
+            android:textColor="@color/bg_black"
+            android:textSize="@dimen/text_size_16" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/bg_fw"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/txt_name"
+            style="@style/bg_ww"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginTop="@dimen/margin_top_10"
+            android:text="服务"
+            android:textColor="@color/word_737373"
+            android:textSize="@dimen/text_size_16" />
+
+        <LinearLayout
+            style="@style/bg_fw"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txt_info"
+                style="@style/bg_fw"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_marginRight="@dimen/margin_right"
+                android:layout_marginTop="@dimen/margin_top_10"
+                android:text="由找化朔官方网站从陕西发货并提供服务"
+                android:textColor="@color/bg_black"
+                android:textSize="@dimen/text_size_16" />
+            <TextView
+                android:id="@+id/txt_pay_style"
+                style="@style/bg_fw"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_marginRight="@dimen/margin_right"
+                android:layout_marginTop="@dimen/margin_top_10"
+                android:text="货到付款"
+                android:gravity="center_vertical"
+                android:drawableLeft="@drawable/icon_pay_style"
+                android:textColor="#1a68b3"
+                android:textSize="@dimen/text_size_14" />
+            
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/bg_fw"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/txt_name3"
+            style="@style/bg_ww"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginTop="@dimen/margin_top_10"
+            android:text="提示"
+            android:textColor="@color/word_737373"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/txt_info3"
+            style="@style/bg_fw"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginRight="@dimen/margin_right"
+            android:layout_marginTop="@dimen/margin_top_10"
+            android:text="如有特殊要求请提前告知商家"
+            android:textColor="@color/bg_black"
+            android:textSize="@dimen/text_size_16" />
+    </LinearLayout>
+
+</LinearLayout>

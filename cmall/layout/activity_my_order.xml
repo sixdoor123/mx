@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/bg_ff"
+    android:background="@color/bg_white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_high_45" >
+
+        <RadioGroup
+            android:id="@+id/rg_my_order"
+            style="@style/bg_fw"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rb_my_intent_order"
+                style="@style/bg_1w"
+                android:layout_gravity="center"
+                android:background="@color/transparent"
+                android:button="@null"
+                android:gravity="center"
+                android:text="意向订单 "
+                android:textColor="@color/word_red_gray" />
+
+            <RadioButton
+                android:id="@+id/rb_my_product_order"
+                style="@style/bg_1w"
+                android:layout_gravity="center"
+                android:background="@color/transparent"
+                android:button="@null"
+                android:gravity="center"
+                android:text="产品订单"
+                android:textColor="@color/word_red_gray" />
+        </RadioGroup>
+
+        <ImageView
+            android:id="@+id/view"
+            style="@style/bg_fw"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/radiobutton_line" />
+    </RelativeLayout>
+
+    <com.baiyi.cmall.pageviews.MyViewPager
+        android:id="@+id/vp_pager_order"
+        style="@style/bg_ff" >
+    </com.baiyi.cmall.pageviews.MyViewPager>
+
+</LinearLayout>

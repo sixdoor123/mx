@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/bg_ff" >
+
+    <com.baiyi.cmall.listitem.QQListView
+        android:id="@+id/lst_qq"
+        style="@style/bg_fw"
+        android:background="@color/bg_white"
+        android:divider="@color/bg_line1_color"
+        android:dividerHeight="0.5dp"
+        android:listSelector="@android:color/transparent" >
+    </com.baiyi.cmall.listitem.QQListView>
+
+    <View
+        style="@style/view_line_1px"
+        android:layout_below="@+id/lst_qq" />
+
+</RelativeLayout>

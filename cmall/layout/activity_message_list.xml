@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/bg_ff"
+    android:background="@color/bg_white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/bg_fw"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_high_45" >
+
+            <RadioGroup
+                android:id="@+id/news_group"
+                style="@style/bg_fw"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/news_user"
+                    style="@style/bg_ww"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="消息 "
+                    android:textColor="@color/word_red_gray" />
+
+                <RadioButton
+                    android:id="@+id/news_system"
+                    style="@style/bg_ww"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="广播"
+                    android:textColor="@color/word_red_gray" />
+            </RadioGroup>
+
+            <RelativeLayout
+                style="@style/bg_fw"
+                android:layout_alignParentBottom="@id/news_group" >
+
+                <ImageView
+                    android:id="@+id/view"
+                    style="@style/bg_fw"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/radiobutton_line" />
+
+                <LinearLayout
+                    style="@style/bg_fw"
+                    android:layout_alignParentBottom="true" >
+
+                    <ImageView
+                        android:id="@+id/news_user_choose"
+                        style="@style/bg_ww"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1"
+                        android:src="@drawable/icon_radiobutton_select"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:id="@+id/news_system_choose"
+                        style="@style/bg_ww"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1"
+                        android:src="@drawable/icon_radiobutton_select"
+                        android:visibility="invisible" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <com.baiyi.cmall.pageviews.MyViewPager
+            android:id="@+id/news_viewpager"
+            style="@style/bg_ff" >
+        </com.baiyi.cmall.pageviews.MyViewPager>
+    </LinearLayout>
+
+</RelativeLayout>

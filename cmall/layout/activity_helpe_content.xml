@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/bg_ff"
+    android:background="@color/bg_white"
+    android:orientation="vertical" >
+
+    <View style="@style/view_line_1px" />
+
+    <LinearLayout
+        android:id="@+id/ll_item_one"
+        style="@style/bg_fw"
+        android:background="@drawable/bg_shuibo"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/margin_top_15"
+        android:paddingTop="@dimen/margin_top_15" >
+
+        <TextView
+            android:id="@+id/txt_item_one"
+            style="@style/bg_1w"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:text="支持帮助"
+            android:textColor="@color/bg_black"
+            android:textSize="@dimen/text_size_16" />
+
+        <ImageView
+            style="@style/bg_ww"
+            android:paddingRight="@dimen/margin_left"
+            android:src="@drawable/right_arrow" />
+    </LinearLayout>
+
+    <View style="@style/view_line_1px" />
+
+    <LinearLayout
+        android:id="@+id/ll_item_two"
+        style="@style/bg_fw"
+        android:background="@drawable/bg_shuibo"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/margin_top_15"
+        android:paddingTop="@dimen/margin_top_15" >
+
+        <TextView
+            android:id="@+id/txt_item_two"
+            style="@style/bg_1w"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:text="意见反馈"
+            android:textColor="@color/bg_black"
+            android:textSize="@dimen/text_size_16" />
+
+        <ImageView
+            style="@style/bg_ww"
+            android:paddingRight="@dimen/margin_left"
+            android:src="@drawable/right_arrow" />
+    </LinearLayout>
+
+    <View style="@style/view_line_1px" />
+
+    <LinearLayout
+        android:id="@+id/ll_item_three"
+        style="@style/bg_fw"
+        android:background="@drawable/bg_shuibo"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/margin_top_15"
+        android:paddingTop="@dimen/margin_top_15" >
+
+        <TextView
+            android:id="@+id/txt_item_three"
+            style="@style/bg_1w"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:text="邀请好友使用DMALL"
+            android:textColor="@color/bg_black"
+            android:textSize="@dimen/text_size_16" />
+
+        <ImageView
+            style="@style/bg_ww"
+            android:paddingRight="@dimen/margin_left"
+            android:src="@drawable/right_arrow" />
+    </LinearLayout>
+
+    <View style="@style/view_line_1px" />
+
+    <LinearLayout
+        android:id="@+id/ll_tuichu"
+        style="@style/bg_fw"
+        android:visibility="gone"
+        android:background="@drawable/bg_shuibo"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/margin_top_15"
+        android:paddingTop="@dimen/margin_top_15" >
+
+        <TextView
+            style="@style/bg_1w"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:text="退出成功"
+            android:textColor="@color/bg_black"
+            android:textSize="@dimen/text_size_16" />
+
+        <ImageView
+            style="@style/bg_ww"
+            android:paddingRight="@dimen/margin_left"
+            android:src="@drawable/right_arrow" />
+    </LinearLayout>
+
+    <View style="@style/view_line_1px" />
+
+</LinearLayout>

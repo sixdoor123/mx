@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <View style="@style/view_line_1px" />
+
+    <TextView
+        android:id="@+id/tv_total_price"
+        style="@style/bg_ww"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="@dimen/margin_top_15"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginTop="@dimen/margin_top_15"
+        android:text="xxx"
+        android:textColor="@color/bg_buyer"
+        android:textSize="18sp" />
+
+    <View style="@style/view_line_15dp" />
+
+    <include layout="@layout/activity_form_foot" />
+
+</LinearLayout>

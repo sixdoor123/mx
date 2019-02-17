@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    android:orientation="vertical" >
+<TableLayout style="@style/bg_fw"
+    android:collapseColumns="2">
+    <TableRow
+        style="@style/bg_fw"
+        android:paddingBottom="@dimen/margin_top_15"
+        android:paddingTop="@dimen/margin_top_15" >
+
+        <TextView
+            style="@style/bg_ww"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:gravity="right"
+            android:singleLine="true"
+            android:text="公司名称: "
+            android:textColor="@color/bg_black"
+            android:textSize="@dimen/text_size_15" />
+
+        <TextView
+            android:id="@+id/txt_logistics_company_name"
+            style="@style/bg_1w"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginRight="@dimen/margin_right"
+            android:singleLine="true"
+            android:text="公司名称 "
+            android:textColor="@color/bg_hui1"
+            android:textSize="@dimen/text_size_15" />
+    </TableRow>
+
+    <View style="@style/view_line_1px" />
+
+    <TableRow
+        style="@style/bg_fw"
+        android:paddingBottom="@dimen/margin_top_15"
+        android:paddingTop="@dimen/margin_top_15" >
+
+        <TextView
+            style="@style/bg_ww"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:gravity="right"
+            android:singleLine="true"
+            android:text="数量: "
+            android:textColor="@color/bg_black"
+            android:textSize="@dimen/text_size_15" />
+
+        <TextView
+            android:id="@+id/txt_logistics_area"
+            style="@style/bg_1w"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:singleLine="true"
+            android:text="陕西"
+            android:textColor="@color/bg_hui1"
+            android:textSize="@dimen/text_size_15" />
+    </TableRow>
+
+    <View style="@style/view_line_1px" />
+
+    <TableRow
+        style="@style/bg_fw"
+        android:paddingBottom="@dimen/margin_top_15"
+        android:paddingTop="@dimen/margin_top_15" >
+
+        <TextView
+            style="@style/bg_ww"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:gravity="right"
+            android:singleLine="true"
+            android:text="始发地址: "
+            android:textColor="@color/bg_black"
+            android:textSize="@dimen/text_size_15" />
+
+        <TextView
+            android:id="@+id/txt_start_city"
+            style="@style/bg_1w"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:singleLine="true"
+            android:text="陕西"
+            android:textColor="@color/bg_hui1"
+            android:textSize="@dimen/text_size_15" />
+    </TableRow>
+
+    <View style="@style/view_line_1px" />
+ <TableRow
+        style="@style/bg_fw"
+        android:paddingBottom="@dimen/margin_top_15"
+        android:paddingTop="@dimen/margin_top_15" >
+
+        <TextView
+            style="@style/bg_ww"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:gravity="right"
+            android:singleLine="true"
+            android:text="目的地址:"
+            android:textColor="@color/bg_black"
+            android:textSize="@dimen/text_size_15" />
+
+        <TextView
+            android:id="@+id/txt_end_city"
+            style="@style/bg_1w"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:singleLine="true"
+            android:text="陕西"
+            android:textColor="@color/bg_hui1"
+            android:textSize="@dimen/text_size_15" />
+    </TableRow>
+
+    <View style="@style/view_line_1px" />
+     <TableRow
+        style="@style/bg_fw"
+        android:paddingBottom="@dimen/margin_top_15"
+        android:paddingTop="@dimen/margin_top_15" >
+
+        <TextView
+            style="@style/bg_ww"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:gravity="right"
+            android:singleLine="true"
+            android:text="发布时间: "
+            android:textColor="@color/bg_black"
+            android:textSize="@dimen/text_size_15" />
+
+        <TextView
+            android:id="@+id/txt_put_time"
+            style="@style/bg_1w"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:singleLine="true"
+            android:text="陕西"
+            android:textColor="@color/bg_hui1"
+            android:textSize="@dimen/text_size_15" />
+    </TableRow>
+
+    <View style="@style/view_line_1px" />
+     <TableRow
+        style="@style/bg_fw"
+        android:paddingBottom="@dimen/margin_top_15"
+        android:paddingTop="@dimen/margin_top_15" >
+
+        <TextView
+            style="@style/bg_ww"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:gravity="right"
+            android:singleLine="true"
+            android:text="始发时间: "
+            android:textColor="@color/bg_black"
+            android:textSize="@dimen/text_size_15" />
+
+        <TextView
+            android:id="@+id/txt_start_time"
+            style="@style/bg_1w"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:singleLine="true"
+            android:text="陕西"
+            android:textColor="@color/bg_hui1"
+            android:textSize="@dimen/text_size_15" />
+    </TableRow>
+
+    <View style="@style/view_line_1px" />
+     <TableRow
+        style="@style/bg_fw"
+        android:paddingBottom="@dimen/margin_top_15"
+        android:paddingTop="@dimen/margin_top_15" >
+
+        <TextView
+            style="@style/bg_ww"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:gravity="right"
+            android:singleLine="true"
+            android:text="到达时间: "
+            android:textColor="@color/bg_black"
+            android:textSize="@dimen/text_size_15" />
+
+        <TextView
+            android:id="@+id/txt_end_time"
+            style="@style/bg_1w"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:singleLine="true"
+            android:text="陕西"
+            android:textColor="@color/bg_hui1"
+            android:textSize="@dimen/text_size_15" />
+    </TableRow>
+
+    <View style="@style/view_line_1px" />
+     <TableRow
+        style="@style/bg_fw"
+        android:paddingBottom="@dimen/margin_top_15"
+        android:paddingTop="@dimen/margin_top_15" >
+
+        <TextView
+            style="@style/bg_ww"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:gravity="right"
+            android:singleLine="true"
+            android:text="货运类型: "
+            android:textColor="@color/bg_black"
+            android:textSize="@dimen/text_size_15" />
+
+        <TextView
+            android:id="@+id/txt_delivery_type"
+            style="@style/bg_1w"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:singleLine="true"
+            android:text="陕西"
+            android:textColor="@color/bg_hui1"
+            android:textSize="@dimen/text_size_15" />
+    </TableRow>
+
+    <View style="@style/view_line_1px" />
+    
+     <TableRow
+        style="@style/bg_fw"
+        android:paddingBottom="@dimen/margin_top_15"
+        android:paddingTop="@dimen/margin_top_15" >
+
+        <TextView
+            style="@style/bg_ww"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:gravity="right"
+            android:singleLine="true"
+            android:text="包装方式:"
+            android:textColor="@color/bg_black"
+            android:textSize="@dimen/text_size_15" />
+
+        <TextView
+            android:id="@+id/txt_pack_type"
+            style="@style/bg_1w"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:singleLine="true"
+            android:text="陕西"
+            android:textColor="@color/bg_hui1"
+            android:textSize="@dimen/text_size_15" />
+    </TableRow>
+
+    <View style="@style/view_line_1px" />
+    <TableRow
+        style="@style/bg_fw"
+        android:paddingBottom="@dimen/margin_top_15"
+        android:paddingTop="@dimen/margin_top_15" >
+
+        <TextView
+            style="@style/bg_ww"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:gravity="right"
+            android:singleLine="true"
+            android:text="联系人: "
+            android:textColor="@color/bg_black"
+            android:textSize="@dimen/text_size_15" />
+
+        <TextView
+            android:id="@+id/txt_logistics_contact_person"
+            style="@style/bg_1w"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:singleLine="true"
+            android:text="联系人 "
+            android:textColor="@color/bg_hui1"
+            android:textSize="@dimen/text_size_15" />
+    </TableRow>
+
+    <View style="@style/view_line_1px" />
+
+    <TableRow
+        style="@style/bg_fw"
+        android:paddingBottom="@dimen/margin_top_15"
+        android:paddingTop="@dimen/margin_top_15" >
+
+        <TextView
+           
+            style="@style/bg_ww"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:gravity="right"
+            android:singleLine="true"
+            android:text="联系方式: "
+            android:textColor="@color/bg_black"
+            android:textSize="@dimen/text_size_15" />
+
+        <TextView
+             android:id="@+id/txt_logistics_contact_num"
+            style="@style/bg_1w"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:singleLine="true"
+            android:text="123456789 "
+            android:textColor="@color/bg_hui1"
+            android:textSize="@dimen/text_size_15" />
+    </TableRow>
+
+    <View style="@style/view_line_15dp" />
+
+    <TableRow
+        style="@style/bg_fw"
+        android:paddingBottom="@dimen/margin_top_15"
+        android:paddingTop="@dimen/margin_top_15" >
+
+        <TextView
+            style="@style/bg_ww"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:gravity="right"
+            android:singleLine="true"
+            android:text="标题: "
+            android:textColor="@color/bg_black"
+            android:textSize="@dimen/text_size_15" />
+
+        <TextView
+            android:id="@+id/txt_logistics_title"
+            style="@style/bg_1w"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginRight="@dimen/margin_right"
+            android:text="从xxx运往xxx的无烟煤 "
+            android:textColor="@color/bg_hui1"
+            android:textSize="@dimen/text_size_15" />
+    </TableRow>
+
+    <View style="@style/view_line_1px" />
+
+    <TableRow
+        style="@style/bg_fw"
+        android:paddingBottom="@dimen/margin_top_15"
+        android:paddingTop="@dimen/margin_top_15" >
+
+        <TextView
+            style="@style/bg_ww"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:gravity="right"
+            android:singleLine="true"
+            android:text="内容: "
+            android:textColor="@color/bg_black"
+            android:textSize="@dimen/text_size_15" />
+
+        <TextView
+            android:id="@+id/txt_logistics_content"
+            style="@style/bg_1w"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginRight="@dimen/margin_right"
+            android:text="123456789 252552225555"
+            android:textColor="@color/bg_hui1"
+            android:textSize="@dimen/text_size_15" />
+    </TableRow>
+</TableLayout>
+    <View style="@style/view_line_15dp" />
+
+    <TextView
+        android:id="@+id/btn_edit_logistics"
+        style="@style/bg_fw"
+        android:layout_marginBottom="@dimen/margin_bottom_20"
+        android:layout_marginLeft="@dimen/margin_bottom_10"
+        android:layout_marginRight="@dimen/margin_bottom_10"
+        android:layout_marginTop="@dimen/margin_bottom_15"
+        android:background="@drawable/cancel_select_bg"
+        android:gravity="center"
+        android:paddingBottom="@dimen/margin_bottom_10"
+        android:paddingTop="@dimen/margin_bottom_10"
+        android:text="编辑"
+        android:textColor="@color/word_blue_white"
+        android:textSize="@dimen/text_size_16" />
+
+</LinearLayout>

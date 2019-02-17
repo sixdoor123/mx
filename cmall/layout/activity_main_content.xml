@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/bg_ff"
+    android:background="@color/bg_white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/activity_circle_indicator" />
+
+    <ImageView 
+        android:id="@+id/img_no"
+        style="@style/bg_fw" 
+        android:background="@drawable/banner"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        style="@style/bg_fw"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin_5" >
+
+        <TextView
+            android:id="@+id/tv_home_settled"
+            style="@style/bg_1w"
+            android:background="@drawable/bg_home_hui_qiangreen"
+            android:drawableTop="@drawable/home_settled"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/margin_bottom_15"
+            android:paddingTop="@dimen/margin_top_15"
+            android:text="免费入驻"
+            android:textColor="@color/bg_qian1_green"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/tv_home_supply"
+            style="@style/bg_1w"
+            android:layout_marginLeft="@dimen/margin_left_5"
+            android:background="@drawable/bg_home_hui_qianred"
+            android:drawableTop="@drawable/home_supply"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/margin_bottom_15"
+            android:paddingTop="@dimen/margin_top_15"
+            android:text="发布供应"
+            android:textColor="@color/bg_qian1_red"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/tv_home_purchase"
+            style="@style/bg_1w"
+            android:layout_marginLeft="@dimen/margin_left_5"
+            android:background="@drawable/bg_home_hui_qianblue"
+            android:drawableTop="@drawable/home_purchase"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/margin_bottom_15"
+            android:paddingTop="@dimen/margin_top_15"
+            android:text="委托采购"
+            android:textColor="@color/bg_qian1_blue"
+            android:textSize="@dimen/text_size_14" />
+    </LinearLayout>
+
+    <View style="@style/view_line_10dp" />
+
+    <com.baiyi.cmall.activities.main.home_pager.view.PublicNoticeView
+        android:id="@+id/pnv_zixun"
+        style="@style/bg_fw" >
+    </com.baiyi.cmall.activities.main.home_pager.view.PublicNoticeView>
+
+    <include layout="@layout/view_line_hot_business" />
+
+    <com.baiyi.cmall.listitem.InScrollGridView
+        android:id="@+id/gdv_list"
+        style="@style/bg_fw"
+        android:horizontalSpacing="1dp"
+        android:numColumns="2"
+        android:verticalSpacing="1dp" />
+
+    <include layout="@layout/view_line_flash_sale" />
+
+</LinearLayout>

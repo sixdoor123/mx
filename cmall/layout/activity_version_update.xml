@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/bg_ff"
+    android:background="@color/bg_white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/bg_fw"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/margin_top_15"
+        android:paddingTop="@dimen/margin_top_15" >
+
+        <TextView
+            style="@style/bg_1w"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:text="当前版本"
+            android:textColor="@color/bg_black"
+            android:textSize="@dimen/text_size_15" />
+
+        <TextView
+            android:id="@+id/txt_current_version"
+            style="@style/bg_ww"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginRight="@dimen/margin_bottom_10"
+            android:text="1.2.1"
+            android:textColor="@color/bg_black"
+            android:textSize="@dimen/text_size_15" />
+    </LinearLayout>
+
+    <View style="@style/view_line_1px" />
+
+    <LinearLayout
+        style="@style/bg_fw"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/margin_top_15"
+        android:paddingTop="@dimen/margin_top_15" >
+
+        <TextView
+            style="@style/bg_1w"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:text="最新版本"
+            android:textColor="@color/bg_black"
+            android:textSize="@dimen/text_size_15" />
+
+        <TextView
+            android:id="@+id/txt_lastest_version"
+            style="@style/bg_ww"
+            android:layout_marginLeft="@dimen/margin_left_40"
+            android:layout_marginRight="@dimen/margin_bottom_10"
+            android:text="1.2.2"
+            android:textColor="@color/bg_black"
+            android:textSize="@dimen/text_size_15" />
+    </LinearLayout>
+
+    <View style="@style/view_line_1px" />
+
+    <LinearLayout
+        style="@style/bg_fw"
+        android:background="@drawable/selector"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/margin_top_15"
+        android:paddingTop="@dimen/margin_top_15" >
+
+        <TextView
+            style="@style/bg_1w"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:text="已经是最新版本，重新下载?"
+            android:textColor="@color/bg_black"
+            android:textSize="@dimen/text_size_15" />
+
+        <TextView
+            android:id="@+id/btn_reload"
+            style="@style/bg_ww"
+            android:layout_marginRight="@dimen/margin_bottom_10"
+            android:background="@drawable/cancel_select_bg"
+            android:paddingBottom="@dimen/margin_left"
+            android:paddingLeft="@dimen/margin_left_15"
+            android:paddingRight="@dimen/margin_left_15"
+            android:paddingTop="@dimen/margin_left"
+            android:text="重新下载"
+            android:textColor="@color/word_blue_white"
+            android:textSize="@dimen/text_size_15" />
+    </LinearLayout>
+
+    <View style="@style/view_line_1px" />
+
+</LinearLayout>

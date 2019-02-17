@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/bg_ff" >
+
+    <com.baiyi.cmall.views.pulldownview.PullToRefreshListView
+        android:id="@+id/lst_classify"
+        style="@style/bg_ff"
+        android:background="@color/bg_white"
+        android:divider="@null"
+        android:paddingBottom="@dimen/margin_bottom_10" />
+
+    <com.baiyi.cmall.views.MyLoadingBar
+        android:id="@+id/load"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

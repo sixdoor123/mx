@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/bg_ff" >
+
+    <LinearLayout
+        android:id="@+id/lin_all_data"
+        style="@style/bg_ff"
+        android:background="@color/bg_white"
+        android:orientation="vertical" >
+
+        <ImageView
+            style="@style/bg_fw"
+            android:layout_marginTop="@dimen/margin_top_10"
+            android:background="@drawable/icon_cai_line" />
+
+        <LinearLayout
+            android:id="@+id/lin_consignee"
+            style="@style/bg_fw_all"
+            android:background="@drawable/bg_yellow_hui3"
+            android:orientation="horizontal" >
+
+            <ImageView
+                style="@style/bg_ww"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/margin_right"
+                android:background="@drawable/icon_address" />
+
+            <LinearLayout
+                android:id="@+id/lin_consignee_hide"
+                style="@style/bg_1w"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    style="@style/bg_fw"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/bg_ww"
+                        android:layout_marginRight="@dimen/margin_right"
+                        android:text="收货人:"
+                        android:textColor="@color/bg_black"
+                        android:textSize="@dimen/text_size_16" />
+
+                    <TextView
+                        android:id="@+id/tv_receive_person"
+                        style="@style/bg_1w"
+                        android:layout_marginRight="@dimen/margin_right"
+                        android:singleLine="true"
+                        android:text="XXX"
+                        android:textColor="@color/bg_black"
+                        android:textSize="@dimen/text_size_16" />
+
+                    <TextView
+                        android:id="@+id/tv_tel_phone"
+                        style="@style/bg_ww"
+                        android:singleLine="true"
+                        android:text="150****6666"
+                        android:textColor="@color/bg_black"
+                        android:textSize="@dimen/text_size_16" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/bg_fw"
+                    android:layout_marginTop="@dimen/margin_top_10"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/bg_ww"
+                        android:layout_marginRight="@dimen/margin_right"
+                        android:text="地区:"
+                        android:textColor="@color/bg_hui1"
+                        android:textSize="@dimen/text_size_15" />
+
+                    <TextView
+                        android:id="@+id/tv_city"
+                        style="@style/bg_ww"
+                        android:text="陕西 西安市"
+                        android:textColor="@color/bg_hui1"
+                        android:textSize="@dimen/text_size_15" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/bg_fw"
+                    android:layout_marginTop="@dimen/margin_top_10"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/bg_ww"
+                        android:layout_marginRight="@dimen/margin_right"
+                        android:text="详细地址:"
+                        android:textColor="@color/bg_hui1"
+                        android:textSize="@dimen/text_size_15" />
+
+                    <TextView
+                        android:id="@+id/tv_goods_address"
+                        style="@style/bg_ww"
+                        android:text="陕西 西安市 雁塔区  凯利大厦 西座 801"
+                        android:textColor="@color/bg_hui1"
+                        android:textSize="@dimen/text_size_15" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_new_consignee"
+                style="@style/bg_1w"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="请新建收货地址"
+                android:textColor="@color/bg_hui1"
+                android:textSize="@dimen/text_size_15"
+                android:visibility="gone" />
+
+            <ImageView
+                style="@style/bg_ww"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:background="@drawable/right_arrow" />
+        </LinearLayout>
+
+        <ImageView
+            style="@style/bg_fw"
+            android:layout_marginBottom="@dimen/margin_top_10"
+            android:background="@drawable/icon_cai_line" />
+
+        <View style="@style/view_line_1px" />
+
+        <LinearLayout
+            android:id="@+id/lin_invoice"
+            style="@style/bg_fw_all"
+            android:background="@drawable/bg_shuibo"
+            android:orientation="horizontal" >
+
+            <ImageView
+                style="@style/bg_ww"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/margin_right"
+                android:background="@drawable/icon_invoice" />
+
+            <LinearLayout
+                android:id="@+id/lin_invoice_hide"
+                style="@style/bg_1w"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    style="@style/bg_fw"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/bg_ww"
+                        android:layout_marginRight="@dimen/margin_right"
+                        android:text="发票类型:"
+                        android:textColor="@color/bg_black"
+                        android:textSize="@dimen/text_size_15" />
+
+                    <TextView
+                        android:id="@+id/tv_invoice_type"
+                        style="@style/bg_ww"
+                        android:singleLine="true"
+                        android:text="耗材"
+                        android:textColor="@color/bg_hui1"
+                        android:textSize="@dimen/text_size_15" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/bg_fw"
+                    android:layout_marginTop="@dimen/margin_top_10"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/bg_ww"
+                        android:layout_marginRight="@dimen/margin_right"
+                        android:text="发票抬头:"
+                        android:textColor="@color/bg_black"
+                        android:textSize="@dimen/text_size_15" />
+
+                    <TextView
+                        android:id="@+id/tv_invoice_title"
+                        style="@style/bg_ww"
+                        android:singleLine="true"
+                        android:text="陕西百益软件有限公司"
+                        android:textColor="@color/bg_hui1"
+                        android:textSize="@dimen/text_size_15" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/bg_fw"
+                    android:layout_marginTop="@dimen/margin_top_10"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/bg_ww"
+                        android:layout_marginRight="@dimen/margin_right"
+                        android:text="发票内容:"
+                        android:textColor="@color/bg_black"
+                        android:textSize="@dimen/text_size_15" />
+
+                    <TextView
+                        android:id="@+id/tv_invoice_content"
+                        style="@style/bg_ww"
+                        android:layout_gravity="end"
+                        android:singleLine="true"
+                        android:text="明细"
+                        android:textColor="@color/bg_hui1"
+                        android:textSize="@dimen/text_size_15" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_new_invoice"
+                style="@style/bg_1w"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="请新建发票信息"
+                android:textColor="@color/bg_hui1"
+                android:textSize="@dimen/text_size_15"
+                android:visibility="gone" />
+
+            <ImageView
+                style="@style/bg_ww"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:background="@drawable/right_arrow" />
+        </LinearLayout>
+
+        <View style="@style/view_line_15dp" />
+
+        <LinearLayout
+            style="@style/bg_fw"
+            android:layout_marginBottom="@dimen/margin_top_15"
+            android:layout_marginTop="@dimen/margin_top_15"
+            android:orientation="horizontal" >
+
+            <ImageView
+                style="@style/bg_ww"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:src="@drawable/quotation" />
+
+            <TextView
+                android:id="@+id/txt_company_name"
+                style="@style/bg_ww"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:text="公司名称"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/bg_black"
+                android:textSize="@dimen/text_size_16" />
+        </LinearLayout>
+
+        <View style="@style/view_line_1px" />
+    </LinearLayout>
+
+</FrameLayout>

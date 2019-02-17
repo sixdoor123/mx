@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/bg_ff"
+    android:background="@color/bg_white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_high_45" >
+
+        <RadioGroup
+            android:id="@+id/rg_my_order"
+            style="@style/bg_fw"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rb_all_intent_order"
+                style="@style/bg_1w"
+                android:layout_gravity="center"
+                android:background="@color/transparent"
+                android:button="@null"
+                android:gravity="center"
+                android:text="全部 "
+                android:textColor="@color/word_red_gray" />
+
+            <RadioButton
+                android:id="@+id/rb_not_sure_intent_order"
+                style="@style/bg_1w"
+                android:layout_gravity="center"
+                android:background="@color/transparent"
+                android:button="@null"
+                android:gravity="center"
+                android:text="未审核"
+                android:textColor="@color/word_red_gray" />
+
+            <RadioButton
+                android:id="@+id/rb_sure_intent_order"
+                style="@style/bg_1w"
+                android:layout_gravity="center"
+                android:background="@color/transparent"
+                android:button="@null"
+                android:gravity="center"
+                android:text="已审核"
+                android:textColor="@color/word_red_gray" />
+
+            <RadioButton
+                android:id="@+id/rb_complete_intent_order"
+                style="@style/bg_1w"
+                android:layout_gravity="center"
+                android:background="@color/transparent"
+                android:button="@null"
+                android:gravity="center"
+                android:text="未通过"
+                android:textColor="@color/word_red_gray" />
+        </RadioGroup>
+
+        <ImageView
+            android:id="@+id/view"
+            style="@style/bg_fw"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/radiobutton_line" />
+
+        <LinearLayout
+            style="@style/bg_fw"
+            android:layout_alignParentBottom="true"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/all_provider_choose"
+                style="@style/bg_1w"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/icon_radiobutton_select"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/not_audit_provider_choose"
+                style="@style/bg_1w"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/icon_radiobutton_select"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/audit_provider_choose"
+                style="@style/bg_1w"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/icon_radiobutton_select"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/not_pass_provider_choose"
+                style="@style/bg_1w"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/icon_radiobutton_select"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout style="@style/bg_ff" >
+
+        <com.baiyi.cmall.pageviews.MyViewPager
+            android:id="@+id/vp_pager"
+            style="@style/bg_ff" >
+        </com.baiyi.cmall.pageviews.MyViewPager>
+
+        <com.baiyi.cmall.views.MyLoadingBar
+            android:id="@+id/pur_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

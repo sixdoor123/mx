@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pop_view"
+    style="@style/bg_ww"
+    android:background="@drawable/bg_pop"
+    android:gravity="left"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/margin_left_15"
+    android:paddingRight="@dimen/margin_right" >
+
+    <TextView
+        android:id="@+id/tv_purchase"
+        style="@style/bg_fw"
+        android:background="@drawable/selector_pop_item"
+        android:drawableLeft="@drawable/icon_purchase"
+        android:drawablePadding="@dimen/margin_left"
+        android:paddingBottom="@dimen/margin_bottom_15"
+        android:paddingTop="@dimen/margin_top_15"
+        android:text="委托采购"
+        android:textColor="@color/bg_white"
+        android:textSize="@dimen/text_size_15" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/bg_white" />
+
+    <TextView
+        android:id="@+id/tv_supply_material"
+        style="@style/bg_fw"
+        android:background="@drawable/selector_pop_item"
+        android:drawableLeft="@drawable/supply_commodity"
+        android:drawablePadding="@dimen/margin_left"
+        android:paddingBottom="@dimen/margin_bottom_15"
+        android:paddingTop="@dimen/margin_top_15"
+        android:text="发布供应"
+        android:textColor="@color/bg_white"
+        android:textSize="@dimen/text_size_15" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/bg_white" />
+
+    <TextView
+        android:id="@+id/tv_delegation"
+        style="@style/bg_fw"
+        android:background="@drawable/selector_pop_item"
+        android:drawableLeft="@drawable/icon_logistics"
+        android:drawablePadding="@dimen/margin_left"
+        android:paddingBottom="@dimen/margin_bottom_15"
+        android:paddingTop="@dimen/margin_top_15"
+        android:text="购物车"
+        android:textColor="@color/bg_white"
+        android:textSize="@dimen/text_size_15" />
+
+
+</LinearLayout>

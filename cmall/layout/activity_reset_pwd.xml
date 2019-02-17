@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/edt_input_pwd"
+        style="@style/bg_fw_all"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginRight="@dimen/margin_right"
+        android:drawableLeft="@drawable/password"
+        android:drawablePadding="@dimen/margin_left"
+        android:hint="请输入你的密码"
+        android:password="true"
+        android:textColor="@color/bg_hui1" />
+
+    <EditText
+        android:id="@+id/edt_sure_pwd"
+        style="@style/bg_fw_all"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginRight="@dimen/margin_right"
+        android:drawableLeft="@drawable/password"
+        android:drawablePadding="@dimen/margin_left"
+        android:hint="请确认你的密码"
+        android:password="true"
+        android:textColor="@color/bg_hui1" />
+
+    <View
+        style="@style/view_line_15dp"
+        android:layout_marginTop="@dimen/margin_bottom_15" />
+
+    <TextView
+        android:id="@+id/btn_complete"
+        style="@style/bg_fw"
+        android:layout_marginLeft="@dimen/margin_bottom_10"
+        android:layout_marginRight="@dimen/margin_bottom_10"
+        android:layout_marginTop="@dimen/margin_bottom_15"
+        android:background="@drawable/submit_select_bg"
+        android:gravity="center"
+        android:paddingBottom="@dimen/margin_bottom_10"
+        android:paddingTop="@dimen/margin_bottom_10"
+        android:text="完成"
+        android:textColor="@color/word_croci_white"
+        android:textSize="@dimen/text_size_16" />
+
+</LinearLayout>

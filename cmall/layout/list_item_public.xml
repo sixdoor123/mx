@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_shuibo"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txt_public"
+        android:layout_marginTop="@dimen/margin_top_15"
+        android:layout_marginBottom="@dimen/margin_bottom_15"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginRight="@dimen/margin_right"
+        android:singleLine="true"
+        style="@style/bg_fw"
+        android:text="aaaa"
+        android:textSize="@dimen/text_size_15" />
+
+</LinearLayout>

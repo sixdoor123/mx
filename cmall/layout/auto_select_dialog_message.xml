@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/view_parent"
+    style="@style/bg_fw"
+    android:background="@drawable/dialog_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/btn_title"
+        style="@style/bg_fw"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/margin_bottom_20"
+        android:paddingTop="@dimen/margin_bottom_20" >
+
+        <TextView
+            android:id="@+id/msgbox_title"
+            style="@style/bg_ww"
+            android:text="信息"
+            android:textColor="@color/bg_buyer"
+            android:textSize="@dimen/text_size_18" />
+    </LinearLayout>
+
+    <View
+        style="@style/view_line_1dp"
+        android:background="@color/bg_buyer" />
+
+    <RadioGroup
+        android:id="@+id/rg_content"
+        style="@style/bg_fw"
+        android:orientation="vertical" >
+
+        <RadioButton
+            android:id="@+id/rb_shi"
+            style="@style/bg_fw"
+            android:background="@drawable/bg_shuibo"
+            android:button="@null"
+            android:drawableRight="@drawable/radio_select"
+            android:padding="10dp"
+            android:text="是"
+            android:textColor="@color/bg_hui1"
+            android:textSize="@dimen/text_size_16" />
+
+        <View style="@style/view_line_1px" />
+
+        <RadioButton
+            android:id="@+id/rb_fou"
+            style="@style/bg_fw"
+            android:layout_gravity="right"
+            android:background="@drawable/bg_shuibo"
+            android:button="@null"
+            android:drawableRight="@drawable/radio_select"
+            android:padding="10dp"
+            android:text="否"
+            android:textColor="@color/bg_hui1"
+            android:textSize="@dimen/text_size_16" />
+    </RadioGroup>
+
+</LinearLayout>

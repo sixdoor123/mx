@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/bg_fw"
+    android:background="@color/bg_white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/bg_fw"
+        android:paddingBottom="@dimen/margin_bottom_10"
+        android:paddingTop="@dimen/margin_top_10" >
+
+        <TextView
+            style="@style/bg_ww"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:text="支付金额:"
+            android:textColor="@color/word_313131"
+            android:textSize="@dimen/text_size_18" />
+
+        <TextView
+            android:id="@+id/txt_total_price"
+            style="@style/bg_fw"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="1222元"
+            android:textColor="@color/word_ff6633"
+            android:textSize="@dimen/text_size_18" />
+
+        <ImageView
+            android:id="@+id/btn_arrow"
+            style="@style/img_arrow_up_down"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/margin_right" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/info_group"
+        style="@style/bg_fw"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/order_pro_group"
+            style="@style/bg_fw"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/bg_fw"
+            android:layout_marginLeft="@dimen/margin_left_45"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/bg_ww"
+                android:text="收获地址:"
+                android:textColor="@color/word_737373"
+                android:textSize="@dimen/text_size_18" />
+
+            <TextView
+                android:id="@+id/txt_accept"
+                style="@style/bg_ww"
+                android:text="科技股份看到了火箭发射角度看但是卡就好的手机卡好的撒健康好开始的空间撒的话就看撒好的空间撒活动空间撒好的尽快撒"
+                android:textColor="@color/word_737373"
+                android:textSize="@dimen/text_size_18" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/bg_fw"
+            android:layout_marginLeft="@dimen/margin_left_45"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/bg_ww"
+                android:text="发票信息:"
+                android:textColor="@color/word_737373"
+                android:textSize="@dimen/text_size_18" />
+
+            <TextView
+                android:id="@+id/txt_invoice"
+                style="@style/bg_ww"
+                android:text="科技股份看到了火箭发射角度看但是卡就好的手机卡好的撒健康好开始的空间撒的话就看撒好的空间撒活动空间撒好的尽快撒"
+                android:textColor="@color/word_737373"
+                android:textSize="@dimen/text_size_18" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.baiyi.cmall.activities.main.buy.PaymentMethodView
+        android:id="@+id/view_payment_method"
+        style="@style/bg_fw" >
+    </com.baiyi.cmall.activities.main.buy.PaymentMethodView>
+
+</LinearLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/view_parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/btn_title"
+        style="@style/bg_fw"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/margin_bottom_15"
+        android:paddingTop="@dimen/margin_top_15" >
+
+        <TextView
+            android:id="@+id/msgbox_title"
+            style="@style/bg_ww"
+            android:layout_centerInParent="true"
+            android:text="提示信息"
+            android:textColor="@color/bg_black"
+            android:textSize="@dimen/text_size_18" />
+    </RelativeLayout>
+
+    <View style="@style/view_line_2px" />
+
+    <LinearLayout
+        style="@style/bg_fw"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/margin_bottom_15"
+        android:paddingTop="@dimen/margin_top_15" >
+
+        <TextView
+            android:id="@+id/msgbox_txt1"
+            style="@style/bg_ww"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginRight="@dimen/margin_right"
+            android:text="用户名或密码错误，请你重新输入"
+            android:textColor="@color/bg_hui1"
+            android:textSize="@dimen/text_size_15" />
+    </LinearLayout>
+
+    <View
+        style="@style/view_line_1px"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginRight="@dimen/margin_right" />
+
+    <LinearLayout
+        style="@style/bg_fw"
+        android:paddingBottom="@dimen/margin_dialog_bottom_8"
+        android:paddingTop="@dimen/margin_top_10" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="" />
+
+        <Button
+            android:id="@+id/btn_canel"
+            style="@style/btn_dialog_nologin_cancel"
+            android:text="取消" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="" />
+
+        <Button
+            android:id="@+id/btn_ok"
+            style="@style/btn_dialog_nologin_cancel"
+            android:text="确定" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="" />
+    </LinearLayout>
+
+</LinearLayout>

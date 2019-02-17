@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_white"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:orientation="vertical"
+        android:paddingLeft="50dp"
+        android:paddingTop="@dimen/margin_top_15" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_help_user"
+            android:gravity="right"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_right" >
+
+            <TextView
+                android:id="@+id/txt_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="欢迎反馈"
+                android:textColor="@color/word_313131"
+                android:textSize="@dimen/text_size_16" />
+
+            <LinearLayout
+                android:id="@+id/lin_img_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_left"
+            android:text="时间"
+            android:textColor="@color/word_313131"
+            android:textSize="@dimen/text_size_14" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_margin="@dimen/margin_left"
+        android:src="@drawable/img_feed_system" />
+
+</LinearLayout>

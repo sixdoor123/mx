@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/bg_ff"
+    android:background="@color/bg_white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/lin_pur_control"
+        style="@style/bg_fw"
+        android:background="@drawable/bg_shuibo"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/margin_bottom_15"
+        android:paddingTop="@dimen/margin_top_15" >
+
+        <ImageView
+            style="@style/bg_ww"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:src="@drawable/procurement" />
+
+        <TextView
+            style="@style/bg_1w"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:text="采购信息"
+            android:textColor="@color/bg_black"
+            android:textSize="@dimen/text_size_15" />
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/tab_pur_detail"
+        style="@style/bg_fw"
+        android:orientation="vertical" >
+    </TableLayout>
+
+    <View
+        android:id="@+id/view_line_15"
+        style="@style/view_line_15dp" />
+
+</LinearLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/bg_ff"
+    android:id="@+id/main"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/bg_fw"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/btn_mall_catory"
+            style="@style/bg_ww"
+            android:layout_weight="1"
+            android:gravity="center"
+             android:background="@drawable/bg_white_hui3"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/margin_bottom_15"
+            android:paddingTop="@dimen/margin_top_15" >
+
+            <ImageView
+                android:id="@+id/img_arrow_sort"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_test_mall_category" />
+
+            <TextView
+                style="@style/bg_ww"
+                android:layout_marginLeft="@dimen/margin_5"
+                android:text="分类"
+                android:textColor="@color/word_737373"
+                android:textSize="@dimen/text_size_18" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_mall_sales"
+            style="@style/bg_ww"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/bg_white_hui3"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/margin_bottom_15"
+            android:paddingTop="@dimen/margin_top_15" >
+
+            <TextView
+                style="@style/bg_ww"
+                android:text="销量"
+                android:textColor="@color/word_737373"
+                android:textSize="@dimen/text_size_18" />
+
+            <ImageView
+                android:id="@+id/img_mall_sales"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_5"
+                android:src="@drawable/selector_mall_price" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_mall_price"
+            style="@style/bg_ww"
+            android:layout_weight="1"
+            android:gravity="center"
+             android:background="@drawable/bg_white_hui3"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/margin_bottom_15"
+            android:paddingTop="@dimen/margin_top_15" >
+
+            <TextView
+                style="@style/bg_ww"
+                android:text="价格"
+                android:textColor="@color/word_737373"
+                android:textSize="@dimen/text_size_18" />
+
+            <ImageView
+                android:id="@+id/img_mall_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_5"
+                android:src="@drawable/selector_mall_price" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_mall_filter"
+            style="@style/bg_ww"
+            android:layout_weight="1"
+             android:background="@drawable/bg_white_hui3"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/margin_bottom_15"
+            android:paddingTop="@dimen/margin_top_15" >
+
+            <TextView
+                style="@style/bg_ww"
+                android:text="筛选"
+                android:textColor="@color/word_737373"
+                android:textSize="@dimen/text_size_18" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_5"
+                android:src="@drawable/icon_test_mall_filter" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/fragment_list_view"/>
+
+</LinearLayout>

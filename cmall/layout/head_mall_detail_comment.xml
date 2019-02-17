@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/bg_fw"
+        android:orientation="horizontal" 
+        >
+
+        <LinearLayout
+            android:id="@+id/comment_all_linear"
+            style="@style/bg_fw"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/margin_bottom_5"
+            android:paddingTop="@dimen/margin_top_5" >
+
+            <TextView
+                style="@style/bg_ww"
+                android:duplicateParentState="true"
+                android:text="全部评价"
+                android:textColor="@color/list_invoice_words"
+                android:textSize="@dimen/text_size_15" />
+
+            <TextView
+                android:id="@+id/comment_all"
+                style="@style/bg_ww"
+                android:layout_marginTop="@dimen/margin_top_5"
+                android:duplicateParentState="true"
+                android:text="0"
+                android:textColor="@color/list_invoice_words"
+                android:textSize="@dimen/text_size_15" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/comment_good_linear"
+            style="@style/bg_fw"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/margin_bottom_5"
+            android:paddingTop="@dimen/margin_top_5" >
+
+            <TextView
+                style="@style/bg_ww"
+                android:duplicateParentState="true"
+                android:text="好评"
+                android:textColor="@color/list_invoice_words"
+                android:textSize="@dimen/text_size_15" />
+
+            <TextView
+                android:id="@+id/comment_good"
+                style="@style/bg_ww"
+                android:layout_marginTop="@dimen/margin_top_5"
+                android:duplicateParentState="true"
+                android:text="0"
+                android:textColor="@color/list_invoice_words"
+                android:textSize="@dimen/text_size_15" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/comment_bad_linear"
+            style="@style/bg_fw"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/margin_bottom_5"
+            android:paddingTop="@dimen/margin_top_5" >
+
+            <TextView
+                style="@style/bg_ww"
+                android:duplicateParentState="true"
+                android:text="差评"
+                android:textColor="@color/list_invoice_words"
+                android:textSize="@dimen/text_size_15" />
+
+            <TextView
+                android:id="@+id/comment_bad"
+                style="@style/bg_ww"
+                android:layout_marginTop="@dimen/margin_top_5"
+                android:duplicateParentState="true"
+                android:text="0"
+                android:textColor="@color/list_invoice_words"
+                android:textSize="@dimen/text_size_15" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/comment_picture_linear"
+            style="@style/bg_fw"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/margin_bottom_5"
+            android:paddingTop="@dimen/margin_top_5" >
+
+            <TextView
+                style="@style/bg_ww"
+                android:duplicateParentState="true"
+                android:text="晒图"
+                android:textColor="@color/list_invoice_words"
+                android:textSize="@dimen/text_size_15" />
+
+            <TextView
+                 android:id="@+id/comment_picture"
+                style="@style/bg_ww"
+                android:layout_marginTop="@dimen/margin_top_5"
+                android:duplicateParentState="true"
+                android:text="0"
+                android:textColor="@color/list_invoice_words"
+                android:textSize="@dimen/text_size_15" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View style="@style/view_line_1px" />
+
+    <View style="@style/view_line_15dp" />
+
+    <View style="@style/view_line_1px" />
+
+</LinearLayout>

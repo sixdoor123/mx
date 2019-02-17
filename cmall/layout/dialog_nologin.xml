@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/bg_fw"
+    android:background="@drawable/dialog_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        style="@style/bg_fw"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/margin_dialog_title_bottom"
+        android:paddingTop="@dimen/margin_dialog_title_top" >
+
+        <TextView
+            android:id="@+id/nologin_title"
+            style="@style/bg_ww"
+            android:layout_centerInParent="true"
+            android:text="提示信息"
+            android:textColor="@color/word_ff6633"
+            android:textSize="@dimen/text_size_18" />
+    </RelativeLayout>
+
+    <View
+        style="@style/view_line_2px"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginRight="@dimen/margin_right" />
+
+    <ScrollView
+        style="@style/bg_fw"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:id="@+id/update_content_layout"
+            style="@style/bg_fw"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/nologin_content"
+                style="@style/bg_ww"
+                android:layout_marginBottom="@dimen/margin_bottom_15"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_marginRight="@dimen/margin_right"
+                android:layout_marginTop="@dimen/margin_top_15"
+                android:lineSpacingExtra="@dimen/margin_line_top_5"
+                android:text="登录失效，请先登录后操作"
+                android:textColor="@color/bg_hui1"
+                android:textSize="@dimen/text_size_15" />
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        style="@style/view_line_1px"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginRight="@dimen/margin_right" />
+
+    <LinearLayout
+        style="@style/bg_fw"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/margin_dialog_bottom_8"
+        android:paddingTop="@dimen/margin_top_10" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/login_cancel"
+            style="@style/btn_dialog_nologin_cancel"
+            android:text="取消" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3" />
+
+        <Button
+            android:id="@+id/login_sure"
+            style="@style/btn_dialog_nologin_cancel"
+            android:text="登录" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/bg_ff"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/bg_ww_all"
+        android:text="发票类型"
+        android:textColor="@color/bg_black"
+        android:textSize="@dimen/text_size_16" />
+
+    <GridView
+        android:id="@+id/grd_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:drawSelectorOnTop="false"
+        android:horizontalSpacing="10dp"
+        android:numColumns="3"
+        android:verticalSpacing="15dp" />
+
+    <TextView
+        style="@style/bg_ww_all"
+        android:text="发票抬头"
+        android:textColor="@color/bg_black"
+        android:textSize="@dimen/text_size_16" />
+
+    <EditText
+        android:id="@+id/et_title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginRight="@dimen/margin_right"
+        android:background="@drawable/edittext_select"
+        android:hint="请输入发票抬头"
+        android:paddingLeft="@dimen/margin_left"
+        android:paddingRight="@dimen/margin_right"
+        android:singleLine="true"
+        android:textColor="@color/bg_hui1"
+        android:textSize="@dimen/text_size_15" />
+
+    <TextView
+        style="@style/bg_ww_all"
+        android:text="发票内容"
+        android:textColor="@color/bg_black"
+        android:textSize="@dimen/text_size_16" />
+
+    <RadioGroup
+        android:id="@+id/rg_context"
+        style="@style/bg_fw"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingTop="-10dp" >
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/rb_is_default"
+        style="@style/bg_fw"
+        android:layout_margin="@dimen/margin_bottom_10"
+        android:background="@drawable/bg_shuibo"
+        android:button="@null"
+        android:drawableLeft="@drawable/select_invoice_isdefault"
+        android:drawablePadding="@dimen/margin_left"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="设置为默认发票" />
+
+    <TextView
+        android:id="@+id/btn_set_ok"
+        style="@style/bg_fw"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginRight="@dimen/margin_right"
+        android:background="@drawable/xiadan_select_bg"
+        android:gravity="center"
+        android:paddingBottom="@dimen/margin_bottom_10"
+        android:paddingTop="@dimen/margin_bottom_10"
+        android:text="确认"
+        android:textColor="@color/word_white_croci"
+        android:textSize="@dimen/text_size_16" />
+
+</LinearLayout>

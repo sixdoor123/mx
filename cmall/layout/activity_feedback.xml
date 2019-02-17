@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="60dp"
+        android:orientation="vertical" >
+
+        <include
+            style="@style/bg_ff"
+            layout="@layout/pull_down_view"
+            android:visibility="gone" />
+        <com.jcodecraeer.xrecyclerview.XRecyclerView
+            android:id="@+id/feedback_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bg_hui1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/lin_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_hui1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/margin_bottom_10"
+            android:paddingLeft="@dimen/margin_left"
+            android:paddingRight="@dimen/margin_right"
+            android:paddingTop="@dimen/margin_top_10" >
+
+            <ImageView
+                android:id="@+id/img_write"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/selector_feedback_img" />
+
+            <RelativeLayout
+                style="@style/bg_fw"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/margin_left" >
+
+                <EditText
+                    android:id="@+id/edt_feed"
+                    style="@style/base_edit_h40"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/bg_edittext"
+                    android:hint="请输入你的意见"
+                    android:singleLine="true"
+                    android:textColor="@color/word_313131"
+                    android:textSize="@dimen/text_size_15" />
+
+                <requestFocus />
+
+                <ImageView
+                    style="@style/bg_ww"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_left"
+                    android:src="@drawable/img_feed_readers" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:paddingBottom="@dimen/margin_bottom_10"
+                android:paddingLeft="@dimen/margin_bottom_10"
+                android:paddingTop="@dimen/margin_bottom_10"
+                android:text="发送"
+                android:textColor="@color/word_313131" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_addimg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_hui1"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <View style="@style/view_line_1px" />
+
+            <com.baiyi.cmall.activities.main.business.help.HorizontalListView
+                android:id="@+id/list_img"
+                android:layout_width="fill_parent"
+                android:layout_height="200dp" >
+            </com.baiyi.cmall.activities.main.business.help.HorizontalListView>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@color/bg_hui1"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/margin_bottom_15"
+                android:paddingTop="@dimen/margin_top_15" >
+
+                <Button
+                    android:id="@+id/btn_gallery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_left"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:gravity="left"
+                    android:text="相册"
+                    android:textColor="@color/word_hui1_white"
+                    android:textSize="@dimen/text_size_15" />
+
+                <CheckBox
+                    android:id="@+id/chb_yuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_left"
+                    android:background="@color/transparent"
+                    android:button="@drawable/checkbox_circle"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/margin_left"
+                    android:text="原图"
+                    android:textColor="@color/word_313131"
+                    android:textSize="@dimen/text_size_15" />
+
+                <Button
+                    android:id="@+id/btn_sendimg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_left"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:gravity="center"
+                    android:text="发送"
+                    android:textColor="@color/word_red_gray_sel"
+                    android:textSize="@dimen/text_size_15" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

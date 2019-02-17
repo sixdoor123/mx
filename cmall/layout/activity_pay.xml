@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/bg_ff"
+    android:background="@color/bg_white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/lin_contral"
+        style="@style/bg_fw_all"
+        android:background="@drawable/bg_shuibo" >
+
+        <TextView
+            style="@style/bg_ww"
+            android:layout_marginRight="@dimen/margin_right"
+            android:text="支付余额:"
+            android:textColor="@color/bg_black"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            style="@style/bg_1w"
+            android:text="XXXXXX"
+            android:textColor="@color/bg_buyer"
+            android:textSize="@dimen/text_size_15" />
+
+        <ImageView
+            android:id="@+id/img_yue"
+            style="@style/bg_ww"
+            android:background="@drawable/down_arrow" />
+    </LinearLayout>
+
+    <View style="@style/view_line_1dp" />
+
+    <include layout="@layout/activity_zhifu" />
+
+    <View style="@style/view_line_15dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_high_45" >
+
+        <RadioGroup
+            android:id="@+id/rg_pay_way"
+            style="@style/bg_fw"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rb_online_pay"
+                style="@style/bg_1w"
+                android:layout_gravity="center"
+                android:background="@color/transparent"
+                android:button="@null"
+                android:gravity="center"
+                android:text="在线支付"
+                android:textColor="@color/word_red_gray" />
+
+            <RadioButton
+                android:id="@+id/rb_offline_pay"
+                style="@style/bg_1w"
+                android:layout_gravity="center"
+                android:background="@color/transparent"
+                android:button="@null"
+                android:gravity="center"
+                android:text="线下支付"
+                android:textColor="@color/word_red_gray" />
+        </RadioGroup>
+
+        <ImageView
+            android:id="@+id/img_line_view"
+            style="@style/bg_fw"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/radiobutton_line" />
+
+        <LinearLayout
+            style="@style/bg_fw"
+            android:layout_alignParentBottom="true"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/img_online"
+                style="@style/bg_1w"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/icon_radiobutton_select"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/img_offline"
+                style="@style/bg_1w"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/icon_radiobutton_select"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.baiyi.cmall.pageviews.MyScrollViewPager
+        android:id="@+id/vp_pager_pay"
+        style="@style/bg_ff" >
+    </com.baiyi.cmall.pageviews.MyScrollViewPager>
+
+</LinearLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/lin_balance_pay"
+        style="@style/bg_fw_all"
+        android:background="@drawable/bg_shuibo"
+        android:orientation="horizontal" >
+
+        <ImageView style="@style/img_yue" />
+
+        <TextView
+            style="@style/bg_1w"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:text="余额支付"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/bg_black"
+            android:textSize="@dimen/text_size_16" />
+
+        <ImageView
+            style="@style/bg_ww"
+            android:src="@drawable/right_arrow" />
+    </LinearLayout>
+
+    <View style="@style/view_line_1px" />
+
+    <LinearLayout
+        android:id="@+id/lin_bank_card_pay"
+        style="@style/bg_fw_all"
+        android:background="@drawable/bg_shuibo"
+        android:orientation="horizontal" >
+
+        <ImageView style="@style/img_card" />
+
+        <TextView
+            style="@style/bg_1w"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:text="储蓄卡支付"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/bg_black"
+            android:textSize="@dimen/text_size_16" />
+
+        <ImageView
+            style="@style/bg_ww"
+            android:src="@drawable/right_arrow" />
+    </LinearLayout>
+
+    <View style="@style/view_line_1px" />
+
+    <LinearLayout
+        android:id="@+id/lin_credit_card_pay"
+        style="@style/bg_fw_all"
+        android:background="@drawable/bg_shuibo"
+        android:orientation="horizontal" >
+
+        <ImageView style="@style/img_credit" />
+
+        <TextView
+            style="@style/bg_1w"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:text="信用卡支付"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/bg_black"
+            android:textSize="@dimen/text_size_16" />
+
+        <ImageView
+            style="@style/bg_ww"
+            android:src="@drawable/right_arrow" />
+    </LinearLayout>
+
+    <View style="@style/view_line_1px" />
+
+    <LinearLayout
+        android:id="@+id/lin_three_party_pay"
+        style="@style/bg_fw_all"
+        android:background="@drawable/bg_shuibo"
+        android:orientation="horizontal" >
+
+        <ImageView style="@style/img_other"/>
+
+        <TextView
+            style="@style/bg_1w"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:text="第三方支付"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/bg_black"
+            android:textSize="@dimen/text_size_16" />
+
+        <ImageView
+            style="@style/bg_ww"
+            android:src="@drawable/right_arrow" />
+    </LinearLayout>
+
+    <View style="@style/view_line_1px" />
+
+    <LinearLayout
+        android:id="@+id/lin_zhao_hang_pay"
+        style="@style/bg_fw_all"
+        android:background="@drawable/bg_shuibo"
+        android:orientation="horizontal" >
+
+        <ImageView
+            style="@style/bg_ww"
+            android:src="@drawable/procurement" />
+
+        <TextView
+            style="@style/bg_1w"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:text="招商银行在线支付"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/bg_black"
+            android:textSize="@dimen/text_size_16" />
+
+        <ImageView
+            style="@style/bg_ww"
+            android:src="@drawable/right_arrow" />
+    </LinearLayout>
+
+    <View style="@style/view_line_1px" />
+
+</LinearLayout>

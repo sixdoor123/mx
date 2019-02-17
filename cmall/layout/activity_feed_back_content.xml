@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/bg_ff"
+    android:background="@color/bg_white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/bg_fw"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/margin_top_15"
+        android:paddingTop="@dimen/margin_top_15" >
+
+        <ImageView
+            style="@style/bg_ww"
+            android:paddingLeft="@dimen/margin_left"
+            android:src="@drawable/feedback" />
+
+        <TextView
+            style="@style/bg_ww"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:text="意见反馈"
+            android:textColor="@color/bg_black"
+            android:textSize="@dimen/text_size_15" />
+    </LinearLayout>
+
+    <View style="@style/view_line_1px" />
+
+    <EditText
+        android:id="@+id/edt_suggest_content"
+        style="@style/bg_fw"
+        android:layout_marginBottom="@dimen/margin_bottom_15"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginRight="@dimen/margin_right"
+        android:layout_marginTop="@dimen/margin_top_15"
+        android:background="@drawable/edittext_select"
+        android:gravity="top"
+        android:hint="请输入意见..."
+        android:lines="6"
+        android:paddingLeft="@dimen/margin_left_5"
+        android:paddingTop="@dimen/margin_left_5"
+        android:textColor="@color/bg_hui1"
+        android:textSize="@dimen/text_size_15" />
+
+    <View style="@style/view_line_1px" />
+
+    <LinearLayout
+        style="@style/bg_fw"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingBottom="@dimen/margin_top_15"
+        android:paddingTop="@dimen/margin_top_15" >
+
+        <ImageView
+            style="@style/bg_ww"
+            android:paddingLeft="@dimen/margin_left"
+            android:src="@drawable/contact" />
+
+        <TextView
+            style="@style/bg_ww"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:text="联系方式(选填)"
+            android:textColor="@color/bg_black"
+            android:textSize="@dimen/text_size_16" />
+
+        <EditText
+            android:id="@+id/edt_phone_number"
+            style="@style/bg_fw"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginRight="@dimen/margin_right"
+            android:background="@drawable/edittext_select"
+            android:hint="请输入手机号..."
+            android:inputType="phone"
+            android:paddingBottom="9dp"
+            android:paddingLeft="@dimen/margin_left_5"
+            android:paddingTop="9dp"
+            android:singleLine="true"
+            android:textColor="@color/bg_hui1"
+            android:textSize="@dimen/text_size_15" />
+    </LinearLayout>
+
+    <View style="@style/view_line_15dp" />
+
+    <TextView
+        android:id="@+id/btn_supply_suggest"
+        style="@style/bg_fw"
+        android:layout_marginBottom="@dimen/margin_bottom_20"
+        android:layout_marginLeft="@dimen/margin_bottom_10"
+        android:layout_marginRight="@dimen/margin_bottom_10"
+        android:layout_marginTop="@dimen/margin_bottom_20"
+        android:background="@drawable/submit_select_bg"
+        android:gravity="center"
+        android:paddingBottom="@dimen/margin_bottom_10"
+        android:paddingTop="@dimen/margin_bottom_10"
+        android:text="提交意见"
+        android:textColor="@color/word_croci_white"
+        android:textSize="@dimen/text_size_16" />
+
+</LinearLayout>

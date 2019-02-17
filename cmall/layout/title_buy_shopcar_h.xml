@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/bg_fw"
+    android:background="@color/bg_green_1d8c59"
+    android:orientation="vertical"
+    android:paddingTop="20dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/shopping_back"
+            style="@style/img_arrow"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_white_hui3"
+            android:padding="10dp" />
+
+        <TextView
+            style="@style/bg_ww"
+            android:layout_centerInParent="true"
+            android:paddingBottom="@dimen/margin_bottom_10"
+            android:paddingTop="@dimen/margin_top_15"
+            android:text="购物车"
+            android:textColor="@color/bg_white"
+            android:textSize="@dimen/text_size_18" />
+
+        <TextView
+            android:id="@+id/btn_edit"
+            style="@style/bg_ww"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_right"
+            android:text="编辑"
+            android:textColor="@color/bg_white"
+            android:textSize="@dimen/text_size_18" />
+    </RelativeLayout>
+
+</LinearLayout>

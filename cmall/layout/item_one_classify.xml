@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 市场行情一级分类标题 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/bg_ff"
+    android:background="@drawable/bg_shuibo"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/margin_left"
+    android:paddingRight="@dimen/margin_right" >
+
+    <TextView
+        android:id="@+id/tv_one_classify"
+        style="@style/bg_fw"
+        android:layout_marginBottom="@dimen/margin_bottom_15"
+        android:layout_marginTop="@dimen/margin_top_15"
+        android:textColor="@color/bg_black"
+        android:textSize="@dimen/text_size_16" />
+
+    <View
+        style="@style/view_line_1dp"
+        android:layout_marginBottom="@dimen/margin_bottom_15" />
+
+    <LinearLayout
+        android:id="@+id/lst_classify_info"
+        style="@style/bg_fw"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/bg_fw"
+    android:padding="@dimen/margin_left" >
+
+    <TextView
+        android:id="@+id/tv_jian"
+        style="@style/bg_ww"
+        android:gravity="right"
+        android:text="XXX:"
+        android:textColor="@color/bg_black"
+        android:textSize="@dimen/text_size_15" />
+
+    <EditText
+        android:id="@+id/et_zhi"
+        style="@style/sty_edit_text"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:background="@drawable/edittext_select"
+        android:singleLine="true"
+        android:text="XXX"
+        android:textColor="@color/bg_hui1"
+        android:textSize="@dimen/text_size_15" />
+
+     <TextView
+        android:id="@+id/tv_unit"
+        style="@style/bg_ww"
+        android:gravity="right"
+        android:text="XXX"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:textColor="@color/bg_hui1"
+        android:textSize="@dimen/text_size_15" />
+</TableRow>

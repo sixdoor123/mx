@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/bg_fw"
+        android:layout_marginBottom="@dimen/margin_bottom_15"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginTop="@dimen/margin_top_15"
+        android:text="一、支付安全问题如何保障 ?"
+        android:textColor="@color/bg_black"
+        android:textSize="@dimen/text_size_16" />
+
+    <View style="@style/view_line_1px" />
+     <TextView
+        style="@style/bg_fw"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginTop="@dimen/margin_top_15"
+        android:text="1、消费者在签收商品后10天内，可提出退换货申请，退换的商品必须不影响商家的二次销售。"
+        android:lineSpacingExtra="10dp"
+        android:textColor="@color/bg_hui1"
+        android:textSize="@dimen/text_size_15" />
+     <TextView
+        style="@style/bg_fw"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:text="2、在邦承诺出售的商品均为正品，消费者若收到假货可在指定期限发起维权，申请“假一赔十”赔付。"
+        android:lineSpacingExtra="10dp"
+        android:textColor="@color/bg_hui1"
+        android:textSize="@dimen/text_size_15" />
+</LinearLayout>

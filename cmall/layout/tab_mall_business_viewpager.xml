@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/bg_fw"
+    android:background="@color/bg_white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/bg_fw"
+        android:paddingTop="@dimen/margin_top_10"
+        android:paddingBottom="@dimen/margin_bottom_10"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            style="@style/bg_fw"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txt_count_business_all"
+                style="@style/bg_ww"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="136"
+                android:textColor="@color/bg_blue"
+                android:textSize="@dimen/text_size_16" />
+
+            <TextView
+                style="@style/bg_ww"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin_top_10"
+                android:gravity="center_horizontal"
+                android:text="全部商品"
+                android:textColor="@color/bg_blue"
+                android:textSize="@dimen/text_size_16" />
+            
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/bg_fw"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txt_count_business_new"
+                style="@style/bg_ww"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="136"
+                android:textColor="@color/bg_blue"
+                android:textSize="@dimen/text_size_16" />
+
+            <TextView
+                style="@style/bg_ww"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin_top_10"
+                android:gravity="center_horizontal"
+                android:text="上新"
+                android:textColor="@color/bg_blue"
+                android:textSize="@dimen/text_size_16" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/bg_fw"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txt_count_business_sales"
+                style="@style/bg_ww"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="136"
+                android:textColor="@color/bg_blue"
+                android:textSize="@dimen/text_size_16" />
+
+            <TextView
+                style="@style/bg_ww"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin_top_10"
+                android:gravity="center_horizontal"
+                android:text="促销"
+                android:textColor="@color/bg_blue"
+                android:textSize="@dimen/text_size_16" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/bg_fw"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txt_count_business_dynamic"
+                style="@style/bg_ww"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="136"
+                android:textColor="@color/bg_blue"
+                android:textSize="@dimen/text_size_16" />
+
+            <TextView
+                style="@style/bg_ww"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin_top_10"
+                android:gravity="center_horizontal"
+                android:text="店铺动态"
+                android:textColor="@color/bg_blue"
+                android:textSize="@dimen/text_size_16" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/head_business_filter" />
+
+</LinearLayout>

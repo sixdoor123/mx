@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/bg_fw"
+    android:id="@+id/ll_"
+    android:orientation="vertical"
+    android:background="@drawable/bg_shuibo" >
+
+    <TextView
+        android:id="@+id/tv_pop"
+        style="@style/bg_fw_all"
+        android:singleLine="true"
+        android:text="@dimen/text_size_16"
+        android:textColor="@color/bg_black" />
+
+</LinearLayout>

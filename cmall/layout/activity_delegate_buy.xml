@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   style="@style/bg_ff"
+   android:id="@+id/ll_add"
+    android:background="@color/bg_white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_supply_info"
+        style="@style/bg_fw"
+        android:background="@drawable/bg_shuibo"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView style="@style/bg_ww"
+            android:layout_marginLeft="@dimen/margin_bottom_10"
+            android:src="@drawable/supply"/>
+        <TextView
+            style="@style/bg_1w"
+            android:button="@null"
+            android:paddingBottom="@dimen/margin_bottom_15"
+            android:paddingLeft="@dimen/margin_bottom_10"
+            android:paddingTop="@dimen/margin_bottom_15"
+            android:text="供应信息"
+            android:textColor="@color/bg_black"
+            android:textSize="@dimen/text_size_16" />
+
+        <ImageView
+            android:id="@+id/img_up_down"
+           style="@style/bg_ww"
+            android:paddingRight="@dimen/margin_bottom_10"
+            android:src="@drawable/down_arrow" />
+    </LinearLayout>
+
+    <View
+       style="@style/view_line_1px"/>
+
+
+</LinearLayout>

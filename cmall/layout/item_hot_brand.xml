@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/img_hot"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/tv_company_name"
+        style="@style/bg_ww"
+        android:layout_margin="10dp"
+        android:textColor="@color/word_black_hui"
+        android:textSize="12sp" />
+
+</FrameLayout>

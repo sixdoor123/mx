@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/margin_left"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/img_mall_item"
+        style="@style/img_mall_list_item"
+        android:background="@drawable/icon_no" />
+
+    <TextView
+        android:id="@+id/txt_mall_name"
+        style="@style/bg_ww"
+        android:layout_marginTop="@dimen/margin_top_15"
+        android:textColor="@color/word_737373"
+        android:text="间甲酚(纯度:99%)" />
+
+    <LinearLayout
+        style="@style/bg_fw"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/txt_mall_price"
+            style="@style/bg_ww"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="@dimen/margin_bottom_10"
+            android:layout_marginTop="@dimen/margin_top_5"
+            android:textColor="@color/word_ff6633"
+            android:text="￥12.00" />
+
+        <TextView
+            android:id="@+id/txt_mall_unit"
+            style="@style/bg_fw"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="@dimen/margin_bottom_10"
+            android:layout_marginTop="@dimen/margin_top_5"
+            android:layout_weight="1"
+            android:text="/ton" />
+
+        <ImageView
+            android:id="@+id/img_mall_sigin"
+            style="@style/img_mall_list_item_sigin"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/margin_5" />
+    </LinearLayout>
+
+</LinearLayout>

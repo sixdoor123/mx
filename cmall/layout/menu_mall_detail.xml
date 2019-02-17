@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        style="@style/bg_ff"
+        android:layout_weight="1"
+        android:background="@color/bg_black"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_mall_detail_menu_shop"
+            style="@style/bg_wf"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:drawableTop="@drawable/icon_quotation"
+            android:background="#00000000"
+            android:gravity="center"
+            android:text="店铺"
+            android:textColor="@color/bg_white"
+            android:textSize="@dimen/text_size_14" />
+
+        <Button
+            android:id="@+id/btn_mall_detail_menu_collect"
+            style="@style/bg_wf"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:drawableTop="@drawable/icon_follow"
+            android:background="#00000000"
+            android:gravity="center"
+            android:text="关注"
+            android:textColor="@color/bg_white"
+            android:textSize="@dimen/text_size_14" />
+
+        <Button
+            android:id="@+id/btn_mall_detail_menu_shoppingcar"
+            style="@style/bg_wf"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:drawableTop="@drawable/icon_pro_purchase"
+            android:background="#00000000"
+            android:gravity="center"
+            android:text="购物车"
+            android:textColor="@color/bg_white"
+            android:textSize="@dimen/text_size_14" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/bg_ff"
+        android:layout_weight="1"
+        android:background="@color/bg_blue"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_mall_detail_menu_buy_shoppingcar"
+            style="@style/bg_ff"
+            android:layout_weight="1"
+            android:background="#ec6f1d"
+            android:gravity="center"
+            android:text="加入购物车"
+            android:textColor="@color/bg_white"
+            android:textSize="@dimen/text_size_16" />
+
+        <Button
+            android:id="@+id/btn_mall_detail_menu_buy"
+            style="@style/bg_ff"
+            android:layout_weight="1"
+            android:background="#ee461f"
+            android:gravity="center"
+            android:text="立即购买"
+            android:textColor="@color/bg_white"
+            android:textSize="@dimen/text_size_16" />
+    </LinearLayout>
+
+</LinearLayout>

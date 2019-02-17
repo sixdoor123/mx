@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/bg_ff" >
+
+    <ImageView
+        style="@style/bg_ww"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/margin_left"
+        android:src="@drawable/icon_pop_back" />
+
+    <TextView
+        style="@style/bg_ww"
+        android:layout_centerInParent="true"
+        android:text="品牌"
+        android:textColor="@color/word_313131"
+        android:textSize="@dimen/text_size_18" />
+
+    <TextView
+        android:id="@+id/btn_ok"
+        style="@style/bg_ww"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/margin_left"
+        android:text="确定"
+        android:textColor="@color/word_737373"
+        android:textSize="@dimen/text_size_16" />
+
+</RelativeLayout>

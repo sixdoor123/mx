@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/bg_ff"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            style="@style/bg_fw_all"
+            android:background="@color/bg_green"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                style="@style/bg_1w"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_order_id"
+                    style="@style/bg_ww"
+                    android:layout_marginBottom="@dimen/margin_bottom_10"
+                    android:text="@string/form_num"
+                    android:textColor="@color/bg_white"
+                    android:textSize="@dimen/text_size_15" />
+
+                <TextView
+                    android:id="@+id/tv_warm_info"
+                    style="@style/bg_ww"
+                    android:text="交易即将关闭,请尽快付款 !"
+                    android:textColor="@color/bg_white"
+                    android:textSize="@dimen/text_size_15" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/img_tu"
+                style="@style/bg_ww"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/icon_payment" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_form_consignee"
+            style="@style/bg_fw_all"
+            android:background="@drawable/bg_shuibo"
+            android:orientation="horizontal" >
+
+            <ImageView
+                style="@style/bg_ww"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/margin_right"
+                android:background="@drawable/icon_address" />
+
+            <LinearLayout
+                style="@style/bg_1w"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    style="@style/bg_fw"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/bg_ww"
+                        android:layout_marginRight="@dimen/margin_right"
+                        android:text="收货人:"
+                        android:textColor="@color/bg_hui1"
+                        android:textSize="@dimen/text_size_15" />
+
+                    <TextView
+                        android:id="@+id/tv_get_goods_person"
+                        style="@style/bg_1w"
+                        android:layout_marginRight="@dimen/margin_right"
+                        android:text=""
+                        android:textColor="@color/bg_hui1"
+                        android:textSize="@dimen/text_size_15" />
+
+                    <TextView
+                        android:id="@+id/tv_tel_phone"
+                        style="@style/bg_ww"
+                        android:text=""
+                        android:textColor="@color/bg_hui1"
+                        android:textSize="@dimen/text_size_15" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/bg_fw"
+                    android:layout_marginTop="@dimen/margin_top_10"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/bg_ww"
+                        android:layout_marginRight="@dimen/margin_right"
+                        android:text="地区:"
+                        android:textColor="@color/bg_hui1"
+                        android:textSize="@dimen/text_size_15" />
+
+                    <TextView
+                        android:id="@+id/tv_get_goods_city"
+                        style="@style/bg_ww"
+                        android:layout_marginRight="@dimen/margin_right"
+                        android:text=""
+                        android:textColor="@color/bg_hui1"
+                        android:textSize="@dimen/text_size_15" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/bg_fw"
+                    android:layout_marginTop="@dimen/margin_top_10"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/bg_ww"
+                        android:layout_marginRight="@dimen/margin_right"
+                        android:text="详细地址:"
+                        android:textColor="@color/bg_hui1"
+                        android:textSize="@dimen/text_size_15" />
+
+                    <TextView
+                        android:id="@+id/tv_get_goods_address"
+                        style="@style/bg_ww"
+                        android:layout_marginRight="@dimen/margin_right"
+                        android:text=""
+                        android:textColor="@color/bg_hui1"
+                        android:textSize="@dimen/text_size_15" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/img_consignee_right"
+                style="@style/bg_ww"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:background="@drawable/right_arrow"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <View style="@style/view_line_1px" />
+        <!-- 发票 -->
+
+        <LinearLayout
+            android:id="@+id/lin_form_invoice"
+            style="@style/bg_fw_all"
+            android:background="@drawable/bg_shuibo"
+            android:orientation="horizontal" >
+
+            <ImageView
+                style="@style/bg_ww"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/margin_right"
+                android:background="@drawable/icon_invoice" />
+
+            <LinearLayout
+                style="@style/bg_1w"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    style="@style/bg_fw"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/bg_ww"
+                        android:layout_marginRight="@dimen/margin_right"
+                        android:text="发票类型:"
+                        android:textColor="@color/bg_hui1"
+                        android:textSize="@dimen/text_size_15" />
+
+                    <TextView
+                        android:id="@+id/tv_invoice_type"
+                        style="@style/bg_ww"
+                        android:layout_marginRight="@dimen/margin_right"
+                        android:text=""
+                        android:textColor="@color/bg_hui1"
+                        android:textSize="@dimen/text_size_15" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/bg_fw"
+                    android:layout_marginTop="@dimen/margin_top_10"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/bg_ww"
+                        android:layout_marginRight="@dimen/margin_right"
+                        android:text="发票抬头:"
+                        android:textColor="@color/bg_hui1"
+                        android:textSize="@dimen/text_size_15" />
+
+                    <TextView
+                        android:id="@+id/tv_invoice_title"
+                        style="@style/bg_ww"
+                        android:layout_marginRight="@dimen/margin_right"
+                        android:text=""
+                        android:textColor="@color/bg_hui1"
+                        android:textSize="@dimen/text_size_15" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/bg_fw"
+                    android:layout_marginTop="@dimen/margin_top_10"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/bg_ww"
+                        android:layout_marginRight="@dimen/margin_right"
+                        android:text="发票内容:"
+                        android:textColor="@color/bg_hui1"
+                        android:textSize="@dimen/text_size_15" />
+
+                    <TextView
+                        android:id="@+id/tv_invoice_content"
+                        style="@style/bg_ww"
+                        android:layout_marginRight="@dimen/margin_right"
+                        android:text=""
+                        android:textColor="@color/bg_hui1"
+                        android:textSize="@dimen/text_size_15" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/img_invoice_right"
+                style="@style/bg_ww"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:background="@drawable/right_arrow"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <View style="@style/view_line_15dp" />
+
+        <include layout="@layout/item_pur_intention_order" />
+
+        <View style="@style/view_line_1px" />
+        
+        <LinearLayout
+            style="@style/bg_fw_all"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                style="@style/bg_fw"
+                android:layout_marginBottom="@dimen/margin_bottom_10"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/pur_company_name"
+                    style="@style/bg_ww"
+                    android:layout_marginRight="@dimen/margin_right"
+                    android:text="商家:"
+                    android:textColor="@color/bg_hui1"
+                    android:textSize="@dimen/text_size_15" />
+
+                <TextView
+                    android:id="@+id/tv_merchact_name"
+                    style="@style/bg_ww"
+                    android:layout_marginRight="@dimen/margin_right"
+                    android:text=""
+                    android:textColor="@color/bg_hui1"
+                    android:textSize="@dimen/text_size_15" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/bg_fw"
+                android:layout_marginBottom="@dimen/margin_bottom_10"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/bg_ww"
+                    android:layout_marginRight="@dimen/margin_right"
+                    android:text="分类:"
+                    android:textColor="@color/bg_hui1"
+                    android:textSize="@dimen/text_size_15" />
+
+                <TextView
+                    android:id="@+id/tv_category"
+                    style="@style/bg_ww"
+                    android:text=""
+                    android:textColor="@color/bg_hui1"
+                    android:textSize="@dimen/text_size_15" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/bg_fw"
+                android:layout_marginBottom="@dimen/margin_bottom_10"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/bg_ww"
+                    android:layout_marginRight="@dimen/margin_right"
+                    android:text="品牌:"
+                    android:textColor="@color/bg_hui1"
+                    android:textSize="@dimen/text_size_15" />
+
+                <TextView
+                    android:id="@+id/tv_brand"
+                    style="@style/bg_ww"
+                    android:text=""
+                    android:textColor="@color/bg_hui1"
+                    android:textSize="@dimen/text_size_15" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/bg_fw"
+                android:layout_marginBottom="@dimen/margin_bottom_10"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/bg_ww"
+                    android:layout_marginRight="@dimen/margin_right"
+                    android:text="数量:"
+                    android:textColor="@color/bg_hui1"
+                    android:textSize="@dimen/text_size_15" />
+
+                <TextView
+                    android:id="@+id/tv_weight"
+                    style="@style/bg_ww"
+                    android:text=""
+                    android:textColor="@color/bg_hui1"
+                    android:textSize="@dimen/text_size_15" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/bg_fw"
+                android:layout_marginBottom="@dimen/margin_bottom_10"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/bg_ww"
+                    android:layout_marginRight="@dimen/margin_right"
+                    android:text="单价:"
+                    android:textColor="@color/bg_hui1"
+                    android:textSize="@dimen/text_size_15" />
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    style="@style/bg_ww"
+                    android:text=""
+                    android:textColor="@color/bg_hui1"
+                    android:textSize="@dimen/text_size_15" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/bg_fw"
+                android:layout_marginBottom="@dimen/margin_bottom_10"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/bg_ww"
+                    android:layout_marginRight="@dimen/margin_right"
+                    android:text="预付金额:"
+                    android:textColor="@color/bg_hui1"
+                    android:textSize="@dimen/text_size_15" />
+
+                <TextView
+                    android:id="@+id/tv_pre_price"
+                    style="@style/bg_ww"
+                    android:text=""
+                    android:textColor="@color/bg_buyer"
+                    android:textSize="@dimen/text_size_15" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/bg_fw"
+                android:layout_marginBottom="@dimen/margin_bottom_10"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/bg_ww"
+                    android:layout_marginRight="@dimen/margin_right"
+                    android:text="总金额:"
+                    android:textColor="@color/bg_hui1"
+                    android:textSize="@dimen/text_size_15" />
+
+                <TextView
+                    android:id="@+id/tv_all_price"
+                    style="@style/bg_ww"
+                    android:text=""
+                    android:textColor="@color/bg_buyer"
+                    android:textSize="@dimen/text_size_15" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/bg_fw"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/bg_ww"
+                    android:layout_marginRight="@dimen/margin_right"
+                    android:text="状态:"
+                    android:textColor="@color/bg_hui1"
+                    android:textSize="@dimen/text_size_15" />
+
+                <TextView
+                    android:id="@+id/tv_state"
+                    style="@style/bg_ww"
+                    android:text=""
+                    android:textColor="@color/bg_hui1"
+                    android:textSize="@dimen/text_size_15" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

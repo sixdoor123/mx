@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_white"
+    android:clickable="true"
+    android:orientation="horizontal"
+    android:padding="3dp"
+    android:textSize="14sp"
+    tools:context=".BusinessActivity"
+    tools:text="Aardvark" />

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/bg_fw"
+    android:background="@color/bg_white"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/margin_bottom_10"
+    android:paddingTop="@dimen/margin_bottom_10" >
+
+    <TextView
+        android:id="@+id/txt_name"
+        style="@style/bg_fw"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:singleLine="true"
+        android:text="医药中间体"
+        android:textColor="@color/word_737373"
+        android:textSize="@dimen/text_size_16" />
+
+</LinearLayout>

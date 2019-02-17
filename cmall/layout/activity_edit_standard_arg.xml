@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/bg_fw_all" >
+
+        <TextView
+            style="@style/bg_ww"
+            android:text="工业分析指标: "
+            android:textColor="@color/bg_black"
+            android:textSize="@dimen/text_size_16" />
+    </LinearLayout>
+
+    <View style="@style/view_line_1px" />
+
+    <TableLayout
+        style="@style/bg_fw">
+
+        <TableRow
+            style="@style/bg_fw_all">
+
+            <TextView
+                style="@style/bg_ww"
+                android:gravity="right"
+                android:text="发热量(Qnet)"
+                android:textColor="@color/bg_black"
+                android:textSize="@dimen/text_size_15" />
+
+            <EditText
+                android:id="@+id/txt_calorific_value"
+                style="@style/sty_edit_text"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:background="@drawable/edittext_select"
+                android:hint="请输入发热量"
+                android:singleLine="true"/>
+        </TableRow>
+
+        <View style="@style/view_line_1px" />
+
+       <TableRow
+            style="@style/bg_fw_all">
+
+            <TextView
+                style="@style/bg_ww"
+                android:gravity="right"
+                android:text="全水份(Mt)"
+                android:textColor="@color/bg_black"
+                android:textSize="@dimen/text_size_15" />
+
+            <EditText
+                android:id="@+id/txt_all_water"
+                style="@style/sty_edit_text"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:background="@drawable/edittext_select"
+                android:hint="请输入全水份"
+                android:singleLine="true"/>
+        </TableRow>
+
+        <View style="@style/view_line_1px" />
+
+        <TableRow
+            style="@style/bg_fw_all">
+
+            <TextView
+                style="@style/bg_ww"
+                android:gravity="right"
+                android:text="内水(Mad)"
+                android:textColor="@color/bg_black"
+                android:textSize="@dimen/text_size_15" />
+
+            <EditText
+                android:id="@+id/txt_in_waters"
+                style="@style/sty_edit_text"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:background="@drawable/edittext_select"
+                android:hint="请输入内水"
+                android:singleLine="true"/>
+        </TableRow>
+
+        <View style="@style/view_line_1px" />
+
+       <TableRow
+            style="@style/bg_fw_all">
+
+
+            <TextView
+                style="@style/bg_ww"
+                android:gravity="right"
+                android:text="挥发份(Var)"
+                android:textColor="@color/bg_black"
+                android:textSize="@dimen/text_size_15" />
+
+            <EditText
+                android:id="@+id/txt_volatile_matter"
+                style="@style/sty_edit_text"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:background="@drawable/edittext_select"
+                android:hint="请输入挥发份"
+                android:singleLine="true"/>
+        </TableRow>
+
+        <View style="@style/view_line_1px" />
+
+      <TableRow
+            style="@style/bg_fw_all">
+
+            <TextView
+                style="@style/bg_ww"
+                android:gravity="right"
+                android:text="灰份(Aar)"
+                android:textColor="@color/bg_black"
+                android:textSize="@dimen/text_size_15" />
+
+            <EditText
+                android:id="@+id/txt_ash_content"
+                style="@style/sty_edit_text"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:background="@drawable/edittext_select"
+                android:hint="请输入灰份"
+                android:singleLine="true"/>
+        </TableRow>
+
+        <View style="@style/view_line_1px" />
+
+        <TableRow
+            style="@style/bg_fw_all">
+
+            <TextView
+                style="@style/bg_ww"
+                android:gravity="right"
+                android:text="全硫份(Star)"
+                android:textColor="@color/bg_black"
+                android:textSize="@dimen/text_size_15" />
+
+            <EditText
+                android:id="@+id/txt_total_sulfur"
+                style="@style/sty_edit_text"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:background="@drawable/edittext_select"
+                android:hint="请输入全硫份(Star)"
+                android:singleLine="true" />
+        </TableRow>
+
+        <View style="@style/view_line_1px" />
+
+       <TableRow
+            style="@style/bg_fw_all">
+
+            <TextView
+                style="@style/bg_ww"
+                android:gravity="right"
+                android:text="固定碳(FC)"
+                android:textColor="@color/bg_black"
+                android:textSize="@dimen/text_size_15" />
+
+            <EditText
+                android:id="@+id/txt_fixed_carbon"
+                style="@style/sty_edit_text"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:background="@drawable/edittext_select"
+                android:hint="请输入固定碳"
+                android:singleLine="true" />
+        </TableRow>
+
+        <View style="@style/view_line_1px" />
+
+        <TableRow
+            style="@style/bg_fw_all">
+
+            <TextView
+                style="@style/bg_ww"
+                android:text="粒度(Size)"
+                 android:gravity="right"
+                android:textColor="@color/bg_black"
+                android:textSize="@dimen/text_size_15" />
+
+            <EditText
+                android:id="@+id/txt_granularity"
+                style="@style/sty_edit_text"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:background="@drawable/edittext_select"
+                android:hint="请输入粒度"
+                android:singleLine="true"/>
+        </TableRow>
+
+        <View style="@style/view_line_1px" />
+
+        <TableRow
+            style="@style/bg_fw_all">
+
+            <TextView
+                style="@style/bg_ww"
+                android:gravity="right"
+                android:text="密度(DE)"
+                android:textColor="@color/bg_black"
+                android:textSize="@dimen/text_size_15" />
+
+            <EditText
+                android:id="@+id/txt_density"
+                style="@style/sty_edit_text"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:background="@drawable/edittext_select"
+                android:hint="请输入密度"
+                android:singleLine="true" />
+        </TableRow>
+    </TableLayout>
+
+    <View style="@style/view_line_1px" />
+
+    <include layout="@layout/activity_button" />
+
+</LinearLayout>
